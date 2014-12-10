@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拖放排序-uif前端框架</title>
+	<link rel="stylesheet" href="css/uikit.docs.min.css">
+    <link rel="stylesheet" href="css/docs.css">
+	<script src="js/jquery.js" ></script>
+	<script src="js/uikit.min.js" ></script>
+	<script src="js/highlight.js" ></script>
+	<script src="js/docs.js" ></script>
+    <link rel="stylesheet" href="css/codemirror.css">
+    <link rel="stylesheet" href="css/show-hint.css">
+    <script src="js/codemirror.js"></script>
+    <script src="js/marked.js"></script>
+    <script src="js/htmleditor.js"></script>
+</head> 
+<body class="tm-background" >
+	<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="../index.html" title="UIkit">
+				<img class="uk-margin uk-margin-remove" src="../images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li  >
+					<a href="../start/index.html">开始使用</a>
+				</li>
+				<li >
+					<a href="../components/index.html">功能组件</a>
+				</li>
+				<li class="uk-active">
+					<a href="index.html">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav> 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">附加组件</li> 
+                            <li><a href="addons_markdownarea.html" title="Markdown area add-on">Markdown 编辑器</a></li>
+                            <li class="uk-active"><a href="addons_sortable.html" title="Sortable add-on">拖放排序</a></li>
+                            <li><a href="addons_datepicker.html" title="Datepicker add-on">日期选择器</a></li>
+                            <li><a href="addons_timepicker.html" title="Timepicker add-on">时间选择器</a></li>
+                            <li><a href="addons_sticky.html" title="Sticky add-on">黏性组件</a></li>
+                            <li><a href="addons_notify.html" title="Notify add-on">通告组件</a></li>
+                            <li><a href="addons_form-password.html" title="Form password add-on">表单密码</a></li>
+                            <li><a href="addons_form-file.html" title="Form file">文件域</a></li>
+                        </ul>
+
+			</div> 
+          <div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1>拖放排序/Sortable</h1>
+
+                            <p class="uk-article-lead">创建可以通过拖拽方式排序的嵌套列表。</p>
+
+                            <p>它可以让你通过拖拽来对项目进行排序和降级，这种方式非常好，如果你想对不同的类型或菜单方面进行管理，请看下面的示例。</p>
+
+                            <h2>用法</h2>
+
+                            <p>一个可排序的列表包含列表本身及其项目，一个手柄和一个开关。</p>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>类/Data属性</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>.uk-sortable</code></td>
+                                        <td>这个类添加到 <code>&lt;ul&gt;</code> 元素来定义插件。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-uk-sortable</code></td>
+                                        <td>若要启用必要的JavaScript，只需添加该Data属性。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-sortable-item</code></td>
+                                        <td>这个类添加到列表项里面的每个 <code>&lt;div&gt;</code> 元素。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-sortable-handle</code></td>
+                                        <td>添加这个类来启用手柄和拖拽排序。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-sortable-action="toggle"</code></td>
+                                        <td>这个Data属性允许你隐藏或显示嵌套的列表项。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <ul class="uk-sortable" data-uk-sortable="">
+                                <li>
+                                    <div class="uk-sortable-item">
+                                        <div class="uk-sortable-handle"></div>
+                                        <div data-sortable-action="toggle"></div>
+                                        Item 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-sortable-item">
+                                        <div class="uk-sortable-handle"></div>
+                                        <div data-sortable-action="toggle"></div>
+                                        Item 2
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-sortable-item">
+                                        <div class="uk-sortable-handle"></div>
+                                        <div data-sortable-action="toggle"></div>
+                                        Item 3
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-sortable"</span> <span class="attribute">data-uk-sortable</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-sortable-item"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-sortable-handle"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-sortable-action</span>=<span class="value">"toggle"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            ...
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                        <hr class="uk-article-divider">
+
+                        <h2>排序多个列表</h2>
+
+                        <p>为了让项目能够从一个列表进行排序到另一个，你可以将它们通过添加 <code>data-uk-sortable="{group:'GROUP-NAME'}"</code> 属性到每个列表。默认情况下，没有任何组名的列表会自动在同一个组中。</p>
+
+                        <h3 class="tm-article-subtitle">示例</h3>
+
+                        <ul class="uk-sortable" data-uk-sortable="{group:'my-group'}">
+                            <li>
+                                <div class="uk-sortable-item">
+                                    <div class="uk-sortable-handle"></div>
+                                    <div data-sortable-action="toggle"></div>
+                                    Item 1
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-sortable-item">
+                                    <div class="uk-sortable-handle"></div>
+                                    <div data-sortable-action="toggle"></div>
+                                    Item 2
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-sortable-item">
+                                    <div class="uk-sortable-handle"></div>
+                                    <div data-sortable-action="toggle"></div>
+                                    Item 3
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3>第二个列表</h3>
+
+                        <ul class="uk-sortable" data-uk-sortable="{group:'my-group'}">
+                            <li>
+                                <div class="uk-sortable-item">
+                                    <div class="uk-sortable-handle"></div>
+                                    <div data-sortable-action="toggle"></div>
+                                    Item 4
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-sortable"</span> <span class="attribute">data-uk-sortable</span>=<span class="value">"{group:'my-group'}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-sortable"</span> <span class="attribute">data-uk-sortable</span>=<span class="value">"{group:'my-group'}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                        <hr class="uk-article-divider">
+
+                        <h2>禁用嵌套</h2>
+
+                        <p>要禁用列表项嵌套，只需添加 <code>data-uk-sortable="{maxDepth:1}"</code> 属性。你也可以使用此Data属性来确定在什么样的深度嵌套是可用的。</p>
+
+                        <ul class="uk-sortable" data-uk-sortable="{maxDepth:1}">
+                            <li>
+                                <div class="uk-sortable-item">
+                                    <div class="uk-sortable-handle"></div>
+                                    <div data-sortable-action="toggle"></div>
+                                    Item 1
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-sortable-item">
+                                    <div class="uk-sortable-handle"></div>
+                                    <div data-sortable-action="toggle"></div>
+                                    Item 2
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-sortable-item">
+                                    <div class="uk-sortable-handle"></div>
+                                    <div data-sortable-action="toggle"></div>
+                                    Item 3
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-sortable"</span> <span class="attribute">data-uk-sortable</span>=<span class="value">"{maxDepth:1}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Javascript 选项</h2>
+
+                            <p>这是关于如何通过属性设置选项的示例：</p>
+
+                            <pre><code class="ini"><span class="setting">data-uk-sortable=<span class="value"><span class="string">"{maxDepth:0, group:'widgets'}"</span></span></span></code></pre>
+
+                            <table class="uk-table uk-table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>选项</th>
+                                        <th>可选值</th>
+                                        <th>默认值</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>group</code></td>
+                                        <td><em>整数 (0..6)</em></td>
+                                        <td>0</td>
+                                        <td>列表组</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>maxDepth</code></td>
+                                        <td><em>整数</em></td>
+                                        <td>10</td>
+                                        <td>最大嵌套级别</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+</div>	
+</body>
+</html>

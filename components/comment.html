@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>开始使用-uif前端框架</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="../index.html" title="UIkit">
+				<img class="uk-margin uk-margin-remove" src="../images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li  >
+					<a href="../start/index.html">开始使用</a>
+				</li>
+				<li class="uk-active">
+					<a href="index.html">功能组件</a>
+				</li>
+				<li>
+					<a href="../addons/index.html">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav> 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">默认</li>
+                            <li><a href="normalize.html" title="Normalize component">标准化</a></li>
+                            <li ><a href="base.html" title="Base component">基础</a></li>
+                            <li ><a href="print.html" title="Print component">打印</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">布局</li>
+                            <li ><a href="grid.html" title="Grid component">网格</a></li>
+                            <li ><a href="panel.html" title="Panel component">面板</a></li>
+                            <li ><a href="article.html" title="Article component">文章</a></li>
+                            <li class="uk-active"><a href="comment.html" title="Comment component">评论</a></li>
+                            <li><a href="utility.html" title="Utility component">效果</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">导航</li>
+                            <li><a href="nav.html" title="Nav component">导航菜单</a></li>
+                            <li><a href="navbar.html" title="Navbar component">导航栏</a></li>
+                            <li><a href="subnav.html" title="Subnav component">子导航</a></li>
+                            <li><a href="breadcrumb.html" title="Breadcrumb component">面包屑</a></li>
+                            <li><a href="pagination.html" title="Pagination component">分页</a></li>
+                            <li><a href="tab.html" title="Tab component">选项卡</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">元素</li>
+                            <li><a href="list.html" title="List component">列表</a></li>
+                            <li><a href="description-list.html" title="Description list component">描述列表</a></li>
+                            <li><a href="table.html" title="Table component">表格</a></li>
+                            <li><a href="form.html" title="Form component">表单</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">常用</li>
+                            <li><a href="button.html" title="Button component">按钮</a></li>
+                            <li><a href="icon.html" title="Icon component">图标</a></li>
+                            <li><a href="close.html" title="Close component">关闭</a></li>
+                            <li><a href="badge.html" title="Badge component">徽章</a></li>
+                            <li><a href="alert.html" title="Alert component">提示框</a></li>
+                            <li><a href="thumbnail.html" title="Thumbnail component">缩略图</a></li>
+                            <li><a href="overlay.html" title="Overlay component">覆盖</a></li>
+                            <li><a href="progress.html" title="Progress component">进度条</a></li>
+                            <li><a href="search.html" title="Search component">搜索</a></li>
+                            <li><a href="text.html" title="Text component">文本</a></li>
+                            <li><a href="animation.html" title="Animation component">动画</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">JavaScript</li>
+                            <li><a href="dropdown.html" title="Dropdown">下拉菜单</a></li>
+                            <li><a href="modal.html" title="Modal component">模态对话框</a></li>
+                            <li><a href="offcanvas.html" title="Off-canvas component">弹出式画布</a></li>
+                            <li><a href="switcher.html" title="Switcher component">切换器</a></li>
+                            <li><a href="toggle.html" title="Toggle component">拨动</a></li>
+                            <li><a href="tooltip.html" title="Tooltip component">提示组件</a></li>
+                            <li><a href="scrollspy.html" title="Scrollspy component">监听滚动</a></li>
+                            <li><a href="smooth-scroll.html" title="Smooth scroll component">平滑滚动</a></li>
+
+                        </ul>
+
+			</div>
+		 <div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title">评论</h1>
+
+                            <p class="uk-article-lead">创建评论，比如关于文章的评论。</p>
+
+                            <h2>用法</h2>
+
+                            <p>评论组件由评论标头（包含头像，标题及元数据）和评论主体组成。</p>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>类</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>.uk-comment</code></td>
+                                        <td>添加这个类来定义评论组件。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-comment-header</code></td>
+                                        <td>添加这个类来创建评论标头。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-comment-avatar</code></td>
+                                        <td>为 <code>&lt;img&gt;</code> 元素添加这个类，创建评论作者的头像。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-comment-title</code></td>
+                                        <td>为标题添加这个类，创建评论的标题。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-comment-meta</code></td>
+                                        <td>为一个段落添加这个类，创建有关评论的元数据。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-comment-body</code></td>
+                                        <td>为 <code>&lt;div&gt;</code> 元素添加这个类，创建评论主体。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                                <article class="uk-comment">
+                                    <header class="uk-comment-header">
+                                        <img class="uk-comment-avatar" src="http://placekitten.com/50/50" alt="">
+                                        <h4 class="uk-comment-title">Author</h4>
+                                        <div class="uk-comment-meta">Written by Super User on 12 April 2012. Posted in Blog</div>
+                                    </header>
+                                    <div class="uk-comment-body">
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                    </div>
+                                </article>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">article</span> <span class="attribute">class</span>=<span class="value">"uk-comment"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">header</span> <span class="attribute">class</span>=<span class="value">"uk-comment-header"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value">"uk-comment-avatar"</span> <span class="attribute">src</span>=<span class="value">""</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">h4</span> <span class="attribute">class</span>=<span class="value">"uk-comment-title"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-comment-meta"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">header</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-comment-body"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">article</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>评论列表</h2>
+
+                            <p>添加 <code>.uk-comment-list</code> 类到一个 <code>&lt;ul&gt;</code> 元素中，创建一个评论列表。你可以在评论列表中嵌套任意数量的 <code>&lt;ul&gt;</code> 元素。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <ul class="uk-comment-list">
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img class="uk-comment-avatar" src="http://placekitten.com/50/50" alt="">
+                                            <h4 class="uk-comment-title">Author</h4>
+                                            <div class="uk-comment-meta">Written by Super User on 12 April 2012. Posted in Blog</div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        </div>
+                                    </article>
+                                    <ul>
+                                        <li>
+                                            <article class="uk-comment">
+                                                <header class="uk-comment-header">
+                                                    <img class="uk-comment-avatar" src="http://placekitten.com/50/50" alt="">
+                                                    <h4 class="uk-comment-title">Author</h4>
+                                                    <div class="uk-comment-meta">Written by Super User on 12 April 2012. Posted in Blog</div>
+                                                </header>
+                                                <div class="uk-comment-body">
+                                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                                </div>
+                                            </article>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-comment-list"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">article</span> <span class="attribute">class</span>=<span class="value">"uk-comment"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">article</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">article</span> <span class="attribute">class</span>=<span class="value">"uk-comment"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">article</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">article</span> <span class="attribute">class</span>=<span class="value">"uk-comment"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">article</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                        </article>
+
+                    </div>
+</div>	
+</body>
+</html>

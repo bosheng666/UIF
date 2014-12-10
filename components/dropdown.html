@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉菜单-uif前端框架</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="../index.html" title="UIkit">
+				<img class="uk-margin uk-margin-remove" src="../images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li  >
+					<a href="../start/index.html">开始使用</a>
+				</li>
+				<li class="uk-active">
+					<a href="index.html">功能组件</a>
+				</li>
+				<li>
+					<a href="../addons/index.html">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav> 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">默认</li>
+                            <li><a href="normalize.html" title="Normalize component">标准化</a></li>
+                            <li ><a href="base.html" title="Base component">基础</a></li>
+                            <li ><a href="print.html" title="Print component">打印</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">布局</li>
+                            <li ><a href="grid.html" title="Grid component">网格</a></li>
+                            <li ><a href="panel.html" title="Panel component">面板</a></li>
+                            <li ><a href="article.html" title="Article component">文章</a></li>
+                            <li ><a href="comment.html" title="Comment component">评论</a></li>
+                            <li><a href="utility.html" title="Utility component">效果</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">导航</li>
+                            <li ><a href="nav.html" title="Nav component">导航菜单</a></li>
+                            <li><a href="navbar.html" title="Navbar component">导航栏</a></li>
+                            <li ><a href="subnav.html" title="Subnav component">子导航</a></li>
+                            <li ><a href="breadcrumb.html" title="Breadcrumb component">面包屑</a></li>
+                            <li><a href="pagination.html" title="Pagination component">分页</a></li>
+                            <li><a href="tab.html" title="Tab component">选项卡</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">元素</li>
+                            <li><a href="list.html" title="List component">列表</a></li>
+                            <li><a href="description-list.html" title="Description list component">描述列表</a></li>
+                            <li><a href="table.html" title="Table component">表格</a></li>
+                            <li><a href="form.html" title="Form component">表单</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">常用</li>
+                            <li><a href="button.html" title="Button component">按钮</a></li>
+                            <li><a href="icon.html" title="Icon component">图标</a></li>
+                            <li><a href="close.html" title="Close component">关闭</a></li>
+                            <li><a href="badge.html" title="Badge component">徽章</a></li>
+                            <li><a href="alert.html" title="Alert component">提示框</a></li>
+                            <li><a href="thumbnail.html" title="Thumbnail component">缩略图</a></li>
+                            <li><a href="overlay.html" title="Overlay component">覆盖</a></li>
+                            <li><a href="progress.html" title="Progress component">进度条</a></li>
+                            <li><a href="search.html" title="Search component">搜索</a></li>
+                            <li><a href="text.html" title="Text component">文本</a></li>
+                            <li><a href="animation.html" title="Animation component">动画</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">JavaScript</li>
+                            <li class="uk-active"><a href="dropdown.html" title="Dropdown">下拉菜单</a></li>
+                            <li><a href="modal.html" title="Modal component">模态对话框</a></li>
+                            <li><a href="offcanvas.html" title="Off-canvas component">弹出式画布</a></li>
+                            <li><a href="switcher.html" title="Switcher component">切换器</a></li>
+                            <li><a href="toggle.html" title="Toggle component">拨动</a></li>
+                            <li><a href="tooltip.html" title="Tooltip component">提示组件</a></li>
+                            <li><a href="scrollspy.html" title="Scrollspy component">监听滚动</a></li>
+                            <li><a href="smooth-scroll.html" title="Smooth scroll component">平滑滚动</a></li>
+
+                        </ul>
+
+			</div>
+<div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title">下拉菜单</h1>
+
+                            <p class="uk-article-lead">为可切换的下拉菜单定制不同的样式。</p>
+
+                            <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
+
+                            <p>任意内容，比如一个按钮，都可以作为切换器用来切换下拉菜单。只需用一个带 <code>data-uk-dropdown</code> 属性的 <code>&lt;div&gt;</code> 元素将其包裹即可。添加 <code>.uk-dropdown</code> 类到一个子级的 <code>&lt;div&gt;</code> 元素来创建下拉菜单本身。一个下拉菜单可以通过鼠标悬停或者的点击的方式来切换。</p>
+
+                            <div class="uk-overflow-container">
+                                <table class="uk-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Data属性</th>
+                                            <th>概述</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>data-uk-dropdown</code></td>
+                                            <td>鼠标悬停打开下拉菜单，并添加一个很小的延迟，这样下拉菜单便不会在你停止在切换器上悬停时立即消失。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-uk-dropdown="{mode:'click'}"</code></td>
+                                            <td>通过点击切换器来打开下拉菜单。再次点击，下拉菜单便关闭。</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p><span class="uk-badge uk-badge-danger">重要</span> 为了应用一个下拉菜单，其父元素拥有一个能恰当地将二者对其的相对位置是很重要的。很多组件默认地创建了这样的定位场景，比如 <a href="button.html" title="Button">按钮</a>，<a href="navbar.html" title="Navbar">导航栏</a>，<a href="subnav.html" title="Subnav">子导航</a> 和 <a href="tab.html" title="Tab">选项卡</a> 等组件。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-margin">
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="">
+                                    <button class="uk-button">Hover me <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown" style="">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                                    <button class="uk-button">Click me <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown" style="">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p><span class="uk-badge">注意</span> 在这个例子理我们使用了 <a href="button.html" title="Button component">按钮组件</a> 作为切换器。</p>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="comment">&lt;!-- 这是JavaScript关联的容器 --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-dropdown</span>&gt;</span>
+
+    <span class="comment">&lt;!-- 这是用来切换下拉菜单的元素 --&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+    <span class="comment">&lt;!-- 这是下拉菜单 --&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="comment">&lt;!-- 这是关联了点击模式的JavaScript的容器 --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-dropdown</span>=<span class="value">"{mode:'click'}"</span>&gt;</span>
+
+    <span class="comment">&lt;!-- 这是用来切换下拉菜单的元素 --&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+    <span class="comment">&lt;!-- 这是下拉菜单 --&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>在悬停模式下延迟下拉菜单</h3>
+
+                            <p>你可以设置一个以毫秒为单位的 <code>delay</code> 参数来防止下拉菜单立即显示出来。</p>
+
+                            <div class="uk-button-dropdown" data-uk-dropdown="{delay: 1000}">
+                                <button class="uk-button">Hover me <i class="uk-icon-caret-down"></i></button>
+                                <div class="uk-dropdown">
+                                    <ul class="uk-nav uk-nav-dropdown">
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Separated item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown"</span> <span class="attribute">data-uk-dropdown</span>=<span class="value">"{delay: 1000}"</span>&gt;</span>
+    ...
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>带有导航菜单的下拉菜单</h3>
+
+                            <p>下拉菜单可以包含一个 <a href="nav.html">导航菜单</a>，只需添加 <code>.uk-nav</code> 类和 <code>.uk-nav-dropdown</code> 修饰类到一个 <code>&lt;ul&gt;</code> 元素中。</p>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-dropdown"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="alignment-modifiers"><a href="#alignment-modifiers" class="uk-link-reset">对齐修饰</a></h2>
+
+                            <p>添加以下类中的一个来对齐下拉菜单。</p>
+
+                            <div class="uk-overflow-container">
+                                <table class="uk-table uk-text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>类</th>
+                                            <th>概述</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.uk-dropdown-flip</code></td>
+                                            <td>右对齐下拉菜单</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-dropdown-up</code></td>
+                                            <td>将下拉菜单对齐在切换器上方</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-dropdown-center</code></td>
+                                            <td>居中下拉菜单</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-button-dropdown" data-uk-dropdown="">
+                                <button class="uk-button">Flip <i class="uk-icon-caret-down"></i></button>
+                                <div class="uk-dropdown uk-dropdown-flip">
+                                    <ul class="uk-nav uk-nav-dropdown">
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Separated item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="uk-button-dropdown" data-uk-dropdown="">
+                                <button class="uk-button">Up <i class="uk-icon-caret-up"></i></button>
+                                <div class="uk-dropdown uk-dropdown-up">
+                                    <ul class="uk-nav uk-nav-dropdown">
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Separated item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="uk-button-dropdown" data-uk-dropdown="">
+                                <button class="uk-button">Center <i class="uk-icon-caret-down"></i></button>
+                                <div class="uk-dropdown uk-dropdown-center">
+                                    <ul class="uk-nav uk-nav-dropdown">
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Separated item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-flip"</span>&gt;</span>
+    ...
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-up"</span>&gt;</span>
+    ...
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-center"</span>&gt;</span>
+    ...
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>调整下拉菜单</h3>
+
+                            <p>调整下拉菜单，只需添加 <code>data-uk-dropdown="{justify:'#ID'}"</code>属性。需要调整的下拉菜单的父元素需要有一个标记id，这样下拉菜单便会扩宽度至这个被标记的元素的宽度。</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <div id="justify1">
+                                <div class="uk-button-dropdown" data-uk-dropdown="{justify:'#justify1'}">
+                                    <button class="uk-button">Justify <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="comment">&lt;!-- 这是需要调整的下拉菜单的父元素 --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"my-id"</span>&gt;</span>
+
+    <span class="comment">&lt;!-- 这是关联了JavaScript的容器 --&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-button-dropdown"</span> <span class="attribute">data-uk-dropdown</span>=<span class="value">"{justify:'#my-id'}"</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 这是切换下拉菜单的元素 --&gt;</span>
+        <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 这是下拉菜单 --&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+                            <hr class="uk-article-divider">
+
+                            <h3>下拉菜单自动翻转</h3>
+
+                            <p>默认情况下，当下拉菜单超出了视口边缘便会自动地翻转。如果你想根据容器的边界来翻转它，只需添加 <code>data-uk-dropdown="{boundary:'#ID'}"</code> 属性，为容器使用一个选择器</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <div id="boundary" class="uk-button-dropdown" data-uk-dropdown="{boundary:'#boundary'}">
+                                <button class="uk-button">Boundary <i class="uk-icon-caret-down"></i></button>
+                                <div class="uk-dropdown">
+                                    <ul class="uk-nav uk-nav-dropdown">
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Separated item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"my-id"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-button-dropdown"</span> <span class="attribute">data-uk-dropdown</span>=<span class="value">"{boundary:'#my-id'}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="grid"><a href="#grid" class="uk-link-reset">网格</a></h2>
+
+                            <p>你甚至可以在下拉菜单中放置一个包含导航或者其它内容的 <a href="grid.html" title="Grid component">网格组件</a>。 只需用一个带有 <code>.uk-panel</code>类的 <code>&lt;div&gt;</code> 元素包裹着这些内容。添加一个 <code>.uk-dropdown-width-*</code> 类来并列最多5列在下拉菜单中。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-button-dropdown" data-uk-dropdown="">
+                                <button class="uk-button">2 Columns <i class="uk-icon-caret-down"></i></button>
+                                <div class="uk-dropdown uk-dropdown-width-2">
+
+                                    <div class="uk-grid uk-dropdown-grid">
+                                        <div class="uk-width-1-2">
+
+                                            <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="uk-width-1-2">
+
+                                            <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="uk-button-dropdown" data-uk-dropdown="">
+                                <button class="uk-button">3 Columns <i class="uk-icon-caret-down"></i></button>
+                                <div class="uk-dropdown uk-dropdown-width-3">
+
+                                    <div class="uk-grid uk-dropdown-grid">
+                                        <div class="uk-width-1-3">
+
+                                            <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+
+                                            <div class="uk-panel">Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit, sed do eiusmod tempor incididunt.</div>
+
+                                        </div>
+                                        <div class="uk-width-1-3">
+
+                                            <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+
+                                            <div class="uk-panel">Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit, sed do eiusmod tempor incididunt.</div>
+
+                                        </div>
+                                        <div class="uk-width-1-3">
+
+                                            <div class="uk-panel">Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit, sed do eiusmod tempor incididunt.</div>
+                                            <div class="uk-panel">Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit, sed do eiusmod tempor incididunt.</div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-width-2"</span>&gt;</span>
+
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-grid uk-dropdown-grid"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-1-2"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-dropdown uk-panel"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-panel"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-1-2"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-panel"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <h3>响应式行为</h3>
+
+                            <p>在狭窄的视口中，比如手机上，可能没有足够的空间来扩展下拉菜单。在这种情况下，下拉菜单会翻转它的对齐准线。如果还是没有足够的空间，网格列会占满宽度并在下拉菜单中垂直地堆叠。</p>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="small-modifier"><a href="#small-modifier" class="uk-link-reset">缩小调整</a></h2>
+
+                            <p>默认情况下，下拉菜单有一个固定的宽度并且文字会切换到下一行。如果你想要你的下拉菜单更小巧，使它不必换行便能扩展到内容的宽度，添加 <code>.uk-dropdown-small</code> 类即可。这对一个按钮下拉菜单是很有用的。</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <div class="uk-button-dropdown" data-uk-dropdown="">
+                                <button class="uk-button">Dropdown <i class="uk-icon-caret-down"></i></button>
+                                <div class="uk-dropdown uk-dropdown-small">
+                                    <ul class="uk-nav uk-nav-dropdown">
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Separated item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-small"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="scrollable-modifier"><a href="#scrollable-modifier" class="uk-link-reset">可滚动的修饰类</a></h2>
+
+                            <p>给下拉菜单添加固定高度、内容可以滚动的效果，添加 <code>.uk-dropdown-scrollable</code> 类即可。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-button-dropdown" data-uk-dropdown="">
+                                <button class="uk-button">Dropdown <i class="uk-icon-caret-down"></i></button>
+                                <div class="uk-dropdown uk-dropdown-scrollable">
+                                    <ul class="uk-nav uk-nav-dropdown">
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Another item</a></li>
+                                        <li><a href="#">Yet another item</a></li>
+                                        <li><a href="#">And another item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Separated item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-scrollable"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="navbar-modifier"><a href="#navbar-modifier" class="uk-link-reset">导航栏中的下拉菜单</a></h2>
+
+                            <p>下拉菜单是 <a href="navbar.html" title="Navbar component">导航栏组件</a> 的基本组成部分。只需添加 <code>.uk-dropdown-navbar</code> 类到下拉菜单中，这样下拉菜单便会完美地融入导航栏中。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <nav class="uk-navbar">
+
+                                <ul class="uk-navbar-nav">
+                                    <li class="uk-active"><a href="">Active</a></li>
+                                    <li><a href="">Item</a></li>
+                                    <li class="uk-parent" data-uk-dropdown="">
+                                        <a href="">Parent <i class="uk-icon-caret-down"></i></a>
+
+                                        <div class="uk-dropdown uk-dropdown-navbar">
+                                            <ul class="uk-nav uk-nav-navbar">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                </ul>
+
+                            </nav>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"uk-navbar"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-navbar-nav"</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 这是关联了JavaScript的容器 --&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"uk-parent"</span> <span class="attribute">data-uk-dropdown</span>&gt;</span>
+
+            <span class="comment">&lt;!-- 这是切换下拉菜单的菜单项 --&gt;</span>
+            <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+
+            <span class="comment">&lt;!-- 这是下拉菜单 --&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-navbar"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-navbar"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+                <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">nav</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="dropdown-in-buttons"><a href="#dropdown-in-buttons" class="uk-link-reset">按钮中的下拉菜单</a></h2>
+
+                            <p> <a href="button.html" title="Button component">按钮组件</a> 中的按钮可以用来切换下拉菜单。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-margin" data-uk-margin="">
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="">
+                                    <button class="uk-button">Hover <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="">
+                                    <button class="uk-button uk-button-primary">Hover <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="">
+                                    <button class="uk-button uk-button-success">Hover <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="">
+                                    <button class="uk-button uk-button-danger">Hover <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="">
+                                    <button class="uk-button" disabled="">Hover <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="comment">&lt;!-- 这是关联了JavaScript的容器 --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-button-dropdown"</span> <span class="attribute">data-uk-dropdown</span>&gt;</span>
+
+    <span class="comment">&lt;!-- 这是切换下拉菜单的按钮 --&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+    <span class="comment">&lt;!-- 这是下拉菜单 --&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-small"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-dropdown"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>按钮组中的下拉菜单</h3>
+
+                            <p>使用 <a href="button.html" title="Button component">按钮组件</a> 中的按钮组，将按钮分作一个标准的按钮和一个下拉菜单切换器。</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <div class="uk-margin" data-uk-margin="">
+                                <div class="uk-button-group">
+                                    <button class="uk-button">Button</button>
+                                    <div data-uk-dropdown="{mode:'click'}">
+                                        <button class="uk-button"><i class="uk-icon-caret-down"></i></button>
+                                        <div class="uk-dropdown uk-dropdown-small">
+                                            <ul class="uk-nav uk-nav-dropdown">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-group">
+                                    <button class="uk-button uk-button-primary">Button</button>
+                                    <div data-uk-dropdown="{mode:'click'}">
+                                        <a href="#" class="uk-button uk-button-primary"><i class="uk-icon-caret-down"></i></a>
+                                        <div class="uk-dropdown uk-dropdown-small">
+                                            <ul class="uk-nav uk-nav-dropdown">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-group">
+                                    <button class="uk-button uk-button-success">Button</button>
+                                    <div data-uk-dropdown="{mode:'click'}">
+                                        <a href="#" class="uk-button uk-button-success"><i class="uk-icon-caret-down"></i></a>
+                                        <div class="uk-dropdown uk-dropdown-small">
+                                            <ul class="uk-nav uk-nav-dropdown">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-group">
+                                    <button class="uk-button uk-button-danger">Button</button>
+                                    <div data-uk-dropdown="{mode:'click'}">
+                                        <a href="#" class="uk-button uk-button-danger"><i class="uk-icon-caret-down"></i></a>
+                                        <div class="uk-dropdown uk-dropdown-small">
+                                            <ul class="uk-nav uk-nav-dropdown">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-group">
+                                    <button class="uk-button" disabled="">Button</button>
+                                    <div data-uk-dropdown="{mode:'click'}">
+                                        <button class="uk-button" disabled=""><i class="uk-icon-caret-down"></i></button>
+                                        <div class="uk-dropdown">
+                                            <ul class="uk-nav uk-nav-dropdown">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-button-group"</span>&gt;</span>
+
+    <span class="comment">&lt;!-- 这是一个按钮 --&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+    <span class="comment">&lt;!-- 这是关联了JavaScript的容器 --&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-dropdown</span>=<span class="value">"{mode:'click'}"</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 这是切换下拉菜单的按钮 --&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 这是下拉菜单 --&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-small"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-dropdown"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="dropdown-in-subnavs"><a href="#dropdown-in-subnavs" class="uk-link-reset">子导航中的下拉菜单</a></h2>
+
+                            <p>下拉菜单也可以用在 <a href="subnav.html" title="Subnav component">子导航组件</a> 中。</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <ul class="uk-subnav uk-subnav-pill">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li data-uk-dropdown="{mode:'click'}">
+                                    <a href="#">More <i class="uk-icon-caret-down"></i></a>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-subnav uk-subnav-pill"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+
+    <span class="comment">&lt;!-- 这是关联了JavaScript的容器 --&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">data-uk-dropdown</span>=<span class="value">"{mode:'click'}"</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 这是切换下拉菜单的导航元素 --&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 这是下拉菜单 --&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-small"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-dropdown"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="dropdown-in-tabs"><a href="#dropdown-in-tabs" class="uk-link-reset">选项卡中的下拉菜单</a></h2>
+
+                            <p>下拉菜单可以用在 <a href="tab.html" title="Tab component">选项卡组件</a> 中。</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <ul class="uk-tab uk-width-medium-1-2" data-uk-tab="">
+                                <li class="uk-active"><a href="#">Tab One</a></li>
+                                <li><a href="#">Tab Two</a></li>
+                                <li data-uk-dropdown="{mode:'click'}">
+                                    <a href="#">More <i class="uk-icon-caret-down"></i></a>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Tab One</a><div class="uk-dropdown uk-dropdown-small"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Tab One</a></li><li><a href="javascript:void(0);">Tab Two</a></li><li><a href="javascript:void(0);">
+                                    More 
+                                    
+                                        
+                                            Item
+                                            Another item
+                                            Header
+                                            Item
+                                            Another item
+                                            
+                                            Separated item
+                                        
+                                    
+                                </a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Another item</a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Another item</a></li><li><a href="javascript:void(0);">Separated item</a></li></ul><div></div></div></li></ul>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab"</span> <span class="attribute">data-uk-tab</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+
+    <span class="comment">&lt;!-- 这是关联了JavaScript的容器 --&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">data-uk-dropdown</span>=<span class="value">"{mode:'click'}"</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 这是切换下拉菜单的选项卡元素 --&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 这是下拉菜单 --&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-small"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-dropdown"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="javascript-options"><a href="#javascript-options" class="uk-link-reset">JavaScript 选项</a></h2>
+
+                            <p>这是关于如何通过属性设置选项的示例：</p>
+
+                            <pre><code class="ini"><span class="setting">data-uk-dropdown=<span class="value"><span class="string">"{mode:'hover'}"</span></span></span></code></pre>
+
+                            <div class="uk-overflow-container">
+                                <table class="uk-table uk-table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>选项</th>
+                                            <th>可选值</th>
+                                            <th>默认值</th>
+                                            <th>概述</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>mode</code></td>
+                                            <td>hover, click</td>
+                                            <td>hover</td>
+                                            <td>下拉菜单的触发行为</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>remaintime</code></td>
+                                            <td>integer</td>
+                                            <td>800</td>
+                                            <td>悬停模式下，自动关闭下拉菜单前的等待时间 </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>justify</code></td>
+                                            <td>CSS selector</td>
+                                            <td>false</td>
+                                            <td>按指定元素的宽度拉伸下拉菜单</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>boundary</code></td>
+                                            <td>window</td>
+                                            <td>CSS selector</td>
+                                            <td>用被标注的元素来保持下拉菜单的可见性</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>delay</code></td>
+                                            <td>integer</td>
+                                            <td>0</td>
+                                            <td>悬停模式下，下拉菜单被显示前的延迟时间，以毫秒为单位。</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <h3>事件</h3>
+
+                            <p>你可以为自定义的功能绑定回调事件。</p>
+
+                            <div class="uk-overflow-container">
+                                <table class="uk-table uk-table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>事件名</th>
+                                            <th>概述</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>uk.dropdown.show</code></td>
+                                            <td>下拉菜单显示时触发</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>uk.dropdown.stack</code></td>
+                                            <td>当下拉菜单堆叠以适应屏幕时触发</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+<pre><code class="ruby"><span class="variable">$(</span><span class="string">'[data-uk-dropdown]'</span>).on(<span class="string">'uk.dropdown.show'</span>, function(){
+    <span class="regexp">//</span> custom code...
+});
+</code></pre>
+
+                        </article>
+
+                    </div>
+
+
+                </div>
+            </div>
+</div>	
+</body>
+</html>

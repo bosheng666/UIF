@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>开始使用-uif前端框架</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="../index.html" title="UIkit">
+				<img class="uk-margin uk-margin-remove" src="../images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li  >
+					<a href="../start/index.html">开始使用</a>
+				</li>
+				<li class="uk-active">
+					<a href="index.html">功能组件</a>
+				</li>
+				<li>
+					<a href="docs/addons.html">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav> 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">默认</li>
+                            <li><a href="normalize.html" title="Normalize component">标准化</a></li>
+                            <li ><a href="base.html" title="Base component">基础</a></li>
+                            <li ><a href="print.html" title="Print component">打印</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">布局</li>
+                            <li ><a href="grid.html" title="Grid component">网格</a></li>
+                            <li ><a href="panel.html" title="Panel component">面板</a></li>
+                            <li ><a href="article.html" title="Article component">文章</a></li>
+                            <li ><a href="comment.html" title="Comment component">评论</a></li>
+                            <li><a href="utility.html" title="Utility component">效果</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">导航</li>
+                            <li ><a href="nav.html" title="Nav component">导航菜单</a></li>
+                            <li><a href="navbar.html" title="Navbar component">导航栏</a></li>
+                            <li ><a href="subnav.html" title="Subnav component">子导航</a></li>
+                            <li ><a href="breadcrumb.html" title="Breadcrumb component">面包屑</a></li>
+                            <li><a href="pagination.html" title="Pagination component">分页</a></li>
+                            <li><a href="tab.html" title="Tab component">选项卡</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">元素</li>
+                            <li><a href="list.html" title="List component">列表</a></li>
+                            <li><a href="description-list.html" title="Description list component">描述列表</a></li>
+                            <li><a href="table.html" title="Table component">表格</a></li>
+                            <li><a href="form.html" title="Form component">表单</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">常用</li>
+                            <li  class="uk-active"><a href="button.html" title="Button component">按钮</a></li>
+                            <li><a href="icon.html" title="Icon component">图标</a></li>
+                            <li><a href="close.html" title="Close component">关闭</a></li>
+                            <li><a href="badge.html" title="Badge component">徽章</a></li>
+                            <li><a href="alert.html" title="Alert component">提示框</a></li>
+                            <li><a href="thumbnail.html" title="Thumbnail component">缩略图</a></li>
+                            <li><a href="overlay.html" title="Overlay component">覆盖</a></li>
+                            <li><a href="progress.html" title="Progress component">进度条</a></li>
+                            <li><a href="search.html" title="Search component">搜索</a></li>
+                            <li><a href="text.html" title="Text component">文本</a></li>
+                            <li><a href="animation.html" title="Animation component">动画</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">JavaScript</li>
+                            <li><a href="dropdown.html" title="Dropdown">下拉菜单</a></li>
+                            <li><a href="modal.html" title="Modal component">模态对话框</a></li>
+                            <li><a href="offcanvas.html" title="Off-canvas component">弹出式画布</a></li>
+                            <li><a href="switcher.html" title="Switcher component">切换器</a></li>
+                            <li><a href="toggle.html" title="Toggle component">拨动</a></li>
+                            <li><a href="tooltip.html" title="Tooltip component">提示组件</a></li>
+                            <li><a href="scrollspy.html" title="Scrollspy component">监听滚动</a></li>
+                            <li><a href="smooth-scroll.html" title="Smooth scroll component">平滑滚动</a></li>
+
+                        </ul>
+
+			</div>
+		 
+<div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title">Button</h1>
+
+                            <p class="uk-article-lead">Easily create nicely looking buttons, which come in different styles.</p>
+
+                            <h2>用法</h2>
+
+                            <p>To apply this component, add the <code>.uk-button</code> class to an <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element. Now you have created a button. Add the <code>disabled</code> attribute to a <code>&lt;button&gt;</code> element to disable the button.</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <p>
+                                <a class="uk-button" href="">Link</a>
+                                <button class="uk-button" type="button">Button</button>
+                                <button class="uk-button" type="button" disabled="">Disabled</button>
+                            </p>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span> <span class="attribute">type</span>=<span class="value">"button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">disabled</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></pre>
+
+                            <p><span class="uk-badge">NOTE</span> If you are displaying a number of buttons in a row, you can add a top margin to them, when they stack on smaller viewports. Just add the <code>data-uk-margin</code> attribute from the <a href="utility.html">Utility component</a> to their parent element.</p>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Color modifiers</h2>
+
+                            <p>There are several color modifiers available. Just add one of the following classes to apply a different look.</p>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>Example</th>
+                                        <th>Class</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><button class="uk-button uk-button-primary" type="button">Primary</button></td>
+                                        <td><code>.uk-button-primary</code></td>
+                                        <td>Emphasizes to identify the primary action in a set of buttons.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="uk-button uk-button-success" type="button">Success</button></td>
+                                        <td><code>.uk-button-success</code></td>
+                                        <td>Indicates a successful or positive action.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="uk-button uk-button-danger" type="button">Danger</button></td>
+                                        <td><code>.uk-button-danger</code></td>
+                                        <td>Indicates a dangerous or negative action.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a class="uk-button uk-button-link" href="#">Link</a></td>
+                                        <td><code>.uk-button-link</code></td>
+                                        <td>Deemphasizes to look like a link while maintaining button behavior.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Size modifiers</h2>
+
+                            <p>Add the <code>.uk-button-mini</code>, <code>.uk-button-small</code> or <code>.uk-button-large</code> class to a button to make it smaller or larger.</p>
+
+                            <p>
+                                <button class="uk-button uk-button-mini" type="button">Mini button</button>
+                                <button class="uk-button uk-button-mini uk-button-primary" type="button">Mini button</button>
+                            </p>
+
+                            <p>
+                                <button class="uk-button uk-button-small" type="button">Small button</button>
+                                <button class="uk-button uk-button-small uk-button-primary" type="button">Small button</button>
+                            </p>
+
+                            <p>
+                                <button class="uk-button" type="button">Default button</button>
+                                <button class="uk-button uk-button-primary" type="button">Default button</button>
+                            </p>
+
+                            <p>
+                                <button class="uk-button uk-button-large" type="button">Large button</button>
+                                <button class="uk-button uk-button-large uk-button-primary" type="button">Large button</button>
+                            </p>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Expand</h3>
+
+                            <p>Add the <code>.uk-button-expand</code> class and the button will behave like a block element and take up full width.</p>
+
+                            <p>
+                                <button class="uk-button uk-button-large uk-button-expand" type="button">Button expand</button>
+                                <button class="uk-button uk-button-primary uk-button-large uk-button-expand" type="button">Button expand</button>
+                            </p>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Button group</h2>
+
+                            <p>To create a button group, add the <code>.uk-button-group</code> class to a <code>&lt;div&gt;</code> element around the buttons. That's it! No further markup needed.</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-margin">
+                                <div class="uk-button-group">
+                                    <a class="uk-button" href="#">Link</a>
+                                    <button class="uk-button">Button</button>
+                                    <button class="uk-button">Button</button>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-button-group">
+                                    <a class="uk-button uk-button-primary" href="#">Link</a>
+                                    <button class="uk-button uk-button-primary">Button</button>
+                                    <button class="uk-button uk-button-primary">Button</button>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-button-group">
+                                    <a class="uk-button uk-button-success" href="#">Link</a>
+                                    <button class="uk-button uk-button-success">Button</button>
+                                    <button class="uk-button uk-button-success">Button</button>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-button-group">
+                                    <a class="uk-button uk-button-danger" href="#">Link</a>
+                                    <button class="uk-button uk-button-danger">Button</button>
+                                    <button class="uk-button uk-button-danger">Button</button>
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-button-group"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>JavaScript</h2>
+
+                            <p>You can toggle button states via JavaScript. Just add the data attibute <code>data-uk-button</code>.</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <button class="uk-button uk-button-primary" type="button" data-uk-button="">Button</button>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button uk-button-primary"</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">data-uk-button</span>&gt;</span>Button<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Checkbox buttons</h3>
+
+                            <p>Toggle between a group of buttons like a checkbox by wrapping a <code>&lt;div&gt;</code> element with the data attribute <code>data-uk-button-checkbox</code> around them. This can also be applied to a button group.</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <div class="uk-margin">
+                                <div data-uk-button-checkbox="">
+                                    <button class="uk-button">Button</button>
+                                    <button class="uk-button">Button</button>
+                                    <button class="uk-button">Button</button>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <div class="uk-button-group" data-uk-button-checkbox="">
+                                    <button class="uk-button">Button</button>
+                                    <button class="uk-button">Button</button>
+                                    <button class="uk-button">Button</button>
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-button-checkbox</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Radio buttons</h3>
+
+                            <p>Toggle between a group of buttons, like radio buttons, by wrapping a <code>div</code> element that uses <code>data-uk-button-radio</code> around them. This can also be applied to a button group.</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <div class="uk-margin">
+                                <div data-uk-button-radio="">
+                                    <button class="uk-button">Button</button>
+                                    <button class="uk-button">Button</button>
+                                    <button class="uk-button">Button</button>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <div class="uk-button-group" data-uk-button-radio="">
+                                    <button class="uk-button">Button</button>
+                                    <button class="uk-button">Button</button>
+                                    <button class="uk-button">Button</button>
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-button-radio</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Button with dropdowns</h2>
+
+                            <p>A button can be used to trigger a dropdown menu from the <a href="dropdown.html">Dropdown component</a>. Just add the <code>.uk-button-dropdown</code> class and the <code>data-uk-dropdown</code> attribute to a <code>&lt;div&gt;</code> element that contains the button and the dropdown itself.</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-margin">
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="">
+                                    <button class="uk-button">Hover <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="">
+                                    <button class="uk-button uk-button-primary">Hover <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="">
+                                    <button class="uk-button uk-button-success">Hover <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="">
+                                    <button class="uk-button uk-button-danger">Hover <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-dropdown" data-uk-dropdown="">
+                                    <button class="uk-button" disabled="">Hover <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="comment">&lt;!-- This is the container enabling the JavaScript --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-button-dropdown"</span> <span class="attribute">data-uk-dropdown</span>&gt;</span>
+
+    <span class="comment">&lt;!-- This is the button toggling the dropdown --&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+    <span class="comment">&lt;!-- This is the dropdown --&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-small"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-dropdown"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>Button group with dropdowns</h3>
+
+                            <p>Use button groups to split buttons into a standard action on the left and a dropdown toggle on the right. Just wrap a <code>&lt;div&gt;</code> element around the button and the dropdown and add the <code>data-uk-dropdown="{mode:'click'}"</code> attribute. Of course, a dropdown can also be applied to a button within a button group.</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <div class="uk-margin">
+                                <div class="uk-button-group">
+                                    <button class="uk-button">Button</button>
+                                    <div data-uk-dropdown="{mode:'click'}">
+                                        <button class="uk-button"><i class="uk-icon-caret-down"></i></button>
+                                        <div class="uk-dropdown uk-dropdown-small">
+                                            <ul class="uk-nav uk-nav-dropdown">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-group">
+                                    <button class="uk-button uk-button-primary">Button</button>
+                                    <div data-uk-dropdown="{mode:'click'}">
+                                        <button class="uk-button uk-button-primary"><i class="uk-icon-caret-down"></i></button>
+                                        <div class="uk-dropdown uk-dropdown-small">
+                                            <ul class="uk-nav uk-nav-dropdown">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-group">
+                                    <button class="uk-button uk-button-success">Button</button>
+                                    <div data-uk-dropdown="{mode:'click'}">
+                                        <button class="uk-button uk-button-success"><i class="uk-icon-caret-down"></i></button>
+                                        <div class="uk-dropdown uk-dropdown-small">
+                                            <ul class="uk-nav uk-nav-dropdown">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-group">
+                                    <button class="uk-button uk-button-danger">Button</button>
+                                    <div data-uk-dropdown="{mode:'click'}">
+                                        <button class="uk-button uk-button-danger"><i class="uk-icon-caret-down"></i></button>
+                                        <div class="uk-dropdown uk-dropdown-small">
+                                            <ul class="uk-nav uk-nav-dropdown">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-button-group">
+                                    <button class="uk-button" disabled="">Button</button>
+                                    <div data-uk-dropdown="{mode:'click'}">
+                                        <button class="uk-button" disabled=""><i class="uk-icon-caret-down"></i></button>
+                                        <div class="uk-dropdown uk-dropdown-small">
+                                            <ul class="uk-nav uk-nav-dropdown">
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Another item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Separated item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-button-group"</span>&gt;</span>
+
+    <span class="comment">&lt;!-- This is a button --&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+    <span class="comment">&lt;!-- This is the container enabling the JavaScript --&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-dropdown</span>=<span class="value">"{mode:'click'}"</span>&gt;</span>
+
+        <span class="comment">&lt;!-- This is the button toggling the dropdown --&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+
+        <span class="comment">&lt;!-- This is the dropdown --&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-small"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-dropdown"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                        </article>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+</div>	
+</body>
+</html>

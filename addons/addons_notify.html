@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>通告组件-uif前端框架</title>
+	<link rel="stylesheet" href="css/uikit.docs.min.css">
+    <link rel="stylesheet" href="css/docs.css">
+	<script src="js/jquery.js" ></script>
+	<script src="js/uikit.min.js" ></script>
+	<script src="js/highlight.js" ></script>
+	<script src="js/docs.js" ></script> 
+    <script src="js/notify.js"></script>
+   <script>
+        $(function(){
+            $("body").on("click", ".uk-button[data-message]", function(){
+                $.UIkit.notify($(this).data());
+            });
+        })
+        </script>
+</head> 
+<body class="tm-background" >
+	<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="../index.html" title="UIkit">
+				<img class="uk-margin uk-margin-remove" src="../images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li  >
+					<a href="../start/index.html">开始使用</a>
+				</li>
+				<li >
+					<a href="../components/index.html">功能组件</a>
+				</li>
+				<li class="uk-active">
+					<a href="index.html">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav> 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">附加组件</li> 
+                            <li ><a href="addons_markdownarea.html" title="Markdown area add-on">Markdown 编辑器</a></li>
+                            <li><a href="addons_sortable.html" title="Sortable add-on">拖放排序</a></li>
+                            <li><a href="addons_datepicker.html" title="Datepicker add-on">日期选择器</a></li>
+                            <li><a href="addons_timepicker.html" title="Timepicker add-on">时间选择器</a></li>
+                            <li><a href="addons_sticky.html" title="Sticky add-on">黏性组件</a></li>
+                            <li class="uk-active"><a href="addons_notify.html" title="Notify add-on">通告组件</a></li>
+                            <li><a href="addons_form-password.html" title="Form password add-on">表单密码</a></li>
+                            <li><a href="addons_form-file.html" title="Form file">文件域</a></li>
+                        </ul>
+
+			</div> 
+           <div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1>通告组件/Notify</h1>
+
+                            <p class="uk-article-lead">创建可切换的通知状态，它可以自动的淡出。</p>
+
+                            <p>但是当鼠标悬停在该消息时它仍然可见不会淡出关闭，你也可以通过单击来关闭通知。</p>
+
+                            <h2>用法</h2>
+
+                            <p>通告组件提供了一个简单的API，你可以在你的应用程序代码中重用。下面的JavaScript代码片段可让你开始使用。</p>
+
+                            <h3 class="tm-article-subtitle">JavaScript</h3>
+
+<pre><code class="ruby"><span class="variable">$.</span><span class="constant">UIkit</span>.notify({
+    message <span class="symbol">:</span> <span class="string">'Bazinga!'</span>,
+    status  <span class="symbol">:</span> <span class="string">'info'</span>,
+    timeout <span class="symbol">:</span> <span class="number">5000</span>,
+    pos     <span class="symbol">:</span> <span class="string">'top-center'</span>
+});
+
+
+<span class="regexp">//</span> <span class="constant">Shortcuts</span>
+<span class="variable">$.</span><span class="constant">UIkit</span>.notify(<span class="string">'My message'</span>);
+<span class="variable">$.</span><span class="constant">UIkit</span>.notify(<span class="string">'My message'</span>, status);
+<span class="variable">$.</span><span class="constant">UIkit</span>.notify(<span class="string">'My message'</span>, { <span class="regexp">/* options */</span> });</code></pre>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <p>
+                                <button class="uk-button" data-message="Message..." data-pos="top-center">Click me</button>
+                            </p>
+
+                            <pre><code class="ruby"><span class="variable">$.</span><span class="constant">UIkit</span>.notify(<span class="string">"Message..."</span>);</code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>HTML message</h3>
+
+                            <p>你可以在通知消息内使用HTML代码，比如从 <a href="icon.html">图标组件</a> 中使用图标。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <p>
+                                <button class="uk-button" data-message="&lt;i class='uk-icon-check'&gt;&lt;/i&gt; Message with an icon...">With icon</button>
+                            </p>
+
+                            <pre><code class="xml">$.UIkit.notify("<span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">'uk-icon-check'</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span> Message with an icon...");</code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>延迟和黏贴</h3>
+
+                            <p>你可以通过定义 <code>timeout</code>（以毫秒为单位） 来设置消息可见的时间。你也可以把 timeout 设置为 0 来创建一个黏性的消息</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <p>
+                                <button class="uk-button" data-message="Sticky message..." data-timeout="0">Sticky</button>
+                            </p>
+
+                            <pre><code class="css">$<span class="class">.UIkit</span><span class="class">.notify</span>("<span class="tag">Message</span>...", <span class="rules">{<span class="rule"><span class="attribute">timeout</span>:<span class="value"> <span class="number">0</span>}</span></span></span>);</code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>定位</h3>
+
+                            <p>添加以下其中一个参数来调整通告不同的方向的定位。</p>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>参数</th>
+                                        <th>代码</th>
+                                        <th>示例</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>top-center</code></td>
+                                        <td>
+                                            <pre><code class="css">$<span class="class">.UIkit</span><span class="class">.notify</span>("...", <span class="rules">{<span class="rule"><span class="attribute">pos</span>:<span class="value"><span class="string">'top-center'</span>}</span></span></span>)</code></pre>
+                                        </td>
+                                        <td><button class="uk-button uk-width-1-1" data-message="Message..." data-pos="top-center">Top Center</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>top-left</code></td>
+                                        <td>
+                                            <pre><code class="css">$<span class="class">.UIkit</span><span class="class">.notify</span>("...", <span class="rules">{<span class="rule"><span class="attribute">pos</span>:<span class="value"><span class="string">'top-left'</span>}</span></span></span>)</code></pre>
+                                        </td>
+                                        <td><button class="uk-button uk-width-1-1" data-message="Message..." data-pos="top-left">Top Left</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>top-right</code></td>
+                                        <td>
+                                            <pre><code class="css">$<span class="class">.UIkit</span><span class="class">.notify</span>("...", <span class="rules">{<span class="rule"><span class="attribute">pos</span>:<span class="value"><span class="string">'top-right'</span>}</span></span></span>)</code></pre>
+                                        </td>
+                                        <td><button class="uk-button uk-width-1-1" data-message="Message..." data-pos="top-right">Top Right</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>bottom-center</code></td>
+                                        <td>
+                                            <pre><code class="css">$<span class="class">.UIkit</span><span class="class">.notify</span>("...", <span class="rules">{<span class="rule"><span class="attribute">pos</span>:<span class="value"><span class="string">'bottom-center'</span>}</span></span></span>)</code></pre>
+                                        </td>
+                                        <td><button class="uk-button uk-width-1-1" data-message="Message..." data-pos="bottom-center">Bottom Center</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>bottom-left</code></td>
+                                        <td>
+                                            <pre><code class="css">$<span class="class">.UIkit</span><span class="class">.notify</span>("...", <span class="rules">{<span class="rule"><span class="attribute">pos</span>:<span class="value"><span class="string">'bottom-left'</span>}</span></span></span>)</code></pre>
+                                        </td>
+                                        <td><button class="uk-button uk-width-1-1" data-message="Message..." data-pos="bottom-left">Bottom Left</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>bottom-right</code></td>
+                                        <td>
+                                            <pre><code class="css">$<span class="class">.UIkit</span><span class="class">.notify</span>("...", <span class="rules">{<span class="rule"><span class="attribute">pos</span>:<span class="value"><span class="string">'bottom-right'</span>}</span></span></span>)</code></pre>
+                                        </td>
+                                        <td><button class="uk-button uk-width-1-1" data-message="Message..." data-pos="bottom-right">Bottom Right</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>状态</h3>
+
+                            <p>每个通知都可以通过设置一个状态样式，表明该消息是一个信息、成功、警告或危险的消息。</p>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>状态</th>
+                                        <th>代码</th>
+                                        <th>示例</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>信息</code></td>
+                                        <td>
+                                            <pre><code class="css">$<span class="class">.UIkit</span><span class="class">.notify</span>("...", <span class="rules">{<span class="rule"><span class="attribute">status</span>:<span class="value"><span class="string">'info'</span>}</span></span></span>)</code></pre>
+                                        </td>
+                                        <td><button class="uk-button uk-width-1-1" data-message="Info message..." data-status="info">Info</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>成功</code></td>
+                                        <td>
+                                            <pre><code class="css">$<span class="class">.UIkit</span><span class="class">.notify</span>("...", <span class="rules">{<span class="rule"><span class="attribute">status</span>:<span class="value"><span class="string">'success'</span>}</span></span></span>)</code></pre>
+                                        </td>
+                                        <td><button class="uk-button uk-width-1-1" data-message="Success message..." data-status="success">Success</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>警告</code></td>
+                                        <td>
+                                            <pre><code class="css">$<span class="class">.UIkit</span><span class="class">.notify</span>("...", <span class="rules">{<span class="rule"><span class="attribute">status</span>:<span class="value"><span class="string">'warning'</span>}</span></span></span>)</code></pre>
+                                        </td>
+                                        <td><button class="uk-button uk-width-1-1" data-message="Warning message..." data-status="warning">Warning</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>威胁</code></td>
+                                        <td>
+                                            <pre><code class="css">$<span class="class">.UIkit</span><span class="class">.notify</span>("...", <span class="rules">{<span class="rule"><span class="attribute">status</span>:<span class="value"><span class="string">'danger'</span>}</span></span></span>)</code></pre>
+                                        </td>
+                                        <td><button class="uk-button uk-width-1-1" data-message="Danger message..." data-status="danger">Danger</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+</div>	
+</body>
+</html>

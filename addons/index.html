@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>附加组件-uif前端框架</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="../index.html" title="UIkit">
+				<img class="uk-margin uk-margin-remove" src="../images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li  >
+					<a href="../start/index.html">开始使用</a>
+				</li>
+				<li >
+					<a href="../components/index.html">功能组件</a>
+				</li>
+				<li class="uk-active">
+					<a href="index.html">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav> 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">附加组件</li> 
+                            <li><a href="addons_markdownarea.html" title="Markdown area add-on">Markdown 编辑器</a></li>
+                            <li><a href="addons_sortable.html" title="Sortable add-on">拖放排序</a></li>
+                            <li><a href="addons_datepicker.html" title="Datepicker add-on">日期选择器</a></li>
+                            <li><a href="addons_timepicker.html" title="Timepicker add-on">时间选择器</a></li>
+                            <li><a href="addons_sticky.html" title="Sticky add-on">黏性组件</a></li>
+                            <li><a href="addons_notify.html" title="Notify add-on">通告组件</a></li>
+                            <li><a href="addons_form-password.html" title="Form password add-on">表单密码</a></li>
+                            <li><a href="addons_form-file.html" title="Form file">文件域</a></li>
+                        </ul>
+
+			</div>
+		 
+ <div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1>附加组件</h1>
+
+                            <p class="uk-article-lead">所有附加组件都是独立的，并不包含在 UIKit 的核心框架中。</p>
+
+                            <p>UIKit 提供了一些高级的组件，它们不包含在 UIKit 的核心框架中。通常你在普通的网站上使用不到这些插件。如果你创建高级的用户界面管理等领域，它们会派上用场，比如“拖放排序”和“日期选择器”。</p>
+
+                            <h2>用法</h2>
+
+                            <p>当你 <a data-uikit-download="" href="https://github.com/uikit/uikit/releases/download/v2.8.0/uikit-2.8.0.zip">下载 UIkit</a> 后，你可以发现附加组件在 <code>/addons</code> 文件夹中。下面是附加组件 “<a href="addons_datepicker.html" title="Datepicker add-on">日期选择器</a>” 的文件结构。</p>
+
+<pre><code class="xml">/addons/css
+    <span class="comment">&lt;!-- 这个日期选择器附加组件为基本风格的样式 --&gt;</span>
+    datepicker.css
+    datepicker.min.css
+    ...
+
+    <span class="comment">&lt;!-- 这个日期选择器附加组件具有渐变风格的样式 --&gt;</span>
+    datepicker.gradient.css
+    datepicker.gradient.min.css
+    ...
+
+    <span class="comment">&lt;!-- 这个日期选择器附加组件具有扁平化风格的样式 --&gt;</span>
+    datepicker.almost-flat.css
+    datepicker.almost-flat.min.css
+    ...
+
+/addons/js
+    <span class="comment">&lt;!-- JavaScript和压缩后的版本 --&gt;</span>
+    datepicker.js
+    datepicker.min.js
+    ...</code></pre>
+
+                            <p>若要使用其中的附加组件，你只需要把它的JavaScript和CSS文件添加到你的文档头部。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+<pre><code class="xml"><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">head</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">title</span>&gt;</span><span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"uikit.min.css"</span> /&gt;</span>
+        <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"jquery.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"uikit.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+        <span class="comment">&lt;!-- Datepicker add-on --&gt;</span>
+        <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"datepicker.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"datepicker.css"</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">body</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
+
+                        </article>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+</div>	
+</body>
+</html>

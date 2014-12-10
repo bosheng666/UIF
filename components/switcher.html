@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>切换器-uif前端框架</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="../index.html" title="UIkit">
+				<img class="uk-margin uk-margin-remove" src="../images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li  >
+					<a href="../start/index.html">开始使用</a>
+				</li>
+				<li class="uk-active">
+					<a href="index.html">功能组件</a>
+				</li>
+				<li>
+					<a href="../addons/index.html">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav> 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">默认</li>
+                            <li><a href="normalize.html" title="Normalize component">标准化</a></li>
+                            <li ><a href="base.html" title="Base component">基础</a></li>
+                            <li ><a href="print.html" title="Print component">打印</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">布局</li>
+                            <li ><a href="grid.html" title="Grid component">网格</a></li>
+                            <li ><a href="panel.html" title="Panel component">面板</a></li>
+                            <li ><a href="article.html" title="Article component">文章</a></li>
+                            <li ><a href="comment.html" title="Comment component">评论</a></li>
+                            <li><a href="utility.html" title="Utility component">效果</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">导航</li>
+                            <li ><a href="nav.html" title="Nav component">导航菜单</a></li>
+                            <li><a href="navbar.html" title="Navbar component">导航栏</a></li>
+                            <li ><a href="subnav.html" title="Subnav component">子导航</a></li>
+                            <li ><a href="breadcrumb.html" title="Breadcrumb component">面包屑</a></li>
+                            <li><a href="pagination.html" title="Pagination component">分页</a></li>
+                            <li><a href="tab.html" title="Tab component">选项卡</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">元素</li>
+                            <li><a href="list.html" title="List component">列表</a></li>
+                            <li><a href="description-list.html" title="Description list component">描述列表</a></li>
+                            <li><a href="table.html" title="Table component">表格</a></li>
+                            <li><a href="form.html" title="Form component">表单</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">常用</li>
+                            <li><a href="button.html" title="Button component">按钮</a></li>
+                            <li><a href="icon.html" title="Icon component">图标</a></li>
+                            <li><a href="close.html" title="Close component">关闭</a></li>
+                            <li><a href="badge.html" title="Badge component">徽章</a></li>
+                            <li><a href="alert.html" title="Alert component">提示框</a></li>
+                            <li><a href="thumbnail.html" title="Thumbnail component">缩略图</a></li>
+                            <li><a href="overlay.html" title="Overlay component">覆盖</a></li>
+                            <li><a href="progress.html" title="Progress component">进度条</a></li>
+                            <li><a href="search.html" title="Search component">搜索</a></li>
+                            <li><a href="text.html" title="Text component">文本</a></li>
+                            <li><a href="animation.html" title="Animation component">动画</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">JavaScript</li>
+                            <li><a href="dropdown.html" title="Dropdown">下拉菜单</a></li>
+                            <li><a href="modal.html" title="Modal component">模态对话框</a></li>
+                            <li><a href="offcanvas.html" title="Off-canvas component">弹出式画布</a></li>
+                            <li  class="uk-active"><a href="switcher.html" title="Switcher component">切换器</a></li>
+                            <li><a href="toggle.html" title="Toggle component">拨动</a></li>
+                            <li><a href="tooltip.html" title="Tooltip component">提示组件</a></li>
+                            <li><a href="scrollspy.html" title="Scrollspy component">监听滚动</a></li>
+                            <li><a href="smooth-scroll.html" title="Smooth scroll component">平滑滚动</a></li>
+
+                        </ul>
+
+			</div>
+<div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title">切换器/Switcher</h1>
+
+                            <p class="uk-article-lead">通过不同的内容窗格进行动态变换。</p>
+
+                            <h2 id="usage"><a href="#usage" class="uk-link-reset">用法</a></h2>
+
+                            <p>切换器由数个触发单元和与他们相关联的内容项组成。添加 <code>data-uk-switcher="{connect:'#ID'}"</code> 属性到包含触发单元的元素，并且指向包含内容项的元素的id。添加 <code>.uk-switcher</code> 类到同一个元素。通常，切换器和其他组件搭配使用，这里将展示其中一部分。</p>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="comment">&lt;!-- 这是触发单元的容器 --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">data-uk-switcher</span>=<span class="value">"{connect:'#my-id'}"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+
+<span class="comment">&lt;!-- 这是内容项的容器 --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"my-id"</span> <span class="attribute">class</span>=<span class="value">"uk-switcher"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>...<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                            <p><span class="uk-badge">注意</span> <a href="utility.html" title="Utility component">效果组件</a> 中的 <code>.uk-margin</code> 类被用在一些例子中，用于在切换器中添加适当的间距。</p>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="switcher-with-subnav"><a href="#switcher-with-subnav" class="uk-link-reset">切换器与子导航</a></h2>
+
+                            <p>切换器简单地应用于 <a href="subnav.html" title="Subnav component">子导航组件</a> 中。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#subnav-pill-content'}">
+                                <li class="uk-active"><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+
+                            <ul id="subnav-pill-content" class="uk-switcher">
+                                <li class="uk-active">Hello!</li>
+                                <li>Hello again!</li>
+                                <li>Bazinga!</li>
+                            </ul>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="comment">&lt;!-- 这是包含触发单元的子导航 --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-subnav uk-subnav-pill"</span> <span class="attribute">data-uk-switcher</span>=<span class="value">"{connect:'#my-id'}"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+
+<span class="comment">&lt;!-- 这是内容项的容器 --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"my-id"</span> <span class="attribute">class</span>=<span class="value">"uk-switcher"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>...<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="switcher-with-tabs"><a href="#switcher-with-tabs" class="uk-link-reset">切换器与选项卡</a></h2>
+
+                            <p>作为一个特例，添加使用"tab"参数替代 "switcher"的 <code>data-uk-tab="{connect:'#ID'}"</code> 属性到选项卡式的导航中，使得切换器和 <a href="tab.html" title="Tab component">选项卡组件</a> 相互结合。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-margin uk-grid" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-2">
+
+                                    <ul class="uk-tab" data-uk-tab="{connect:'#tab-content'}">
+                                        <li class="uk-active"><a href="#">Tab</a></li>
+                                        <li><a href="#">Tab</a></li>
+                                        <li><a href="#">Tab</a></li>
+                                    <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Tab</a><div class="uk-dropdown uk-dropdown-small"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Tab</a></li><li><a href="javascript:void(0);">Tab</a></li><li><a href="javascript:void(0);">Tab</a></li></ul><div></div></div></li></ul>
+
+                                    <ul id="tab-content" class="uk-switcher uk-margin">
+                                        <li class="uk-active">Hello!</li>
+                                        <li>Hello again!</li>
+                                        <li>Bazinga!</li>
+                                    </ul>
+
+                                </div>
+                                <div class="uk-width-medium-1-2">
+
+                                    <ul id="tab-bottom-content" class="uk-switcher uk-margin">
+                                        <li class="uk-active">Hello!</li>
+                                        <li>Hello again!</li>
+                                        <li>Bazinga!</li>
+                                    </ul>
+
+                                    <ul class="uk-tab uk-tab-bottom" data-uk-tab="{connect:'#tab-bottom-content'}">
+                                        <li class="uk-active"><a href="#">Tab</a></li>
+                                        <li><a href="#">Tab</a></li>
+                                        <li><a href="#">Tab</a></li>
+                                    <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Tab</a><div class="uk-dropdown uk-dropdown-small uk-dropdown-up"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Tab</a></li><li><a href="javascript:void(0);">Tab</a></li><li><a href="javascript:void(0);">Tab</a></li></ul><div></div></div></li></ul>
+
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="comment">&lt;!-- 这是包含触发单元的选项卡式导航T --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab"</span> <span class="attribute">data-uk-tab</span>=<span class="value">"{connect:'#my-id'}"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+
+<span class="comment">&lt;!-- 这是内容项的容器 --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"my-id"</span> <span class="attribute">class</span>=<span class="value">"uk-switcher uk-margin"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>...<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                            <p><span class="uk-badge">注意</span>  当使用选项卡组件的 <code>.uk-tab-bottom</code> 类的时候，导航和内容需要按相反的顺序放置，这样内容才会显示在选项卡的上方。</p>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>垂直选项卡</h3>
+
+                            <p>使用 <a href="grid.html" title="Grid component">网格组件</a>正确地显示内容以及带有垂直排列的选项卡导航。</p>
+
+                            <h4 class="tm-article-subtitle">例子</h4>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-2">
+
+                                    <div class="uk-grid">
+                                        <div class="uk-width-medium-1-2">
+
+                                            <ul class="uk-tab uk-tab-left" data-uk-tab="{connect:'#tab-left-content'}">
+                                                <li class="uk-active"><a href="#">Tab</a></li>
+                                                <li><a href="#">Tab</a></li>
+                                                <li><a href="#">Tab</a></li>
+                                            <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Tab</a><div class="uk-dropdown uk-dropdown-small"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Tab</a></li><li><a href="javascript:void(0);">Tab</a></li><li><a href="javascript:void(0);">Tab</a></li></ul><div></div></div></li></ul>
+
+                                        </div>
+                                        <div class="uk-width-medium-1-2">
+
+                                            <ul id="tab-left-content" class="uk-switcher">
+                                                <li class="uk-active">Hello!</li>
+                                                <li>Hello again!</li>
+                                                <li>Bazinga!</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="uk-width-medium-1-2">
+
+                                    <div class="uk-grid" data-uk-grid-margin="">
+                                        <div class="uk-width-medium-1-2 uk-push-1-2">
+
+                                            <ul class="uk-tab uk-tab-right" data-uk-tab="{connect:'#tab-right-content'}">
+                                                <li class="uk-active"><a href="#">Tab</a></li>
+                                                <li><a href="#">Tab</a></li>
+                                                <li><a href="#">Tab</a></li>
+                                            <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Tab</a><div class="uk-dropdown uk-dropdown-small"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Tab</a></li><li><a href="javascript:void(0);">Tab</a></li><li><a href="javascript:void(0);">Tab</a></li></ul><div></div></div></li></ul>
+
+                                        </div>
+                                        <div class="uk-width-medium-1-2 uk-pull-1-2">
+
+                                            <ul id="tab-right-content" class="uk-switcher">
+                                                <li class="uk-active">Hello!</li>
+                                                <li>Hello again!</li>
+                                                <li>Bazinga!</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <h4 class="tm-article-subtitle">Code</h4>
+
+<pre><code class="xml"><span class="comment">&lt;!-- 这是左侧垂直的选项卡式导航 --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-grid"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-medium-1-2"</span>&gt;</span>
+        <span class="comment">&lt;!-- 这是包含了触发单元的垂直选项卡式导航 --&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab uk-tab-left"</span> <span class="attribute">data-uk-tab</span>=<span class="value">"{connect:'#my-id'}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-medium-1-2"</span>&gt;</span>
+        <span class="comment">&lt;!-- 这是内容项的容器 --&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"my-id"</span> <span class="attribute">class</span>=<span class="value">"uk-switcher"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="comment">&lt;!-- 这是右侧垂直的选项卡式导航  --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-grid"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-medium-1-2 uk-push-1-2"</span>&gt;</span>
+        <span class="comment">&lt;!-- This is the vertical tabbed navigation containing the toggling elements --&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab uk-tab-right"</span> <span class="attribute">data-uk-tab</span>=<span class="value">"{connect:'#my-id'}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-medium-1-2 uk-pull-1-2"</span>&gt;</span>
+        <span class="comment">&lt;!-- This is the container of the content items --&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"my-id"</span> <span class="attribute">class</span>=<span class="value">"uk-switcher"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="switcher-with-buttons"><a href="#switcher-with-buttons" class="uk-link-reset">切换器与按钮</a></h2>
+
+                            <p>切换器同样可以应用于 <a href="button.html" title="Button component">按钮或按钮组</a> 中。只需要添加切换器data属性到一个包含了一组按钮的 <code>&lt;div&gt;</code> 元素中或者添加到带有 <code>.button-group</code> 类的元素。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-margin uk-grid" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-2">
+
+                                    <div data-uk-switcher="{connect:'#button-content'}">
+                                        <a class="uk-button uk-active" href="#">Link</a>
+                                        <button class="uk-button">Button</button>
+                                        <button class="uk-button" type="button">Button</button>
+                                    </div>
+
+                                    <ul id="button-content" class="uk-switcher uk-margin">
+                                        <li class="uk-active">Hello!</li>
+                                        <li>Hello again!</li>
+                                        <li>Bazinga!</li>
+                                    </ul>
+
+                                </div>
+                                <div class="uk-width-medium-1-2">
+
+                                    <div class="uk-button-group" data-uk-switcher="{connect:'#button-group-content'}">
+                                        <a class="uk-button uk-active" href="#">Link</a>
+                                        <button class="uk-button" type="button">Button</button>
+                                        <button class="uk-button" type="button">Button</button>
+                                    </div>
+
+                                    <ul id="button-group-content" class="uk-switcher uk-margin">
+                                        <li class="uk-active">Hello!</li>
+                                        <li>Hello again!</li>
+                                        <li>Bazinga!</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="comment">&lt;!-- 这是用于切换的按钮的容器 --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-switcher</span>=<span class="value">"{connect:'#my-id'}"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span> <span class="attribute">type</span>=<span class="value">"button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="comment">&lt;!-- 这是包含了内容项的容器 --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"my-id"</span> <span class="attribute">class</span>=<span class="value">"uk-switcher uk-margin"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+
+<span class="comment">&lt;!-- 这是包含了用于切换的按钮的按钮组 buttons --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-button-group"</span> <span class="attribute">data-uk-switcher</span>=<span class="value">"{connect:'#my-id'}"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"uk-button"</span> <span class="attribute">type</span>=<span class="value">"button"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="comment">&lt;!-- 这是包含了内容项的容器  --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"my-id"</span> <span class="attribute">class</span>=<span class="value">"uk-switcher uk-margin"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2 id="switcher-with-navs"><a href="#switcher-with-navs" class="uk-link-reset">切换器与导航菜单</a></h2>
+
+                            <p>若需将切换器应用于 <a href="nav.html" title="Nav component">导航菜单组件</a>，添加data属性到导航菜单的 <code>&lt;ul&gt;</code> 元素中。使用 <a href="grid.html" title="Grid component">网格组件</a> 将导航菜单和内容项放置在同一个网格布局中。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-4">
+
+                                    <ul class="uk-nav uk-nav-side" data-uk-switcher="{connect:'#nav-content'}">
+                                        <li class="uk-active"><a href="">Item</a></li>
+                                        <li><a href="">Item</a></li>
+                                        <li><a href="">Item</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="uk-width-medium-3-4">
+
+                                    <ul id="nav-content" class="uk-switcher">
+                                        <li class="uk-active">Hello!</li>
+                                        <li>Hello again!</li>
+                                        <li>Bazinga!</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-grid"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-medium-1-4"</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 这是包含了触发单元的导航菜单 --&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-side"</span> <span class="attribute">data-uk-switcher</span>=<span class="value">"{connect:'#my-id'}"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-medium-3-4"</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 这是内容项的容器 --&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"my-id"</span> <span class="attribute">class</span>=<span class="value">"uk-switcher"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>...<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                             <hr class="uk-article-divider">
+
+                            <h2 id="javascript-events"><a href="#javascript-events" class="uk-link-reset">JavaScript 事件</a></h2>
+
+                            <p>每当切换器组件切换到一个内容区域时，都会触发一次 <code>uk.switcher.show</code> 事件。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+<pre><code class="sql">$('[data-uk-switcher]').on('uk.switcher.<span class="operator"><span class="keyword">show</span><span class="string">', function(event, area){
+    console.log("Switcher switched to ", area);
+});</span></span></code></pre>
+
+                        </article>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+</div>	
+</body>
+</html>

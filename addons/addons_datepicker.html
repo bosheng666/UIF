@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日期选择器-uif前端框架</title>
+	<link rel="stylesheet" href="css/uikit.docs.min.css">
+    <link rel="stylesheet" href="css/docs.css">
+	<script src="js/jquery.js" ></script>
+	<script src="js/uikit.min.js" ></script>
+	<script src="js/highlight.js" ></script>
+	<script src="js/docs.js" ></script>
+    <link rel="stylesheet" href="css/codemirror.css">
+    <link rel="stylesheet" href="css/show-hint.css">
+    <script src="js/codemirror.js"></script>
+    <script src="js/marked.js"></script>
+    <script src="js/htmleditor.js"></script>
+    <script src="js/datepicker.js"></script>
+</head> 
+<body class="tm-background" >
+	<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="../index.html" title="UIkit">
+				<img class="uk-margin uk-margin-remove" src="../images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li  >
+					<a href="../start/index.html">开始使用</a>
+				</li>
+				<li >
+					<a href="../components/index.html">功能组件</a>
+				</li>
+				<li class="uk-active">
+					<a href="index.html">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav> 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">附加组件</li> 
+                            <li ><a href="addons_markdownarea.html" title="Markdown area add-on">Markdown 编辑器</a></li>
+                            <li><a href="addons_sortable.html" title="Sortable add-on">拖放排序</a></li>
+                            <li class="uk-active"><a href="addons_datepicker.html" title="Datepicker add-on">日期选择器</a></li>
+                            <li><a href="addons_timepicker.html" title="Timepicker add-on">时间选择器</a></li>
+                            <li><a href="addons_sticky.html" title="Sticky add-on">黏性组件</a></li>
+                            <li><a href="addons_notify.html" title="Notify add-on">通告组件</a></li>
+                            <li><a href="addons_form-password.html" title="Form password add-on">表单密码</a></li>
+                            <li><a href="addons_form-file.html" title="Form file">文件域</a></li>
+                        </ul>
+
+			</div> 
+           <div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1>日期选择器/Datepicker</h1>
+
+                            <p class="uk-article-lead">创建一个可切换具有下拉的日期选择器。</p>
+
+                            <h2>用法</h2>
+
+                            <p>要创建一个日期选择器，只需把 <code>data-uk-datepicker</code> 添加到 <code>&lt;input&gt;</code> 元素。您还可以根据自己的需求来自定义日期格式，只需要添加 <em>format</em> 选项到 <code>data-uk-datepicker</code> 属性。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <form class="uk-form">
+                                <input type="text" data-uk-datepicker="{format:'YYYY.MM.DD'}">
+                            </form>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">form</span> <span class="attribute">class</span>=<span class="value">"uk-form"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">""</span> <span class="attribute">data-uk-datepicker</span>=<span class="value">"{format:'YYYY.MM.DD'}"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Javascript 选项</h2>
+
+                            <p>这是关于如何通过属性设置选项的示例：</p>
+
+                            <pre><code class="ini"><span class="setting">data-uk-datepicker=<span class="value"><span class="string">"{weekstart:0, format:'DD.MM.YYYY'}"</span></span></span></code></pre>
+
+                            <table class="uk-table uk-table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>选项</th>
+                                        <th>可选值</th>
+                                        <th>默认值</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>weekstart</code></td>
+                                        <td><em>整数 (0..6)</em></td>
+                                        <td>1</td>
+                                        <td>一周的开始</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>i18n</code></td>
+                                        <td><em>JSON 对象</em></td>
+                                        <td class="uk-text-small">{ months:['January',...], weekdays:['Sun',..,'Sat'] }</td>
+                                        <td>语言字符串定义</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>format</code></td>
+                                        <td><em>DD，MM 和 YY 的任意组合</em></td>
+                                        <td>'DD.MM.YYYY'</td>
+                                        <td>日期格式字符串</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>offsettop</code></td>
+                                        <td><em>整数</em></td>
+                                        <td>5</td>
+                                        <td>输入偏移值</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </article>
+
+                    </div> 
+                </div>
+            </div>
+</div>	
+</body>
+</html>

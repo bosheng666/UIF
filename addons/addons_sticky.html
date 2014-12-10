@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>黏性组件-uif前端框架</title>
+	<link rel="stylesheet" href="css/uikit.docs.min.css">
+    <link rel="stylesheet" href="css/docs.css"> 
+    <script src="js/jquery.js" ></script>
+	<script src="js/uikit.min.js" ></script>
+	<script src="js/highlight.js" ></script>
+	<script src="js/docs.js" ></script>
+    <script src="js/sticky.js" ></script>    
+</head> 
+<body class="tm-background" >
+	<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="../index.html" title="UIkit">
+				<img class="uk-margin uk-margin-remove" src="../images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li  >
+					<a href="../start/index.html">开始使用</a>
+				</li>
+				<li >
+					<a href="../components/index.html">功能组件</a>
+				</li>
+				<li class="uk-active">
+					<a href="index.html">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav> 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">附加组件</li> 
+                            <li ><a href="addons_markdownarea.html" title="Markdown area add-on">Markdown 编辑器</a></li>
+                            <li><a href="addons_sortable.html" title="Sortable add-on">拖放排序</a></li>
+                            <li ><a href="addons_datepicker.html" title="Datepicker add-on">日期选择器</a></li>
+                            <li ><a href="addons_timepicker.html" title="Timepicker add-on">时间选择器</a></li>
+                            <li class="uk-active"><a href="addons_sticky.html" title="Sticky add-on">黏性组件</a></li>
+                            <li><a href="addons_notify.html" title="Notify add-on">通告组件</a></li>
+                            <li><a href="addons_form-password.html" title="Form password add-on">表单密码</a></li>
+                            <li><a href="addons_form-file.html" title="Form file">文件域</a></li>
+                        </ul>
+
+			</div> 
+          <div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article" style="height: 1800px;">
+
+                            <h1>黏性组件/Sticky</h1>
+
+                            <p class="uk-article-lead">使元素保持在视区的顶部，像一个黏性的导航栏。</p>
+
+                            <h2>用法</h2>
+
+                            <p>要创建一个元素滚动下来时，保持在网站视窗的顶部，添加 <code>data-uk-sticky</code> 属性到该元素</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div id="sticky-s8199" class="uk-sticky" style="height: 52px;"><div class="uk-panel uk-panel-box" data-uk-sticky="">黏贴到顶部</div></div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+                            <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-sticky</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>定义一个偏移量</h2>
+
+                            <p>你也可以定位元素到视窗的边缘下方。例如，添加 <code>data-uk-sticky="{top:100}"</code> 属性来创建 100px 的边距。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div id="sticky-s4558" class="uk-sticky" style="height: 52px;"><div class="uk-panel uk-panel-box" data-uk-sticky="{top:100}">黏贴到距顶端下方 100px</div></div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+                            <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-sticky</span>=<span class="value">"{top:100}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+</div>	
+</body>
+</html>

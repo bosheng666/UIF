@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>监听滚动-uif前端框架</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="../index.html" title="UIkit">
+				<img class="uk-margin uk-margin-remove" src="../images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li  >
+					<a href="../start/index.html">开始使用</a>
+				</li>
+				<li class="uk-active">
+					<a href="index.html">功能组件</a>
+				</li>
+				<li>
+					<a href="../addons/index.html">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav> 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">默认</li>
+                            <li><a href="normalize.html" title="Normalize component">标准化</a></li>
+                            <li ><a href="base.html" title="Base component">基础</a></li>
+                            <li ><a href="print.html" title="Print component">打印</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">布局</li>
+                            <li ><a href="grid.html" title="Grid component">网格</a></li>
+                            <li ><a href="panel.html" title="Panel component">面板</a></li>
+                            <li ><a href="article.html" title="Article component">文章</a></li>
+                            <li ><a href="comment.html" title="Comment component">评论</a></li>
+                            <li><a href="utility.html" title="Utility component">效果</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">导航</li>
+                            <li ><a href="nav.html" title="Nav component">导航菜单</a></li>
+                            <li><a href="navbar.html" title="Navbar component">导航栏</a></li>
+                            <li ><a href="subnav.html" title="Subnav component">子导航</a></li>
+                            <li ><a href="breadcrumb.html" title="Breadcrumb component">面包屑</a></li>
+                            <li><a href="pagination.html" title="Pagination component">分页</a></li>
+                            <li><a href="tab.html" title="Tab component">选项卡</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">元素</li>
+                            <li><a href="list.html" title="List component">列表</a></li>
+                            <li><a href="description-list.html" title="Description list component">描述列表</a></li>
+                            <li><a href="table.html" title="Table component">表格</a></li>
+                            <li><a href="form.html" title="Form component">表单</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">常用</li>
+                            <li><a href="button.html" title="Button component">按钮</a></li>
+                            <li><a href="icon.html" title="Icon component">图标</a></li>
+                            <li><a href="close.html" title="Close component">关闭</a></li>
+                            <li><a href="badge.html" title="Badge component">徽章</a></li>
+                            <li><a href="alert.html" title="Alert component">提示框</a></li>
+                            <li><a href="thumbnail.html" title="Thumbnail component">缩略图</a></li>
+                            <li><a href="overlay.html" title="Overlay component">覆盖</a></li>
+                            <li><a href="progress.html" title="Progress component">进度条</a></li>
+                            <li><a href="search.html" title="Search component">搜索</a></li>
+                            <li><a href="text.html" title="Text component">文本</a></li>
+                            <li><a href="animation.html" title="Animation component">动画</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">JavaScript</li>
+                            <li><a href="dropdown.html" title="Dropdown">下拉菜单</a></li>
+                            <li><a href="modal.html" title="Modal component">模态对话框</a></li>
+                            <li><a href="offcanvas.html" title="Off-canvas component">弹出式画布</a></li>
+                            <li><a href="switcher.html" title="Switcher component">切换器</a></li>
+                            <li><a href="toggle.html" title="Toggle component">拨动</a></li>
+                            <li><a href="tooltip.html" title="Tooltip component">提示组件</a></li>
+                            <li class="uk-active"><a href="scrollspy.html" title="Scrollspy component">监听滚动</a></li>
+                            <li><a href="smooth-scroll.html" title="Smooth scroll component">平滑滚动</a></li>
+
+                        </ul>
+
+			</div>
+<div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1 id="bottom" class="uk-article-title">监听滚动/Scrollspy</h1>
+
+                            <p class="uk-article-lead">页面滚动时触发事件及动画。</p>
+
+                            <h2>用法</h2>
+
+                            <p>该监听滚动组件监听页面滚动，并触发基于滚动位置的事件。比如当你向下滚动页面时，你可以使首次出现在视窗中的一个元素触发一个平滑淡出的动画。</p>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>Data属性</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy="{cls:'MY-CLASS'}"</code></td>
+                                        <td>只有元素首次出现在视窗时才触发。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy="{cls:'MY-CLASS', repeat: true}"</code></td>
+                                        <td>每次元素出现在视窗中都触发。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy="{cls:'MY-CLASS', delay:600}"</code></td>
+                                        <td>添加以毫秒为单位的动画延迟。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p>通常情况下，<a href="animation.html">动画组件</a> 的类都与监听滚动一起使用。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <p>下面的例子使用了 <code>repeat: true</code> 选项。向上或向下滚动可以看到被触发动画。</p>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+                                        <h3>Fade</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4 uk-push-1-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
+                                        <h3>Scale up</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4 uk-push-2-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-scale-down" data-uk-scrollspy="{cls:'uk-animation-scale-down', repeat: true}">
+                                        <h3>Scale down</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4 uk-push-3-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-slide-top" data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}">
+                                        <h3>Slide top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4 uk-push-2-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-slide-bottom" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                        <h3>Slide bottom</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4 uk-push-1-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-slide-right" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}">
+                                        <h3>Slide right</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true}">
+                                        <h3>Slide left</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+                                        <h3 class="uk-panel-title">Delay</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300, repeat: true}">
+                                        <h3 class="uk-panel-title">Delay</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600, repeat: true}">
+                                        <h3 class="uk-panel-title">Delay</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900, repeat: true}">
+                                        <h3 class="uk-panel-title">Delay</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-scrollspy</span>=<span class="value">"{cls:'uk-animation-fade'}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-scrollspy</span>=<span class="value">"{cls:'uk-animation-fade', repeat: true}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-scrollspy</span>=<span class="value">"{cls:'uk-animation-fade', delay:900}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Javascript 事件</h2>
+
+                            <p>该监听滚动组件，每次当一个元素出现在视窗中时触发 <code>uk.scrollspy.inview</code> 事件，元素离开视窗时触发 <code>uk.scrollspy.outview</code> 事件。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+<pre><code class="javascript">$(<span class="string">'[data-uk-scrollspy]'</span>).on({
+
+    <span class="string">'uk.scrollspy.inview'</span>, <span class="keyword">function</span>(){
+        console.log(<span class="string">"Element is visible."</span>);
+    },
+
+    <span class="string">'uk.scrollspy.outview'</span>, <span class="keyword">function</span>(){
+        console.log(<span class="string">"Element is not visible."</span>);
+    }
+});</code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>监听滚动导航/Scrollspy Nav</h2>
+
+                            <p>根据你网站滚动条的位置来自动更新所对应的导航标记，只需添加 <code>data-uk-scrollspy-nav</code> 这个data属性到任意导航中。导航项中的链接必须对应到网站中具有相同ID的部分。</p>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>Data属性</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy-nav</code></td>
+                                        <td>触发监听滚动导航功能所必需的JavaScript。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy-nav="{closest:'MY-SELECTOR'}"</code></td>
+                                        <td>通过遍历查找此DOM树中最接近的节点元素进行匹配。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy-nav="{smoothscroll:true}"</code></td>
+                                        <td>在网站的不同部分之间切换时应用 <a href="smooth-scroll.html">平滑滚动组件</a>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy-nav="{cls:'MY-CLASS'}"</code></td>
+                                        <td>默认情况下ScrollspyNav将切换 <code>uk-active</code> 类。使用 <code>cls</code> 选项可以使用自己的类名。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p>对于监听滚动导航的一个例子, 可以查看 <a href="../src/tests/scrollspy.html">监听滚动导航测试页</a>。</p>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-side"</span> <span class="attribute">data-uk-scrollspy-nav</span>=<span class="value">"{closest:'li', smoothscroll:true}"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#MY-ID"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#MY-ID2"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"MY-ID"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"MY-ID2"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                        </article>
+
+                    </div>
+
+
+                </div>
+            </div>
+</div>	
+</body>
+</html>

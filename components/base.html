@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>开始使用-uif前端框架</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="../index.html" title="UIkit">
+				<img class="uk-margin uk-margin-remove" src="../images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li  >
+					<a href="../start/index.html">开始使用</a>
+				</li>
+				<li class="uk-active">
+					<a href="index.html">功能组件</a>
+				</li>
+				<li>
+					<a href="../addons/index.html">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav> 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">默认</li>
+                            <li><a href="normalize.html" title="Normalize component">标准化</a></li>
+                            <li  class="uk-active"><a href="base.html" title="Base component">基础</a></li>
+                            <li><a href="print.html" title="Print component">打印</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">布局</li>
+                            <li><a href="grid.html" title="Grid component">网格</a></li>
+                            <li><a href="panel.html" title="Panel component">面板</a></li>
+                            <li><a href="article.html" title="Article component">文章</a></li>
+                            <li><a href="comment.html" title="Comment component">评论</a></li>
+                            <li><a href="utility.html" title="Utility component">效果</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">导航</li>
+                            <li><a href="nav.html" title="Nav component">导航菜单</a></li>
+                            <li><a href="navbar.html" title="Navbar component">导航栏</a></li>
+                            <li><a href="subnav.html" title="Subnav component">子导航</a></li>
+                            <li><a href="breadcrumb.html" title="Breadcrumb component">面包屑</a></li>
+                            <li><a href="pagination.html" title="Pagination component">分页</a></li>
+                            <li><a href="tab.html" title="Tab component">选项卡</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">元素</li>
+                            <li><a href="list.html" title="List component">列表</a></li>
+                            <li><a href="description-list.html" title="Description list component">描述列表</a></li>
+                            <li><a href="table.html" title="Table component">表格</a></li>
+                            <li><a href="form.html" title="Form component">表单</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">常用</li>
+                            <li><a href="button.html" title="Button component">按钮</a></li>
+                            <li><a href="icon.html" title="Icon component">图标</a></li>
+                            <li><a href="close.html" title="Close component">关闭</a></li>
+                            <li><a href="badge.html" title="Badge component">徽章</a></li>
+                            <li><a href="alert.html" title="Alert component">提示框</a></li>
+                            <li><a href="thumbnail.html" title="Thumbnail component">缩略图</a></li>
+                            <li><a href="overlay.html" title="Overlay component">覆盖</a></li>
+                            <li><a href="progress.html" title="Progress component">进度条</a></li>
+                            <li><a href="search.html" title="Search component">搜索</a></li>
+                            <li><a href="text.html" title="Text component">文本</a></li>
+                            <li><a href="animation.html" title="Animation component">动画</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">JavaScript</li>
+                            <li><a href="dropdown.html" title="Dropdown">下拉菜单</a></li>
+                            <li><a href="modal.html" title="Modal component">模态对话框</a></li>
+                            <li><a href="offcanvas.html" title="Off-canvas component">弹出式画布</a></li>
+                            <li><a href="switcher.html" title="Switcher component">切换器</a></li>
+                            <li><a href="toggle.html" title="Toggle component">拨动</a></li>
+                            <li><a href="tooltip.html" title="Tooltip component">提示组件</a></li>
+                            <li><a href="scrollspy.html" title="Scrollspy component">监听滚动</a></li>
+                            <li><a href="smooth-scroll.html" title="Smooth scroll component">平滑滚动</a></li>
+
+                        </ul>
+
+			</div>
+		<div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title">基础</h1>
+
+                            <p class="uk-article-lead">提供所有的HTML元素默认样式。</p>
+
+                            <p>这个组件定义了你的网页的基础视觉效果。通过为每个HTML元素设置默认的颜色、边距、字体大小及其他的属性实现强大的版面效果。本页是一个关于如何使用基础HTML元素和 UIF 如何对它们进行风格化的简要向导。</p>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>标题</h2>
+
+                            <p>使用 <code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 标签来定义你的标题。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <h1>h1 Heading 1</h1>
+                            <h2>h2 Heading 2</h2>
+                            <h3>h3 Heading 3</h3>
+                            <h4>h4 Heading 4</h4>
+                            <h5>h5 Heading 5</h5>
+                            <h6>h6 Heading 6</h6>
+
+                            <p>你可以添加 <code>.uk-h1</code>，<code>.uk-h2</code>，<code>.uk-h3</code>，<code>.uk-h4</code>，<code>.uk-h5</code> 或 <code>.uk-h6</code> 类来改变你的标题的大小，比如让 <code>h1</code> 看起来像一个 <code>h3</code>。</p>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>段落</h2>
+
+                            <p>通过自定义设置变量，可对全局的字体大小、行间距、边距等常规元素进行调整。段落和其他块元素也继承这些变量值。</p>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>文本层次语义</h2>
+
+                            <p>下面的列表为你提供了最常用的文本层次语义，以及如何利用它们的简短概述。</p>
+
+                            <table class="uk-table uk-table-hover uk-table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th class="uk-width-1-4">标签</th>
+                                        <th class="uk-width-3-4">概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>&lt;a&gt;</code></td>
+                                        <td>将文本转换为超文本使用 <a href="#">a 标签</a>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;em&gt;</code></td>
+                                        <td>强调文本使用 <em>em 标签</em>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;strong&gt;</code></td>
+                                        <td>强调任何额外的更重要文本使用 <strong>strong 标签</strong>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;code&gt;</code></td>
+                                        <td>定义内联代码片段使用 <code>code 标签</code>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;del&gt;</code></td>
+                                        <td>标记文档中已被修改或删除的文本使用 <del>del 标签</del>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;ins&gt;</code></td>
+                                        <td>标记文档中插入的文本使用 <ins>ins 标签</ins>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;mark&gt;</code></td>
+                                        <td>高亮显示文本使用 <mark>mark 标签</mark>，它没有任何语义含义。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;q&gt;</code></td>
+                                        <td>定义引入的语录在 <q>q 标签 <q>里面使用</q> q 标签</q>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;abbr&gt;</code></td>
+                                        <td>定义一个标题的缩写使用 <abbr title="Abbreviation Element">abbr 标签</abbr>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;dfn&gt;</code></td>
+                                        <td>定义一个项目术语名称使用 <dfn title="Defines a definition term">dfn 标签</dfn>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;small&gt;</code></td>
+                                        <td>缩小显示不重要的文本使用 <small>small 标签</small>。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>水平线</h2>
+
+                            <p>使用 <code>&lt;hr&gt;</code> 标签创建一条水平线。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <hr>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>引用文字</h2>
+
+                            <p>在文档中从其他来源引用多行内容时，使用 <code>&lt;blockquote&gt;</code> 标签。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <blockquote>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <small>Someone famous</small>
+                            </blockquote>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">blockquote</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>Quotation<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">small</span>&gt;</span>Source<span class="tag">&lt;/<span class="title">small</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">blockquote</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>代码块</h2>
+
+                            <p>对于多行代码，使用 <code>&lt;pre&gt;</code> 标签定义含有固定格式的文本。它会建立一个保留空格、制表符及换行符的文本块。内部嵌套 <code>&lt;code&gt;</code> 标签来定义代码块。<br><span class="uk-badge uk-badge-danger">重要</span> 为保证正确地渲染，必须确保避开代码中的任何尖括号。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">pre</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">code</span>&gt;</span>...<span class="tag">&lt;/<span class="title">code</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">pre</span>&gt;</span></code></pre>
+
+                            <p><span class="uk-badge">注意</span> 你也可以添加 <a href="utility.html">通用组件</a> 中介绍到的 <code>.uk-scrollable-text</code> 类, 这将设置最大高度为300px，并提供Y轴滚动条。</p>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>列表</h2>
+
+                            <p>创建一个无序列表使用 <code>&lt;ul&gt;</code> 标签或使用 <code>&lt;ol&gt;</code> 标签创建有序列表。<code>&lt;li&gt;</code> 元素定义列表项。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-2">
+                                    <div class="uk-panel">
+
+                                        <ul>
+                                            <li>Item 1</li>
+                                            <li>Item 2
+                                                <ul>
+                                                    <li>Item 1</li>
+                                                    <li>Item 2
+                                                        <ul>
+                                                            <li>Item 1</li>
+                                                            <li>Item 2</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Item 3</li>
+                                            <li>Item 4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-2">
+                                    <div class="uk-panel">
+
+                                        <ol>
+                                            <li>Item 1</li>
+                                            <li>Item 2
+                                                <ol>
+                                                    <li>Item 1</li>
+                                                    <li>Item 2
+                                                        <ol>
+                                                            <li>Item 1</li>
+                                                            <li>Item 2</li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>Item 3</li>
+                                            <li>Item 4</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-2">
+                                    <div class="uk-panel">
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>...<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>...
+        <span class="tag">&lt;<span class="title">ul</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>...<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-2">
+                                    <div class="uk-panel">
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ol</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>...<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>...
+        <span class="tag">&lt;<span class="title">ol</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>...<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ol</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ol</span>&gt;</span></code></pre>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>描述列表</h2>
+
+                            <p>创建一个描述列表使用 <code>&lt;dl&gt;</code> 标签。使用 <code>&lt;dt&gt;</code> 定义项目，使用 <code>&lt;dd&gt;</code> 定义描述内容。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <dl>
+                                <dt>Description lists</dt>
+                                <dd>A description list defines terms and their corresponding descriptions.</dd>
+                                <dt>This is a term</dt>
+                                <dd>This is a description.</dd>
+                                <dt>This is a term</dt>
+                                <dd>This is a description.</dd>
+                            </dl>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">dl</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">dt</span>&gt;</span>...<span class="tag">&lt;/<span class="title">dt</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">dd</span>&gt;</span>...<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">dl</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>表格</h2>
+
+                            <p>通过 <code>&lt;table&gt;</code> 标签创建一个表格。使用 <code>&lt;tr&gt;</code>， <code>&lt;td&gt;</code> 和 <code>&lt;th&gt;</code> 标签建立表格行，表格单元格和表格的标题。<code>&lt;thead&gt;</code>， <code>&lt;tbody&gt;</code> 和 <code>&lt;tfoot&gt;</code> 标签定义表格的部分。你还可以通过添加 <code>&lt;caption&gt;</code> 标签来创建标题。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <table>
+                                <caption>Table caption</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Table Heading</th>
+                                        <th>Table Heading</th>
+                                        <th>Table Heading</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <td>Table Footer</td>
+                                        <td>Table Footer</td>
+                                        <td>Table Footer</td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">table</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">caption</span>&gt;</span>...<span class="tag">&lt;/<span class="title">caption</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">thead</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">th</span>&gt;</span>...<span class="tag">&lt;/<span class="title">th</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">thead</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">tfoot</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">td</span>&gt;</span>...<span class="tag">&lt;/<span class="title">td</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">tfoot</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">tbody</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">td</span>&gt;</span>...<span class="tag">&lt;/<span class="title">td</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">tbody</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">table</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>响应式图片</h2>
+
+                            <p>UIKit 中的所有图片默认都是响应的。如果布局变窄，图片会调整它们的大小并保持自身的比例。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <p>调整浏览器窗口大小观察图片的响应式行为。</p>
+
+                            <p><img src="http://placekitten.com/480/260" alt=""></p>
+
+                            <p><span class="uk-badge">注意</span> 若要避免响应式行为并保持图像的原始尺寸，可以为单独的图片添加 <code>.uk-img-preserve</code> 类。如果你具有多张图片，也可以将这个类添加到父容器中。谷歌地图不需要这样的设置。</p>
+
+                        </article>
+
+                    </div>
+		</div>
+
+	</div>
+</div>	
+</body>
+</html>
