@@ -1,0 +1,25 @@
+﻿ .text-center {
+    text-align: center!important;
+}
+code {
+    color: #d05;
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 0 4px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background: #fafafa;
+}
+.grid-truncate code {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 16px;
+}
+
+.grid-truncate .grid{
+    margin-bottom: 25px;
+}

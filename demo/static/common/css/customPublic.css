@@ -1,0 +1,513 @@
+﻿/*customPublic.css*/
+body {
+    font-size:12px;
+    line-height:1.2;
+    padding:0;
+    margin:0;
+    font-family:'Microsoft YaHei','simsun';
+}
+
+input,select,textarea,table {
+    font-size:12px;
+    font-family:'Microsoft YaHei','simsun';
+}
+
+table {
+    margin:0 auto;
+}
+
+.floatL,.f-fl {
+    float:left;
+}
+
+.floatR,.f-fr {
+    float:right;
+}
+.clear,.f-cb {
+    clear:both;
+    height:0;
+    line-height:0;
+    font-size:0;
+    overflow:hidden;
+}
+
+.clearFloat {
+    clear:both;
+    overflow:hidden;
+}
+
+.clearfix{*zoom:1}
+.clearfix:before,.clearfix:after{display:table;line-height:0;content:""}
+.clearfix:after{clear:both}
+
+.inlineBlock,.f-ib {
+    display:inline-block;
+}
+
+.displayBlock,.f-block {
+    display:block;
+}
+
+.curDefault {
+    cursor:default;
+}
+
+.curPointer {
+    cursor:pointer;
+}
+
+.positionRelative {
+    position:relative;
+}
+
+
+.width40 {
+    width:40px;
+}
+
+.width60 {
+    width:60px;
+}
+
+.width90 {
+    width:90px;
+}
+
+.width97 {
+    width:97px;
+}
+
+.width110 {
+    width:110px;
+}
+
+.width120 {
+    width:120px;
+}
+
+.width144 {
+    width:144px;
+}
+
+.width150 {
+    width:150px;
+}
+
+.width154 {
+    width:154px;
+}
+
+.width182 {
+    width:182px;
+}
+
+.width198 {
+    width:198px;
+}
+
+.width200 {
+    width:200px;
+}
+
+.width210 {
+    width:210px;
+}
+
+.width230 {
+    width:230px;
+}
+
+.width234 {
+    width:234px;
+}
+
+.width240 {
+    width:240px;
+}
+
+.width250 {
+    width:250px;
+}
+
+.width280 {
+    width:280px;
+}
+
+.width300 {
+    width:300px;
+}
+
+.width310 {
+    width:310px;
+}
+
+.width346 {
+    width:346px;
+}
+
+.width366 {
+    width:366px;
+}
+
+.width370 {
+    width:370px;
+}
+
+.width400 {
+    width:400px;
+}
+
+.width430 {
+    width:430px;
+}
+
+.width455 {
+    width:455px;
+}
+
+.width470 {
+    width:470px;
+}
+
+.width500 {
+    width:500px;
+}
+
+.width510 {
+    width:510px;
+}
+
+.width600 {
+    width:600px;
+}
+
+.width634 {
+    width:634px;
+}
+
+.width660 {
+    width:660px;
+}
+
+.width710 {
+    width:710px;
+}
+
+.width712 {
+    width:712px;
+}
+
+.width722 {
+    width:722px;
+}
+
+.width750 {
+    width:750px;
+}
+
+.width760 {
+    width:760px;
+}
+
+.width810 {
+    width:810px;
+}
+
+.width935 {
+    width:935px;
+}
+
+.width982 {
+    width:982px;
+}
+
+
+.height80 {
+    height:80px;
+}
+.height150 {
+    height:150px;
+}
+.height280 {
+    height:280px;
+}
+.height500 {
+    height:500px;
+}
+
+.paddingT3,.f-pt3 {
+    padding-top:3px;
+}
+.paddingT20,.f-pt20 {
+    padding-top:20px;
+}
+.paddingL2,.f-pl2 {
+    padding-left:2px;
+}
+.f-pl3 {
+    padding-left:3px;
+}
+.paddingL4,.f-pl4 {
+    padding-left:4px;
+}
+.paddingL10,.f-pl10 {
+    padding-left:10px;
+}
+.f-pr3 {
+    padding-right:3px;
+}
+.paddingR10,.f-pr10 {
+    padding-right:10px;
+}
+
+.f-ml3 {
+    margin-left:3px;
+}
+
+.marginL5,.f-ml5 {
+    margin-left:5px;
+}
+
+.marginL10,.f-ml10 {
+    margin-left:10px;
+}
+
+.f-ml15 {
+    margin-left:15px;
+}
+
+.marginL20,.f-ml20 {
+    margin-left:20px;
+}
+
+.marginR3,.f-mr3 {
+    margin-right:3px;
+}
+
+.marginR5,.f-mr5 {
+    margin-right:5px;
+}
+
+.marginR10,.f-mr10 {
+    margin-right:10px;
+}
+
+.marginR20,.f-mr20 {
+    margin-right:20px;
+}
+
+
+.mTMinus3,.f-mtm3 {
+    margin-top:-3px;
+}
+
+.marginT5,.f-mt5 {
+    margin-top:5px;
+}
+
+.marginT6,.f-mt6 {
+    margin-top:6px;
+}
+
+.marginT10,.f-mt10 {
+    margin-top:10px;
+}
+
+.f-mt15 {
+    margin-top:15px;
+}
+
+.f-mt20 {
+    margin-top:20px;
+}
+
+.marginT25,.f-mt25 {
+    margin-top:25px;
+}
+
+.marginB5,.f-mb5 {
+    margin-bottom:5px;
+}
+
+.marginB10,.f-mb10 {
+    margin-bottom:10px;
+}
+
+.f-mb15 {
+    margin-bottom:15px;
+}
+
+.f-mb20 {
+    margin-bottom:20px;
+}
+
+.f-mb30 {
+    margin-bottom:30px;
+}
+
+.MB5 {
+    margin-bottom:5px;
+}
+
+/*新增-前端框架部分*/
+a:hover {
+    color:#66cc00;
+    text-decoration:underline;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+/*==前端框架部分==*/
+a.whiteA:link,a.whiteA:visited,a.whiteA:hover {
+    color:#fff;
+    text-decoration:none;
+}
+
+a.btnA:link,a.btnA:visited {
+    display:inline-block;
+    text-align:center;
+    height:20px;
+    line-height:20px;
+    text-decoration:none;
+    padding:0 10px;
+    margin:5px 0 0 0;
+    border-radius:2px;
+    box-shadow:1px 1px 2px #d4d4d4;
+    cursor:pointer;
+}
+
+.grayTxt,.s-fcGray {
+    color:#666;
+}
+/*此处因为顶部下拉文字颜色太灰，故修改*/
+.grayTxt{
+    color:#4E4E4E;
+}
+/*==此处因为顶部下拉文字颜色太灰，故修改==*/
+.grayTxt1,.darkGrayTxt,.s-fcDGray {
+    color:#505050;
+}
+
+.grayTxt2,.lightGrayTxt,.s-fcLGray {
+    color:#999;
+}
+
+.lightRedTxt,.s-fcLRed {
+    color:#ff6666;
+}
+
+.redTxt,.s-fcRed {
+    color:#e52e2d;
+}
+
+.lightGreenTxt,.s-fcLGreen {
+    color:#57c422;
+}
+/*深土黄*/
+.s-fcDOrange {
+    color:#9b5b32;
+}
+
+
+.font12,.f-fs12 {
+    font-size:12px;
+}
+
+.font14,.f-fs14 {
+    font-size:14px;
+}
+
+.f-fs16 {
+    font-size:16px;
+}
+
+.f-fw {
+    font-weight:bold;
+}
+
+.f-fwNor {
+    font-weight:normal;
+}
+
+.valignM,.f-vam {
+    vertical-align:middle;
+}
+
+.valignT,.f-vat {
+    vertical-align:top;
+}
+
+.f-vab {
+    vertical-align:bottom;
+}
+
+.txtAlignR {
+    text-align:right;
+}
+
+.alignCenter,.f-tac {
+    text-align:center;
+}
+
+.alignLeft,.f-tal {
+    text-align:left;
+}
+
+.alignRight,.f-tar {
+    text-align:right;
+}
+
+.grayBgColor,.s-bgcGray {
+    background-color:#f7f7f7;
+}
+
+.s-bgcLGray {
+    background-color:#fafafa;
+}
+
+.s-bgcLYellow {
+    background-color:#fffee5;
+}
+
+.bgColor {
+    background:#f7f7f7;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    border: 1px #ccc solid;
+    display: none;
+    background: #ccc;
+}
+
+.pageBg {
+    background-color: gray;
+    position: absolute;
+    width:100%;
+    height:100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    filter: Alpha(opacity=50);
+    z-index:99;
+    display:none;
+}
+
+.loadingStyle {
+    margin: 0 10px;
+}
+
+.icon-source {
+    display: inline-block;
+    padding: 1px 8px;
+    color: #666;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    border-radius: 2px;
+    background:#eee;
+}
+ 
+

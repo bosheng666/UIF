@@ -742,3 +742,7 @@ input.sp-input {
 .sp-hue { font: inherit; }
 
 .sp-input-container { margin-bottom: 10px; }
+
+pre .string, pre .tag .value, pre .phpdoc, pre .tex .formula {
+    color: #d14;
+}
