@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>uif前端框架</title>
+	<link rel="stylesheet" href="css/uikit.docs.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery-1.11.1.min.js" ></script>
+	<style type="text/css">
+	* { margin:0; padding:0; }
+	html, body { width:100%; height:100%; }
+	canvas { display:block;position: absolute;left:0px;top:0px;z-index: -1;padding: 0;
+	margin: 0;
+	overflow: hidden;}
+ 	</style>
+</head>
+<body class="tm-background" style="background:none;"> 
+<nav class="tm-navbar uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+
+			<a class="uk-navbar-brand uk-hidden-small" href="index.html" title="UIkit" target="content">
+				<img class="uk-margin uk-margin-remove" src="images/t_logo.jpg" width="90" height="30" alt="uif"></a>
+
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li>
+					<a href="start/index_frame.html"  target="content">开始使用</a>
+				</li>
+				<li>
+					<a href="components/index.html"  target="content">功能组件</a>
+				</li>
+				<li>
+					<a href="addons/index.html"  target="content">附加组件</a>
+				</li> 
+			</ul>
+
+			<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+			<div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+				<a href="index.html" title="UIkit">
+					<img src="images/t_logo.jpg" width="90" height="30" alt="UIkit"></a>
+			</div>
+
+		</div>
+	</nav>
+	<script>
+         $(function(){
+         	 $(".uk-container .uk-navbar-nav li").each(
+         	 	function(){
+         	 		$(this).bind("click",function(){
+	                     $(this).siblings("li").removeClass("uk-active");
+	                     $(this).addClass("uk-active");
+         	 		});
+         	 	});
+         });
+	</script>
+</body>	
+</html>
+
+ 
