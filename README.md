@@ -6,4 +6,4 @@
 说明：基础内容来自v1.0  新版本主要是对内容的展现方式、案例补充、快速工具的补充
 
 
-v1.0 地址：frontend.dodoedu.com
+v1.0 地址：http://frontend.dodoedu.com
