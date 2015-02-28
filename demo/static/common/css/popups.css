@@ -1,0 +1,867 @@
+
+.floatL, .f-fl {
+float: left;
+}
+
+.floatR, .f-fr {
+float: right;
+}
+
+.clearFloat {
+clear: both;
+overflow: hidden;
+}
+
+/*弹框*/
+.PopupsFra {
+	position:absolute;
+    z-index:100;
+}
+
+a.Popups_close:link,a.Popups_close:visited,.edui-dialog-closebutton .edui-button-body {
+	display:block;
+	width:22px;
+	height:22px;
+	line-height:22px;
+	overflow:hidden;
+	cursor:pointer;
+	vertical-align:text-top;
+	margin:2px 5px 0 0;
+	background:url(../images/siteSpr.gif) no-repeat -83px 5px;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+
+a.Popups_close:hover {
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+
+.PopupsFra h5 strong{
+	color:#fff;
+	display:inline-block;
+	padding:6px 10px 7px 10px;
+    font-weight:400;
+}
+
+.PopupsFra h5{
+	font-size:14px;
+	background:#368a41;
+	border:1px solid #2b7935;
+	border-bottom:none;
+	border-radius:4px 4px 0 0;
+}
+
+.PopupsCon {
+	padding:10px 0;
+	background:#fff;
+	border:1px solid #b2b2b2;
+	border-top:none;
+	border-radius:0 0 4px 4px;
+	box-shadow:0 2px 3px rgba(0,0,0,0.1);
+}
+
+.PopupsType {
+	line-height:1.5;
+}
+
+/*弹框按钮区样式*/
+.PopupsCon .PopupsFunc,.PopupsCon .PopupsFuncInside {
+	height: 26px;
+	line-height: 26px;
+	margin: 10px 0 0 0;
+	padding: 10px 0 0 10px;
+	border-top: 1px solid #d2d2d2;
+}
+.PopupsCon .PopupsFunc .customBtn,.PopupsCon .PopupsFuncInside .customBtn {
+	vertical-align:top;
+}
+
+/*弹框公共样式*/
+.PopupsType select {
+	width:150px;
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #d2d2d2;
+	vertical-align: middle;
+	*vertical-align:top;
+	*margin-top:2px;
+}
+
+.PopupsCon .titleLabel,.PopupsCon .labelTxt {
+	display: inline-block;
+	vertical-align: middle;
+	height: 26px;
+	line-height: 26px;
+	*height: auto;
+	*line-height: auto;
+	overflow:hidden;
+}
+
+/*弹框func区有input内容*/
+.PopupsFunc .PopupsFunc_option,.PopupsFuncInside .PopupsFunc_option {
+	line-height:25px;
+}
+
+/*发表日记和创建相册*/
+.PopupsType .editSet span {
+	line-height: 25px;
+	display: inline-block;
+}
+.PopupsType .editSet input,.PopupsType .editSet label {
+	vertical-align:middle;
+	*vertical-align:baseline;
+}
+
+/*空间管理分类和班级的分类管理*/
+.PopupsCon .blogClassList li,.PopupsCon .subjectList li {
+	line-height:26px;
+	padding:5px 0;
+	border-bottom:1px solid #e5e5e5;
+}
+
+.PopupsCon .subjectList select {
+	width:80px;
+}
+
+/*发表作业禁改区*/
+.PopupsCon .DisabledTxtCon {
+	padding:10px;
+	border:1px dashed #e5e5e5;
+	background-color:#f7f7f7;
+}
+
+.PopupsCon .DisabledTxtCon p {
+	padding:2px 0 8px 0;
+}
+
+.DisabledTxtInfo {
+	border-top:1px solid #e5e5e5;
+}
+
+
+/*班级发短信*/
+.PopupsCon .selectContact .recText {
+	width: 371px;
+	_width: 363px;
+	height: auto!important;
+	height: 24px;
+	min-height: 24px;
+	line-height: 24px;
+	background: #f7f7f7;
+	border: 1px solid #e5e5e5;
+}
+
+.PopupsCon .selectContact .recText span {
+	color: #fff;
+	display: inline-block;
+	height: 22px;
+	line-height: 22px;
+	padding: 0 0 0 5px;
+	margin: 1px 2px 1px 1px;
+}
+
+.PopupsCon .selectContact .recText span .del {
+	text-align: center;
+	display: inline-block;
+	width: 19px;
+	height: 20px;
+	overflow: hidden;
+	vertical-align: middle;
+	padding: 2px 0 0 0;
+	margin: 0 0 0 4px;
+	cursor: pointer;
+	opacity: 0.7;
+	filter: Alpha(opacity=70);
+}
+
+.PopupsCon .selectContact .recText span .del em {
+	display: inline-block;
+	width: 6px;
+	height: 7px;
+	font-size: 0;
+	padding: 2px 0 0 0;
+	margin: 4px 0 0 0;
+	background: url(../images/siteSpr.gif) no-repeat -140px -1px;
+}
+
+.PopupsCon .selectContact .colourLightGray {
+	padding: 3px 5px;
+}
+
+.selectContactList .memberListCell {
+	width:auto;
+}
+
+/*网盘上传文件*/
+.PopupsCon .desP {
+	line-height:20px;
+	padding:0 0 10px 0;
+}
+/*发布作业*/
+.SQhome_hwFrm .PopupsType select {
+	width:120px;
+}
+
+.SQhome_hwFrm .PopupsType .title .customForm_txtInput {
+	width:430px;
+}
+
+.SQhome_hwFrm .PopupsType .recText {
+	width: 371px;
+	_width: 363px;
+}
+
+.PopupsFunc .additionItem,.PopupsFuncInside .additionItem {
+	line-height: 18px;
+	padding: 4px 0 0;
+}
+
+.PopupsFunc .additionItem input,.PopupsFuncInside .additionItem input {
+	vertical-align: top;
+	margin: 2px 3px 0 0;
+}
+
+.PopupsType .hwDate {
+	color: #505050;
+	display: inline-block;
+	width: 91px;
+	height: 24px;
+	text-align: center;
+	cursor: pointer;
+	background: #fff;
+	border: 1px solid #e7e7e7;
+	vertical-align: top;
+}
+
+.PopupsType .hwDate input {
+	color: #505050;
+	width: 67px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 12px;
+	border: 1px solid #fff;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.SQhome_hwFrm .PopupsType .noDateCheckbox {
+	vertical-align: top;
+	margin: 7px 3px 0 10px;
+	*margin:1px 2px 0 10px;
+}
+
+/*选择其他作业*/
+.hwList li {
+	line-height:24px;
+	overflow: hidden;
+	padding:5px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+.hwContactList .seachTxt {
+	width: 150px;
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #e7e7e7;
+}
+.hwContactL {
+	width: 206px;
+}
+.hwContactCon {
+	width: 206px;
+	height: 414px;
+	overflow-y: auto;
+	border: 1px solid #e7e7e7;
+	background: #fff;
+}
+.hwContactL .customForm_searchTxtInput {
+	width:208px;
+}
+.hwContactL .customForm_searchTxtInput .txtInput {
+	width:170px;
+}
+.hwContactL .associateWrap {
+	width:180px;
+}
+.hwContactCon h3 {
+	cursor:pointer;
+    padding: 8px;
+    border-bottom: 1px solid #DFDFDF;
+	background-color: #f7f7f7;
+}
+.hwContactCon h3 span {
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	border-left: 5px solid #fff;
+	border-right: 5px solid #fff;
+	border-top: 5px solid #666;
+	margin: 6px 5px 0 0;
+}
+.hwContactCon .active span {
+	border-top: 0px solid #666;
+	border-left: 5px solid #fff;
+	border-right: 5px solid #fff;
+	border-bottom: 5px solid #666;
+}
+
+.hwContactCon .hwContactListCon {
+	padding: 5px 0;
+	border-bottom: 1px solid #DFDFDF;
+}
+.hwContactCon .hwContactListCon span {
+	line-height:20px;
+	color: #505050;
+	cursor: pointer;
+	display: block;
+	padding: 4px 8px;
+}
+.hwContactCon .hwContactListCon span a{
+	width: 100%;
+	display: block;
+	text-indent: 6px;
+	height: 24px;
+	line-height: 24px;
+	background-color: #F0F0F0;
+	border: 1px solid #E7E7E7;
+}
+.hwContactCon .hwContactListCon span a:hover{
+	color: #fff;
+	text-decoration: none;
+	background-color: #5cbc3a;
+	border: 1px solid #3FAC19;
+}
+
+.hwContactR {
+	position:relative;
+	width: 470px;
+	/*width: 378px;*/
+	height: 450px;
+	overflow-y: scroll;
+	border: 1px solid #e7e7e7;
+	background: #fff;
+}
+.hwContactR p {
+	height:18px;
+	line-height:18px;
+	padding: 10px 12px 0 12px;
+}
+.hwContactR p .floatR {
+	height:20px;
+	line-height:20px;
+	display:inline-block;
+}
+.hwContactRcon div {
+	float: left;
+	width: 120px;
+	height: 40px;
+	display: inline;
+	margin: 15px 0 0 12px;
+	padding: 8px;
+	overflow: hidden;
+	border-radius: 4px;
+	border: 1px solid #f0f0f0;
+	cursor: pointer;
+}
+.hwContactR div p {
+	float:right;
+	width:72px;
+	padding: 2px 0 0 0;
+}
+.hwContactR .del {
+	visibility:hidden;
+}
+.hwContactR .active {
+	position:relative;
+	background: #f9f9f9;
+}
+.hwContactR .active .del {
+	visibility:visible;
+	width:14px;
+	height:14px;
+	border-radius:14px;
+	position:absolute;
+	z-index:1;
+	top:1px;
+	right:1px;
+	cursor:pointer;
+	background:#ccc url(../images/siteSpr.gif) no-repeat -136px 1px;
+}
+
+
+/*权限设置框处于锁定时*/
+.lockSelect {
+	width:223px;
+	color:#505050;
+	display:inline-block;
+	padding:3px 0 3px 5px;
+	border:1px solid #d5d5d5;
+	background:url(../images/SQSpr2.gif) no-repeat 208px -507px;
+}
+
+/*课表选择背景颜色*/
+.PopupsType .chooseBgColor .blueBgColor,.PopupsType .chooseBgColor .orangeBgColor,.PopupsType .chooseBgColor .greenBgColor,.PopupsType .chooseBgColor .pinkBgColor {
+	text-align:center;
+	color:#1b74b8;
+	background:#f3fbff;
+	border:1px solid #dae8ef;
+	display:inline-block;
+	width:50px;
+	height:18px;
+	line-height:18px;
+	border-radius:2px;
+}
+
+.PopupsType .chooseBgColor .orangeBgColor {
+	color:#9f8d16;
+	background:#fffee5;
+	border:1px solid #e3e2c3;
+}
+
+.PopupsType .chooseBgColor .greenBgColor {
+	color:#449644;
+	background:#ecffec;
+	border:1px solid #d4ebd4;
+}
+
+.PopupsType .chooseBgColor .pinkBgColor {
+	color:#704b86;
+	background:#faf2ff;
+	border:1px solid #e4d9eb;
+}
+
+/*举报*/
+.report_userInfo {
+	width:430px;
+	overflow:hidden;
+	padding:10px;
+	margin:5px 0 15px 0;
+	background: #f7f7f7;
+}
+.reported_userInfo {
+	background:none;
+}
+.report_userInfo dt {
+	width:55px;
+	border-right:1px solid #e2e2e2;
+}
+.report_userInfo dt a {
+	width:40px;
+	text-align:center;
+	display:block;
+	margin:0 0 3px 0;
+}
+.report_userInfo dd {
+	width:352px;
+	color:#666;
+	line-height:18px;
+	margin:3px 0 0 15px;
+}
+.report_type {
+	color:#666;
+	width:423px;
+	overflow:hidden;
+	margin:0 0 15px 0;
+}
+
+.report_type li {
+	float:left;
+	display:inline;
+	width:130px;
+	height:23px;
+	line-height:23px;
+	margin:0 10px 0 0;
+}
+
+.report_type li input,.report_type li label {
+	vertical-align:middle;
+}
+
+/*我要提问*/
+.PopupsType .answerSelect select {
+	width:60px;
+	height:22px;
+	line-height:22px;
+}
+
+/*班级添加勋章和印象*/
+.PopupsType .addHonorIcon {
+	width: 230px;
+	overflow:hidden;
+}
+
+.PopupsType .addHonorIcon .imgSizeWrap {
+	height: 70px;
+	overflow: hidden;
+	padding: 10px 15px 15px 15px;
+	background: #fafafa;
+	border: 1px dashed #d5d5d5;
+	border-radius: 4px;
+	margin:10px 0 0;
+}
+
+.addHonorIcon div dl {
+	width: 64px;
+	float: left;
+	padding: 0 20px 0 0;
+}
+
+.addHonorIcon div .honorIcon40 {
+	padding: 24px 15px 0 0;
+}
+
+/*推荐弹框*/
+.PopupsType .partakeConBox {
+	display:inline-block;
+	padding:5px;
+	margin:0 0 10px 0;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	border-radius:4px;
+}
+
+.callFriList {
+	line-height:21px;
+	color: #505050;
+	padding:0 0 12px 0;
+}
+
+.callFriList input {
+	vertical-align:middle;
+	*vertical-align:baseline;
+	margin:0 3px 0 0;
+}
+
+.callFriList label {
+	display:inline-block;
+	width:100px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	vertical-align:middle;
+	margin:0 20px 0 0;
+}
+
+.PopupsType .callFriList {
+	padding:0;
+}
+
+.PopupsType .callFriList label {
+	width:75px;
+	*width:65px;
+}
+
+/*投递*/
+.PopupsType .contributeWrap {
+	background:#fff;
+	border:1px solid #e5e5e5;
+	padding:10px 10px 5px 10px;
+}
+
+.PopupsType .contributeWrap a img {
+	vertical-align: top;
+	margin: 3px 4px 0 0;
+}
+
+
+/*弹框中的提示信息*/
+.PopupsFra .customTipsWrap {
+	padding:20px 10px;
+	*padding:20px 10px 0 10px;
+}
+
+/*生成头像*/
+        #rRightDown, #rLeftDown, #rLeftUp, #rRightUp, #rRight, #rLeft, #rUp, #rDown {
+            position: absolute;
+            background: #FFF;
+            border: 1px solid #333;
+            width: 6px;
+            height: 6px;
+            z-index: 500;
+            font-size: 0;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+
+        #rLeftDown, #rRightUp {
+            cursor: ne-resize;
+        }
+
+        #rRightDown, #rLeftUp {
+            cursor: nw-resize;
+        }
+
+        #rRight, #rLeft {
+            cursor: e-resize;
+        }
+
+        #rUp, #rDown {
+            cursor: n-resize;
+        }
+
+        #rLeftDown {
+            left: -4px;
+            bottom: -4px;
+        }
+
+        #rRightUp {
+            right: -4px;
+            top: -4px;
+        }
+
+        #rRightDown {
+            right: -4px;
+            bottom: -4px;
+            background-color: #00F;
+        }
+
+        #rLeftUp {
+            left: -4px;
+            top: -4px;
+        }
+
+        #rRight {
+            right: -4px;
+            top: 50%;
+            margin-top: -4px;
+        }
+
+        #rLeft {
+            left: -4px;
+            top: 50%;
+            margin-top: -4px;
+        }
+
+        #rUp {
+            top: -4px;
+            left: 50%;
+            margin-left: -4px;
+        }
+
+        #rDown {
+            bottom: -4px;
+            left: 50%;
+            margin-left: -4px;
+        }
+
+        #bgDiv {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #666666;
+            position: relative;
+        }
+
+        #dragDiv {
+            border: 1px dashed #fff;
+            width: 100px;
+            height: 100px;
+            top: 50px;
+            left: 50px;
+            cursor: move;
+        }
+
+.btnAvatar {
+	font-size:14px;
+	width:78px;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	text-align:center;
+	border:none;
+	background:#3fa156;
+	border:1px solid #528542;
+	border-radius:6px;
+	margin:0 10px 0 0;  
+}
+/*修改头像*/
+.face .PopupsFunc,.face .PopupsFuncInside {
+	text-align:center;
+	margin:25px 0;
+	padding:25px 0 0 0;
+	border-top:1px solid #e7e7e7;
+}
+
+.face .PopupsFunc input,.face .PopupsFuncInside input {
+	font-size:14px;
+	width:78px;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	text-align:center;
+	border:none;
+	background:#3fa156;
+	border:1px solid #528542;
+	border-radius:6px;
+	margin:0 10px 0 0;
+}
+
+.picBtn {
+	font-size:12px;
+	color:#505050;
+}
+
+.picBtn span {
+	padding:5px 0 0 0;
+	display:block;
+}
+
+.picBox {
+	padding:20px 0 0 20px;
+	overflow:hidden;
+}
+
+.picBox .pic {
+	width:330px;
+	height:320px;
+	border-right:1px solid #e7e7e7;
+}
+
+.smallPic {
+	width:312px;
+	padding:15px 0 0 0;
+}
+
+.smallPic p {
+	padding:0 0 20px 0;
+}
+
+.smallPicSize160 {
+	width:160px;
+}
+
+.smallPicSize64 {
+	width:64px;
+	margin:33px 0 0 32px;
+}
+
+.smallPicSize40 {
+	width:40px;
+	margin:0 0 0 32px;
+}
+
+.smallPic img {
+	border:1px solid #e7e7e7;
+}
+
+.smallPic span {
+	color:#505050;
+	display:block;
+	padding:5px 0 0 0;
+}
+
+/*上传头像的默认头像*/
+#bgDiv {
+	width: 300px;
+	height: 300px;
+	border: 1px solid #e3e3e3;
+	background: #f7f7f7 url(../images/cameraGray.png) no-repeat center center;
+	position: relative;
+}
+
+
+/*搜索名字+结果显示*/
+.PopupsCon .andSomeonePop .recText {
+	width:448px;
+}
+
+.PopupsCon .selectContact1 .searchBox {
+	padding: 0 0 0 0;
+	box-shadow:inset 0 1px 1px #f7f7f7;
+}
+
+.PopupsCon .selectContact1 .searchBox .customForm_inputBoxDefault {
+	width:430px;
+}
+
+.PopupsCon .selectContact1 .resultsBox {
+	padding:6px 0 0;
+	background-color:#f7f7f7;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.PopupsCon .selectContact1 .resultsBox .bgColor {
+	background-color:#f0f0f0;
+}
+
+.PopupsCon .selectContact1 .resultsBox .userCell {
+	display:inline;
+	float:left;
+	width:95px;
+	height:18px;
+	line-height:18px;
+	overflow:hidden;
+	padding:5px;
+	margin:0 0 5px 5px;
+	cursor:pointer;
+}
+
+.PopupsCon .selectContact1 .resultsBox .userCell img {
+	vertical-align:top;
+	margin:0 5px 0 0;
+}
+
+/*搜索地址层级*/
+.tangram-suggestion-main {
+	z-index: 101;
+}
+
+/*新功能提示弹框*/
+.m-PopFuncTips {
+	border-radius:6px;
+	background-color:#f5f5f5;
+	box-shadow:0 1px 4px #525252;
+}
+
+.m-PopFuncTips .u-closeBtn {
+	display:inline-block;
+	width:27px;
+	height:27px;
+	line-height:0;
+	font-size:0;
+	margin:11px 8px 0 0;
+	background:url(../images/nFuncTips/closeBtn.png) no-repeat 0 0;
+	_background:url(../images/nFuncTips/closeBtn.gif) no-repeat 0 0;
+}
+
+.m-PopFuncTips .u-closeBtn:hover {
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+
+.m-PopFuncTips .u-closeBtn:active {
+	opacity:1;
+	filter:alpha(opacity=100);
+	background-position:-39px 0;
+}
+
+.m-PopFuncTips .g-bd {
+	padding:0 15px 15px;
+}
+
+.m-PopFuncTips .g-fnuc .customBtnLarge {
+	padding:14px 45px;
+	font-size:18px;
+	font-weight:bold;
+	border-radius:6px;
+	border:none;
+}
+
+.m-PopFuncTips .g-fnuc .colourOrange:link,.m-PopFuncTips .g-fnuc .colourOrange:visited {
+	background-color:#f67a27;
+	background-image:linear-gradient(to bottom, #f17e30, #fc751a);
+}
+
+.m-PopFuncTips .g-fnuc .colourOrange:hover {
+	text-decoration:none;
+	background-color:#fd8d41;
+	background-image:linear-gradient(to bottom, #fb934e, #ff8431);
+}
+
+.m-PopFuncTips .g-fnuc .colourOrange:active {
+	box-shadow:inset 0 2px 3px #e05e1e;
+	background-color:#f77924;
+	background-image:linear-gradient(to bottom, #f17e30, #fc751a);
+}
+
+

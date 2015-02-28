@@ -1,0 +1,67 @@
+﻿.panel {
+    display: block;
+    position: relative;
+}
+.panel-box {
+    padding: 15px;
+    background: #fafafa;
+    color: #666;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.panel-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.badge {
+    display: inline-block;
+    padding: 0 5px;
+    background: #009dd8;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: none;
+    border: 1px solid rgba(0,0,0,.2);
+    border-bottom-color: rgba(0,0,0,.3);
+    background-origin: border-box;
+    background-image: -webkit-linear-gradient(top,#00b4f5,#008dc5);
+    background-image: linear-gradient(to bottom,#00b4f5,#008dc5);
+    border-radius: 2px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+}
+.badge-danger {
+    background-color: #d32c46;
+    background-image: -webkit-linear-gradient(top,#ee465a,#c11a39);
+    background-image: linear-gradient(to bottom,#ee465a,#c11a39);
+}
+.panel-box .panel-badge {
+    top: 10px;
+    right: 10px;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+    color: #666;
+}
+.panel-box .panel-title {
+    color: #666;
+}
+.panel-box-primary {
+    background-color: #ebf7fd;
+    color: #2d7091;
+    border-color: rgba(45,112,145,.3);
+}
+.panel-box-secondary {
+    background-color: #fff;
+    color: #444;
+}

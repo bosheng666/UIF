@@ -30,7 +30,7 @@
 }
 
 body, h1, h2, h3, h4, h5, h6,
-.uk-navbar-nav > li > a { font-family: Helvetica, STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Tohoma, Arial; }
+.uk-navbar-nav > li > a { font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 
 /* Base
@@ -47,20 +47,22 @@ html {
  ========================================================================== */
 
 
-.tm-background { background: #252525; }
+.tm-background { background: #2ba3d4; }
 
 /*
  * Blocks
  */
 
-.tm-middle,
+.tm-middle{
+    padding: 0px;
+}
+
 .tm-section,
 .tm-footer { padding: 50px 0; }
 
 /* Tablet and bigger */
 @media (min-width: 768px) {
 
-    .tm-middle,
     .tm-section,
     .tm-footer { padding: 90px 0; }
 
@@ -69,7 +71,6 @@ html {
 /* Large screen and bigger */
 @media (min-width: 1220px) {
 
-    .tm-middle,
     .tm-section,
     .tm-footer { padding: 120px 0; }
 
@@ -91,7 +92,7 @@ html {
     }
 
     .tm-main {
-        padding-left: 50px !important;
+        padding:80px 0 120px 50px !important;
         border-left: 1px solid #E5E5E5;
     }
 
@@ -743,6 +744,17 @@ input.sp-input {
 
 .sp-input-container { margin-bottom: 10px; }
 
+/*代码块自定义样式*/
+/*部分公用样式来自于uikit.docs.min.css*/
 pre .string, pre .tag .value, pre .phpdoc, pre .tex .formula {
-    color: #d14;
+    color: #66d9ef;
 }
+
+pre .comment{
+    color: #717069;
+}
+
+pre .tag .attribute{
+    color: #a6e22e;
+}
+/*==代码块自定义样式==*/

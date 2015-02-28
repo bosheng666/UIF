@@ -1,0 +1,31 @@
+﻿
+/*"m-"模块*/
+.m-layout .tt{
+	font-size: 16px;
+	font-weight: bold;
+}
+.m-layout .ct{
+	padding: 10px 0;
+	font-size: 14px;
+}
+.m-layout .ft{
+	margin-top: 10px;
+}
+/*=="m-"模块==*/
+
+.s-bgBlue{
+	background: #ADCBF2;
+	color: #3D6BA9;
+	padding: 6px;
+}
+
+.s-bgRed{
+	background: #F2ADAD;
+	color: #A93D3D;
+	padding: 6px;
+}
+
+.s-bgWhite{
+	background-color: #fff;
+	padding: 6px;
+}

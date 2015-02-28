@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>开始使用-多多前端框架v2.0</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	 
+<div class="tm-middle">
+	<div class="uk-container  ">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			 
+		 
+<div class="tm-main  ">
+
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title">选项卡</h1>
+
+                            <p class="uk-article-lead">创建一个不同风格样式的选项卡式导航。</p>
+
+                            <h2>用法</h2>
+
+                            <p>该选项卡组件由并排排列的可点击的标签组成。</p>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>类</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>.uk-tab</code></td>
+                                        <td>添加这个类到 <code>&lt;ul&gt;</code> 元素中，定义选项卡组件。使用 <code>&lt;a&gt;</code> 元素作为列表中的标签项。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-active</code></td>
+                                        <td>为列表项添加此类，对其应用选中状态。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-disabled</code></td>
+                                        <td>为列表项添加此类，对其应用禁用状态。.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p><code>data-uk-tab</code> 属性是为了实现两个目的而必须添加的。首先，它可以使其应用相应行为。在较窄的视口中，比如手机，之前的标签将被合并成一个下拉菜单，由一个单独的标签来进行标签项切换。这将需要用到 <a href="dropdown.html" title="Dropdown component">下拉菜单组件</a> 才能正常运行。</p>
+                            <p>其次，它的功能将耦合到 <a href="switcher.html" title="Switcher component">切换器组件</a>。这是使用选项卡式导航动态切换不同内容所必须的。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                                <ul class="uk-tab uk-width-medium-7-10" data-uk-tab="">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-disabled"><a href="#">Disabled</a></li>
+                                <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Active</a><div class="uk-dropdown uk-dropdown-small"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Active</a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Item</a></li></ul><div></div></div></li></ul>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab"</span> <span class="attribute">data-uk-tab</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"uk-active"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"uk-disabled"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>水平修饰类</h2>
+
+                            <p>添加以下类之一来改变选项卡的样式。这些修饰类也可以组合使用。</p>
+
+                            <h3>对齐选项卡</h3>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>类</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>.uk-tab-flip</code></td>
+                                        <td>添加这个类将选项卡右侧对齐并颠倒顺序。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-tab-bottom</code></td>
+                                        <td>添加这个类到 <code>&lt;ul&gt;</code> 元素将选项卡放置底部。这也可以与其它修饰类结合使用。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-2">
+                                    <ul class="uk-tab uk-tab-flip" data-uk-tab="">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Active</a><div class="uk-dropdown uk-dropdown-small uk-dropdown-flip"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Active</a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Item</a></li></ul><div></div></div></li></ul>
+                                </div>
+                                <div class="uk-width-medium-1-2">
+                                    <ul class="uk-tab uk-tab-bottom" data-uk-tab="">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Active</a><div class="uk-dropdown uk-dropdown-small uk-dropdown-up"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Active</a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Item</a></li></ul><div></div></div></li></ul>
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab uk-tab-flip"</span> <span class="attribute">data-uk-tab</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab uk-tab-bottom"</span> <span class="attribute">data-uk-tab</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>两端对齐选项卡</h3>
+
+                            <p>添加 <code>.uk-tab-grid</code> 类和 <a href="grid.html" title="Grid component">网格组件</a> 中的一个 <code>.uk-width-*</code> 类到列表项中，将选项卡放置一个网格中，使其占满父元素的宽度。</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <div class="uk-width-medium-1-2">
+                                <ul class="uk-tab uk-tab-grid uk-tab-bottom" data-uk-tab="">
+                                    <li class="uk-width-1-3 uk-active"><a href="#">Active</a></li>
+                                    <li class="uk-width-1-3"><a href="#">Item</a></li>
+                                    <li class="uk-width-1-3"><a href="#">Item</a></li>
+                                <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Active</a><div class="uk-dropdown uk-dropdown-small uk-dropdown-up"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Active</a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Item</a></li></ul><div></div></div></li></ul>
+                            </div>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab uk-tab-grid uk-tab-bottom"</span> <span class="attribute">data-uk-tab</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"uk-width-1-3"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h3>居中选项卡</h3>
+
+                            <p>添加 <code>.uk-tab-center</code> 类到一个包含选项卡导航的 <code>&lt;div&gt;</code> 元素中，使选项卡居中。</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <div class="uk-width-medium-1-2">
+                                <div class="uk-tab-center">
+                                    <ul class="uk-tab" data-uk-tab="">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Active</a><div class="uk-dropdown uk-dropdown-small"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Active</a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Item</a></li></ul><div></div></div></li></ul>
+                                </div>
+                            </div>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-tab-center"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab"</span> <span class="attribute">data-uk-tab</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>垂直修饰类</h2>
+
+                            <p>添加 <code>.uk-tab-left</code> 或 <code>.uk-tab-right</code> 类 垂直对齐到选项卡的左侧或右侧。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-2">
+
+                                    <ul class="uk-tab uk-tab-left uk-width-medium-1-2" data-uk-tab="">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Active</a><div class="uk-dropdown uk-dropdown-small"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Active</a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Item</a></li></ul><div></div></div></li></ul>
+
+                                </div>
+                                <div class="uk-width-medium-1-2">
+
+                                    <ul class="uk-tab uk-tab-right uk-width-medium-1-2" data-uk-tab="">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Active</a><div class="uk-dropdown uk-dropdown-small"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Active</a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Item</a></li></ul><div></div></div></li></ul>
+
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-2">
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab uk-tab-left uk-width-medium-1-2"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>...<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+                                </div>
+                                <div class="uk-width-medium-1-2">
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab uk-tab-right uk-width-medium-1-2"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>...<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+
+                            <h3>Responsive behavior</h3>
+
+                            <p>In narrower viewports, like phones, vertical tabs align themselves horizontally. Adding the <code>data-uk-tab</code> attribute will apply the same responsive behavior as horizontal tabs.</p>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Tabs with dropdowns</h2>
+
+                            <p>This is an example of how to use tabs with the <a href="dropdown.html">Dropdown component</a>.</p>
+
+                            <h4 class="tm-article-subtitle">示例</h4>
+
+                            <ul class="uk-tab uk-width-medium-7-10" data-uk-tab="">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li data-uk-dropdown="{mode:'click'}">
+                                    <a href="#">More <i class="uk-icon-caret-down"></i></a>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                         <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Another item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Separated item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            <li class="uk-tab-responsive uk-active"><a href="javascript:void(0);">Active</a><div class="uk-dropdown uk-dropdown-small"><ul class="uk-nav uk-nav-dropdown"><li><a href="javascript:void(0);">Active</a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">
+                                    More 
+                                    
+                                         
+                                            Item
+                                            Another item
+                                            Header
+                                            Item
+                                            Another item
+                                            
+                                            Separated item
+                                        
+                                    
+                                </a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Another item</a></li><li><a href="javascript:void(0);">Item</a></li><li><a href="javascript:void(0);">Another item</a></li><li><a href="javascript:void(0);">Separated item</a></li></ul><div></div></div></li></ul>
+
+                            <h4 class="tm-article-subtitle">Code.</h4>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-tab"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+
+    <span class="comment">&lt;!-- This is the container enabling the JavaScript --&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">data-uk-dropdown</span>=<span class="value">"{mode:'click'}"</span>&gt;</span>
+
+        <span class="comment">&lt;!-- This is the menu item toggling the dropdown --&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+
+        <span class="comment">&lt;!-- This is the dropdown --&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-small"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-dropdown"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                        </article>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+</div>	
+</body>
+</html>

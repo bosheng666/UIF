@@ -1,0 +1,378 @@
+section,div,body,html,dl,dt,dd,ul,li,ol,table,th,td,input,p {
+    margin: 0;
+    padding: 0
+}
+ul,li,ol {
+    list-style: none
+}
+body {
+    font-size: 14px;
+    font-family:"微软雅黑" "Droid Sans Fallback" "Rounded MT Bold";
+    min-height: 100%;
+    line-height: 1;
+    color: #666;
+    -webkit-text-stroke:0.001px transparent; 
+	text-shadow:rgba(0,0,0,0.00784314) 0px 0px 1px; 
+	min-height:100%; height:100% !important;
+    overflow-x:hidden;
+}
+input {
+    outline: 0;
+    border: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+img {
+    vertical-align: middle
+}
+strong {
+    font-weight: normal
+}
+a {
+    text-decoration: none;
+    cursor: hand;
+}
+a:visited {
+    text-decorationn: none
+}
+.bgWarp{
+    z-index: -10;
+}
+#frameContainer{
+    width: 409px;
+    height: 727px;
+    position: fixed;
+    right: 70px;
+    top: 10px;
+    background-image: url(img/iphone.png);
+    z-index: 2;
+}
+#frame_overflow {
+    background-color: #5ea3b7;
+    width: 320px;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    top: 122px;
+    left: 46px;
+}
+/*css重置*/
+
+/*登录页权限导航*/
+.navBar{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    left: 20px;
+}
+.navBar p{
+    margin-bottom: 10px;
+}
+.navBar li{
+    float: left;
+    position: relative;
+}
+.navBar li.nolink{
+    color: #b9b9ba;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px 10px;
+    display: block;
+    border: 2px solid #b9b9ba;
+    background-color:#fff;
+    margin: 0 2px;    
+}
+.navBar li a{
+    color: #c13729;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px 10px;
+    display: block;
+    border: 2px solid #c13729;
+    background-color:#fff;
+    margin: 0 2px; 
+}
+.navBar li a:hover{
+    color: #C0746C;
+    background-color: #EEEBEB;
+    border-color: #C0746C;
+}
+.tips_lgoin{
+    width: 12px;
+    height: 14px;
+    display: block;
+    background: url(img/red_pot.png) no-repeat;
+    position: absolute;
+    top: -10px;
+    right: -4px;
+}
+/*==登录页权限导航==*/
+
+/*顶部栏目*/
+.topBar{
+    padding-top: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 44px;
+    background: url(img/stat_bar.png) no-repeat #2fcc71;
+    width: 320px;
+    z-index: 100;
+}
+.menu{
+    float: left;
+}
+.menu a{
+    width:59px;
+    height: 44px;
+    display: block;
+    background:url(img/item.png) no-repeat;
+}
+.menu a:hover{
+    background:url(img/item_hover.png) no-repeat;
+}
+
+.topBar h1{
+    float: right;
+    width: 202px;
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    vertical-align: middle;
+    margin: 0;
+    line-height: 44px;
+    font-size: 20px;
+}
+.empty_btn{
+    float:right;
+    width:59px;
+    height: 44px;
+    display: block;      
+    background-color: #2fcc71;
+}
+.erweima{
+    float:right;
+}
+.erweima a{
+    width:59px;
+    height: 44px;
+    display: block;
+    background:url(img/erwima.png) no-repeat;
+}
+.erweima a:hover{
+    background:url(img/erwima_hover.png) no-repeat;
+}
+/*==顶部栏目==*/
+
+
+/*内部内容*/
+.askWarp{
+    position: absolute;
+    top: 123px;
+    left: 161px;
+}
+.askWarp a{
+    width: 150px;
+    height: 64px;
+    display: block;
+    background:url(img/ask.png) no-repeat; 
+}
+.askWarp a:hover{
+    background:url(img/ask_hover.png) no-repeat; 
+}
+/*==内部内容==*/
+
+/*底部工具栏*/
+.toolBar{
+    /*background: url(img/toolbar_stu.png) no-repeat;*/
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 320px;
+    height: 63px;
+    display: block;
+}
+.toolBar ul {
+    /*margin-top: 44px;*/
+}
+.toolBar ul li{
+    float: left;
+}
+.toolBar ul li a{
+    color: #fefefe;
+    /*font-size: 0;*/
+    width: 64px;
+    height: 64px;
+    display: block;
+    background: url(img/toolbar_stu.png) no-repeat 0 0;
+}
+.toolbar_tec ul li a{
+    background: url(img/toolbar_tec.png) no-repeat 0 0;    
+}
+.toolBar ul li.nav1 a{
+    background-position: 0px 0;
+}
+.toolBar ul li.nav2 a{
+    background-position: -68px 0;
+}
+.toolBar ul li.nav2 a:hover{
+    background-position: -68px -63px;
+}
+.toolBar ul li.nav3 a{
+    background-position: -127px 0;
+}
+.toolBar ul li.nav3 a:hover{
+    background-position: -127px -63px;
+}
+.toolBar ul li.nav4 a{
+    background-position: -190px  0;
+}
+.toolBar ul li.nav4 a:hover{
+    background-position: -190px -63px;
+}
+.toolBar ul li.nav5 a{
+    background-position: -256px 0;
+}
+.toolBar ul li.nav5 a:hover{
+    background-position: -256px -63px;
+}
+.toolBar ul li a:hover{
+    color: #fefefe;
+    /*font-size: 0;*/
+    display: block;
+    /*background: url(img/toolbar_stu.png) no-repeat 0 0;*/
+}
+/*==底部工具栏==*/
+
+
+/*二维码界面*/
+.erweima_done {
+    position: absolute;
+    top: 390px;
+    left: 59px;
+}
+.erweima_done a{
+    display: block;
+    width: 203px;
+    height: 40px;
+    background: url(img/btn_erweima_done.png) no-repeat;
+}
+.erweima_done a:hover{
+    background: url(img/btn_erweima_done_hover.png) no-repeat;
+}
+.erweima_cancel {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+.erweima_cancel a{
+    display: block;
+    width: 59px;
+    height: 44px;
+    background: url(img/btn_erweima_cancel.png) no-repeat;
+}
+.erweima_cancel a:hover{
+    background: url(img/btn_erweima_cancel_hover.png) no-repeat;
+}
+
+/*==二维码界面==*/
+
+
+/*在线学习界面*/
+.btn_home_video {
+    position: absolute;
+    top: 20px;
+    left: 260px;
+}
+.btn_home_video a{
+    display: block;
+    width: 59px;
+    height: 44px;
+    background: url(img/btn_home.png) no-repeat;
+}
+.btn_home_video a:hover{
+    background: url(img/btn_home_hover.png) no-repeat;
+}
+
+/*==在线学习界面==*/
+
+/*快速发布*/
+.cancel_send {
+    position: absolute;
+    top: 18px;
+    left: 266px;
+}
+.cancel_send a{
+    display: block;
+    width: 34px;
+    height: 32px;
+    background: url(img/send_cancle.png) no-repeat -34px 0;
+}
+.cancel_send a:hover{
+    background-position: 0 0;
+}
+
+/*==快速发布==*/
+
+/*教师主页*/
+.noteWarp {
+    position: absolute;
+    top: 89px;
+    left: 24px;
+}
+.noteWarp a{
+    display: block;
+    width: 60px;
+    height:60px;
+    background: url(img/btn_noteWarp.png) no-repeat 0 0;
+}
+.noteWarp a:hover{
+    background-position: -60px 0;
+}
+
+.oaWarp {
+    position: absolute;
+    top: 286px;
+    left: 130px;
+}
+.oaWarp a{
+    display: block;
+    width: 60px;
+    height:60px;
+    background: url(img/btn_oaWarp.png) no-repeat 0 0;
+}
+.oaWarp a:hover{
+    background-position: -60px 0;
+}
+.tec_studyWarp {
+    position: absolute;
+    top: 187px;
+    left: 25px;
+}
+.tec_studyWarp a{
+    display: block;
+    width: 60px;
+    height:60px;
+    background: url(img/tec_study.png) no-repeat 0 0;
+}
+.tec_studyWarp a:hover{
+    background-position: -60px 0;
+}
+/*==教师主页==*/
+
+
+/*APP装饰*/
+#bodyWarp{
+    background-color: #f5f5f5;
+}
+/*==APP装饰==*/
+
+/*视频潜入*/
+.videoCon{
+    position: absolute;
+    top: 64px;
+    left: 0;
+}
+/*==视频潜入==*/
+
+
+

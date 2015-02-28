@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DEMO-整体布局</title>
+<link href="../static/common/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="../static/common/css/public.css" rel="stylesheet" type="text/css" />
+<link href="../static/common/css/component.css" rel="stylesheet" type="text/css" />
+<link href="../static/common/css/stu-layout.css" rel="stylesheet" type="text/css" />
+<style type="">
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 14px;
+        color: #7E7E7E;
+        
+    }
+    h3{
+        font-size:16px;
+    }
+    .s-divShow{
+        background-color:rgba(184, 184, 184, 0.5);
+        color: #7E7E7E;
+    }
+    i{
+        font-weight: normal;
+        color:green;
+    }
+</style>
+</head>
+
+<body>
+<!--通用顶部-->
+<div class="g-hd">
+<!--hd info-->
+    <div class="g-hdt s-divShow">
+        <div class="g-hdc s-divShow">
+            <h1>
+                顶部状态栏目（g-hd>g-hdt> <i> g-hdc</i>）
+            </h1>
+        </div>
+    </div>
+
+</div>
+<!--内容&底部-->
+<div class="g-wrap s-divShow">
+    <h2>整体内容+底部版权（g-hd> <i>g-wrap</i> ）
+    <!-- ：绑定样式（g-wrap） -->
+    </h2>
+    <div class="g-bd s-divShow">
+
+        <div class="g-sd f-fl s-divShow">
+            <h2>内容左侧（ g-wrap >g-bd > <i> g-sd f-fl</i>）</h2>
+        </div>
+
+        <div class="g-mn f-fr s-divShow">
+            <h2>内容右侧 （ g-wrap >g-bd > <i> g-mn f-fr </i>）</h2>
+        </div>
+<!--    整体内容布局,采用了浮动布局，故每次使用后都要清除浮动。
+
+        如果觉得该方法麻烦，也可以采用div.clearfix>(div.f-fl+div.f-fr)的结构
+
+        该方法在该页面中，同样适用 -->
+        <div class="f-cb" style="font-size:14px;height:100%;
+        line-height:20px;padding:10px;color:red;">
+        整体内容布局,采用了浮动布局，故每次使用后都要<strong>清除浮动</strong>。<br>
+
+        如果觉得该方法麻烦，也可以采用<strong>div.clearfix>(div.f-fl+div.f-fr</strong>)的结构<br>
+
+        该方法在该页面中，同样适用
+        </div>
+    </div>
+
+    <div class="g-ft s-divShow">
+        <div class="g-ftc s-divShow">
+            底部版权（g-wrap>g-ft> <i>g-ftc</i>）
+        </div>
+    </div>
+</div>
+</body>
+</html>

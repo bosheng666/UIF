@@ -30,7 +30,7 @@
 }
 
 body, h1, h2, h3, h4, h5, h6,
-.uk-navbar-nav > li > a { font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.uk-navbar-nav > li > a { font-family: Helvetica, STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Tohoma, Arial; }
 
 
 /* Base
@@ -47,29 +47,30 @@ html {
  ========================================================================== */
 
 
-.tm-background { background: #2ba3d4; }
+.tm-background { background: #252525; }
 
 /*
  * Blocks
  */
 
-.tm-middle,
+.tm-middle{
+    padding: 0px;
+}
+
 .tm-section,
-.tm-footer { padding: 20px 0; }
+.tm-footer { padding: 50px 0; }
 
 /* Tablet and bigger */
 @media (min-width: 768px) {
 
-    .tm-middle,
     .tm-section,
-    .tm-footer { padding: 60px 0 90px 0; }
+    .tm-footer { padding: 90px 0; }
 
 }
 
 /* Large screen and bigger */
 @media (min-width: 1220px) {
 
-    .tm-middle,
     .tm-section,
     .tm-footer { padding: 120px 0; }
 
@@ -91,7 +92,7 @@ html {
     }
 
     .tm-main {
-        padding-left: 50px !important;
+        padding:80px 0 120px 50px !important;
         border-left: 1px solid #E5E5E5;
     }
 
@@ -106,7 +107,7 @@ html {
 .tm-section .uk-heading-large { margin-bottom: 20px; }
 .tm-section .uk-text-large { margin-bottom: 60px; }
 
- 
+.tm-section-color-1 { background: #2ba3d4 url("../images/bg_teaser.svg") 50% 50% no-repeat; }
 
 /* Desktop and bigger */
 @media (max-width: 959px) {
@@ -256,6 +257,7 @@ html {
 .tm-footer a { color: #ddd !important; }
 .tm-footer a:hover { color: #fff !important; }
 
+#goTop{ display: none; position: fixed; right: 30px; bottom: 30px; }
 
 /* UIkit component modifiers
  ========================================================================== */
@@ -741,3 +743,18 @@ input.sp-input {
 .sp-hue { font: inherit; }
 
 .sp-input-container { margin-bottom: 10px; }
+
+/*代码块自定义样式*/
+/*部分公用样式来自于uikit.docs.min.css*/
+pre .string, pre .tag .value, pre .phpdoc, pre .tex .formula {
+    color: #66d9ef;
+}
+
+pre .comment{
+    color: #717069;
+}
+
+pre .tag .attribute{
+    color: #a6e22e;
+}
+/*==代码块自定义样式==*/

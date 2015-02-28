@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>开始使用-多多前端框架v2.0</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+	<link rel="stylesheet" href="../css/start/index.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+</head>
+<body class="tm-background" > 
+<div class="tm-middle">
+	<div class="uk-container ">
+
+		<div class="uk-grid" data-uk-grid-margin=""> 
+			<div class="tm-main ">
+
+				<article class="uk-article">
+
+					<h1>简介</h1>
+
+					<p class="uk-article-lead">新版增加内容</p>
+					<p>新版-多多前端框架-继承于V1版本，相比而言，作为后续加强版本，<br>v2主要增加了以下内容：</p>
+					<p>
+						<ul>
+							<li>1.新增表单、表格标准样式</li>
+							<li>2.新增html标准模版，设定meta等关键标签内容</li>
+							<li>3.补充V1版本中缺失的DEMO,增加可视性</li>
+							<li>4.优化V1版本中代码高亮，增加第三方软件（如：DW/SB）配置，方便各平台使用和提高效率</li>
+							<li>5.丰富JS类库，优化代码，提高复用性</li>
+							<li>6.新增对HTML5属性的支撑</li>
+							<li>7.新增对移动属性的支撑</li>
+							<li>8.新增常见布局DEMO及其常见问题解答</li>
+							<li>9.新增标准图标样式库</li>
+							<li>10.新增工作流程描述，发布标准和自动化发布工具</li>
+						</ul>
+					</p>
+
+					<p>
+						此外，<a href="https://github.com/uikit/uikit" target="_blank" rel="nofollow">多多前端框架</a>在github上部署有项目文件，你可以在内网，外网
+					</p>
+
+					<p>
+						<a class="uk-button uk-button-large uk-button-primary" data-uikit-download="" href="https://github.com/uikit/uikit/releases/download/v2.8.0/uikit-2.8.0.zip">下载 多多前端框架</a>
+					</p>
+
+					<hr class="uk-article-divider">
+
+					<h2>压缩包文件结构</h2>
+
+					<p>
+						在ZIP文件中，你可以找到准备在你的项目中使用的所有的CSS、JavaScript和图片文件。UIF 的核心框架几乎没有任何样式，这样做是为了保持它的苗条。因此我们提供两个额外的风格样式，一个渐变样式和一个扁平化样式。每个风格样式提供单独的CSS文件以及压缩后的版本。
+					</p>
+
+					<table class="uk-table uk-table-striped">
+						<thead>
+							<tr>
+								<th>文件夹</th>
+								<th>概述</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<code>/css</code>
+								</td>
+								<td>包含 UIF 所有的CSS文件和压缩后的版本。</td>
+							</tr> 
+							<tr>
+								<td>
+									<code>/images</code>
+								</td>
+								<td>包含 UIF 所有的Images文件和压缩后的版本。</td>
+							</tr>
+							<tr>
+								<td>
+									<code>/js</code>
+								</td>
+								<td>包含 UIF 所有的JavaScript文件和压缩后的版本。</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<pre><code class="xml">/css
+    <span class="comment">&lt;!-- UIF的基本样式 --&gt;</span>
+    reset.css
+    component.css       //组件公共样式，后面组件以单独样式表存在，后面统一压缩到component.css样式表；
+
+   
+ 
+
+/js
+    <span class="comment">&lt;!-- JavaScript和压缩后的版本 --&gt;</span>
+   jquery-1.6.4 .min.js
+   component.js       //组件公共js库，后面组件以单独js库存在，后面统一压缩到component.js文件中
+    </code></pre>
+
+					<hr class="uk-article-divider">
+
+					<h2>搭建项目并使用</h2>
+
+					<p>
+						首先，确保你有一个可靠的代码编辑器，比如
+						<a href="http://www.sublimetext.com/3" target="_blank" rel="nofollow">Sublime Text</a>
+						。然后在你需要的HTML的文档头部引用框架的CSS和JavaScript文件（最好是压缩后的版本,根据功能需求添加）。
+                        就是这样！<br>
+						<br><br>ps:别忘了添加
+						<a href="http://jquery.com/" target="_blank" rel="nofollow">jQuery</a>类库的引用;引用的文件注意上下的加载顺序。
+					</p>
+
+					<h3 class="tm-article-subtitle">示例</h3> 
+<pre><code class="xml"><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"zh-CN"</span> &gt;</span>
+    <span class="tag">&lt;<span class="title">head</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"Content-Type"</span> <span class="attribute">content</span>=<span class="value">"text/html; charset=utf-8"</span> /&gt;</span>
+	    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"renderer"</span> <span class="attribute">content</span>=<span class="value">"webkit"</span> /&gt;</span>
+	    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"IE=Edge,chrome=1"</span> /&gt;</span> 
+        <span class="tag">&lt;<span class="title">title</span>&gt;</span>多多框架-hello world!<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"../../static/common/css/reset.css"</span> /&gt;</span>
+        <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"../../static/common/css/component.css"</span> /&gt;</span>
+        <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"../../static/common/js/jquery-1.6.4 .min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span> 
+    <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">body</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
+
+					<p>
+						如果你已经完成了在网页中添加 UIF，那就看一下
+						<a href="components/index.html" target="_blank">UIF 功能组件</a>
+						并从中获取提供的相关介绍吧。
+					</p>
+
+				</article>
+
+			</div>
+		</div>
+
+	</div>
+</div>		
+</body>
+</html>

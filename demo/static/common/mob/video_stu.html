@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>心理健康-在线学习</title>
+	<link rel="stylesheet" type="text/css" href="mobile.css">
+	<script src="../build/jquery.js"></script>	
+	<script src="../build/mediaelement-and-player.min.js"></script>
+	<link rel="stylesheet" href="../build/mediaelementplayer.min.css" />
+</head>
+<body id="bodyWarp">
+	
+	<div class="content">
+		<div class="btn_home_video">
+			<a href="stu_index.html"></a>
+		</div>
+			<div class="videoCon">
+				<video width="320" height="180" id="player2" poster="../media/yyns.jpg" controls="controls" preload="none">
+					<!-- MP4 source must come first for iOS -->
+					<source type="video/mp4" src="../media/yyns.mp4" />
+					<object width="320" height="180" type="application/x-shockwave-flash" data="../build/flashmediaelement.swf"> 		
+						<param name="movie" value="../build/flashmediaelement.swf" /> 
+						<param name="flashvars" value="controls=true&amp;file=../media/yyns.mp4" /> 		
+						<!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
+						<img src="../media/yyns.jpg" width="320" height="180" alt="Here we are" 
+							title="No video playback capabilities" />
+					</object> 	
+				</video>
+			</div>
+			<script>
+			 $('video').mediaelementplayer({
+				success: function(player, node) {
+					$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+				}
+			});
+			</script>
+
+		<div class="bgWarp">
+			<img src="img/hudongketang.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>

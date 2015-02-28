@@ -1,0 +1,484 @@
+/*用户未登录*/
+body{
+	overflow: hidden;
+	background: #c0d27c url(../images/login-bg.jpg) center 0 no-repeat;
+}
+.g-bd{
+	width: 808px;
+	margin: 0 auto;
+}
+
+.m-info{
+	width: 510px;
+	padding-top:66px ; 
+	margin:0px auto 86px auto;
+}
+.m-info .m-info-img {
+	 width: 156px;
+	 height: 156px;
+	 border: 5px solid #fff;
+	 border-radius: 162px;
+	 box-shadow: 0px 1px 1px #c6c9cb;
+	 overflow: hidden; 
+	 margin-right: 55px;
+}
+.m-info .m-info-img  img{  
+}
+.m-info .m-info-tex{
+	  width: 217px;
+	  padding: 10px 0 28px 55px;
+	  border-left: 1px solid #D3D3D3;
+	  color:#64be42;
+	  font-size: 18px;
+}
+.m-info .m-info-tex h2{ 
+	  font-weight: normal;
+	  color:#333;
+	  font-size: 24px;
+	  padding-bottom: 3px;
+}
+.m-info .m-info-tex h2 span{
+	display: inline-block;
+	width: 54px;
+	height: 16px;
+ 	background: url(../images/level-icon.gif) no-repeat 0 0;
+ 	position: relative;
+ 	z-index: 1;
+
+}
+.m-info .m-info-tex h2 i{
+	display: inline-block;
+	width: 27px;
+	height: 8px; 
+ 	position:absolute;
+ 	z-index: 10;
+ 	top:0px;
+ 	left: 0px;
+}
+.m-info .m-info-tex li{ 
+	line-height: 28px;
+}
+.m-info .m-info-tex .loginOut{
+	padding-top: 10px;
+	margin-top: 10px;
+	border-top: 1px dashed #D8D8D8;
+}
+.m-toggle{
+	width:100%;
+	margin: 0 auto;
+}
+.m-toggle h2{
+	  font-weight: normal;
+	  color:#333;
+	  font-size: 24px;
+	  padding-bottom: 17px;
+	  border-bottom:1px solid #c9caca;
+}
+.m-toggle ul{ 
+	width: 100%;
+	  float: left;
+	  color:#8e8a8a;
+	  font-size: 18px;
+	  padding: 45px 0 40px 0;	
+	  border-top: 1px solid #fff; 
+	  border-bottom: 1px solid #c9caca;  
+}
+.m-toggle li{ 
+	  width:158px;  
+	  text-align: center;
+	  float: left; 
+	  margin-right: 54px;
+	  _margin-right: 40px;
+}
+.m-toggle li a{
+	display: inline-block;
+}
+.m-toggle li.manager{  
+	  margin-right: 0px;
+}
+.m-toggle li .m-toggle-pic{
+	height:170px;  
+	width:170px; 
+	margin-bottom: 36px;	
+	display:inline-block;
+}
+.m-toggle li i{ 
+	 display: inline-block; 
+	 height:160px;  
+	 width:160px;  
+	 border-radius: 160px;
+	 overflow:hidden;
+	 background-position: center;  
+	 background: #c9caca url(../images/login/picture.png) no-repeat -5px 0;
+	 _background: #c9caca url(../images/login/picture.gif) no-repeat -5px 0;
+}
+.m-toggle li .a-LGrayl .tex{
+	 display:inline-block;
+}
+/*.m-toggle li a:hover i{ */
+.m-toggle li .select i{ 
+	margin-top: -5px;
+    height:170px;  
+	width:170px;
+	background: #2fcc71 url(../images/login/picture.png) no-repeat 0 5px;
+	_background: #2fcc71 url(../images/login/picture.gif) no-repeat 0 5px;
+ } 
+  .m-toggle li i.teacher{
+ 	background-position:-5px 0;
+ }
+ .m-toggle li i.student{
+ 	background-position: -218px 0;
+ }
+ .m-toggle li i.parents{
+ 	background-position: -428px 0;
+ }
+.m-toggle li i.manager{
+ 	background-position:-638px 8px;
+ }
+
+.m-toggle li a:hover  i{
+	transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+.m-toggle li a:hover  i.teacher{
+	background-position: -5px 5px;
+}
+.m-toggle li a:hover  i.student{
+	background-position: -218px 5px;
+}
+.m-toggle li a:hover  i.parents{
+	background-position: -428px 5px;
+}
+.m-toggle li a:hover  i.manager{
+	background-position: -638px 13px;
+}
+
+.m-logout p{
+	text-align: center;
+	display: block;
+	padding: 30px 0 60px 0;
+	border-top:1px solid #fff;
+	color: #8e8a8a;
+	font-size: 18px;
+}
+.m-logout p a{
+	display: inline-block;
+	margin-left: 5px;
+	padding:0 2px;
+	background-color: #2fcc71;
+	color:#fff;
+}
+
+/*用户登录*/
+.login-bg{
+	overflow: hidden;
+	background: #c0d27c url(../images/login-bg.jpg) center 0 no-repeat;
+}
+.m-logo-page{
+	width: 100%; 
+	text-align: center;
+	padding-top:170px;
+}
+.m-logo-page img{
+	background: none;
+}
+.m-logo-page a{
+	 display: inline-block;
+	 width: 100px;
+	 height: 100px;
+	 background:url(../images/login/login.png) no-repeat -400px 0;
+	 _background:url(../images/login/login.gif) no-repeat -400px 0;
+     margin: 35px 0;
+}
+.m-logo-page h1{
+	 text-align: center;
+     display: inline-block;
+	 width: 100%;
+	 font-size:35px;
+	 font-weight:normal;
+	 color: #3e3a39;
+	 text-shadow:#cecece 1px 1px 2px;
+}
+.m-logo-page span{
+	display: inline-block;
+	font-size: 14px;
+	 color: #666;
+	 padding: 23px 0 68px 0;
+	 display: none;
+} 
+.m-enterSection{
+	width: 460px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+/*登录注册*/
+.btn-view ,.btn-login ,.btn-loginOut ,.btn-reg ,.icon-arrowTop ,.img-dodo ,.btn-gotoReg{
+	display: block;
+	/*float: left;*/
+	margin: 0 7px;
+	width: 192px;
+	height: 52px;
+	font-size: 0px;
+	letter-spacing: 8px;
+	line-height: 0px;
+	background:url(../images/login.png) 0 0 no-repeat;
+	_background:url(../images/login.gif) 0 0 no-repeat;
+}
+.btn-view{background-position: 0 -178px} 
+.btn-login{background-position: 0 -46px} 
+.btn-loginOut{background-position: 0 -240px}
+.btn-reg{background-position: 0 -240px}
+
+.btn-view:hover ,.btn-view:active{background-position: -200px -178px} 
+.btn-login:hover ,.btn-login:active{background-position: -200px -46px} 
+.btn-loginOut:hover ,.btn-loginOut:active{background-position: -200px -240px}
+.btn-reg:hover ,.btn-reg:active{background-position: -200px -240px}
+/*==登录注册==*/
+
+.img-dodo {
+	width: 195px;
+	height: 45px;
+	background: #fff url(../images/login.png) -1px -301px no-repeat;
+	_background: #fff url(../images/login.gif) -1px -301px no-repeat;
+}
+.btn-gotoReg{
+	width: 195px;
+	height: 42px;
+	background: #fff url(../images/login.png) -1px -392px no-repeat;
+	_background: #fff url(../images/login.gif) -1px -392px no-repeat;
+}
+.btn-gotoReg:hover{
+	background-position: -1px -346px;
+}
+/*底部弹窗*/
+.m-popLayer{
+	position: absolute;
+	left: 0;
+	top: 380px;
+	width: 100%;
+	z-index: 100;
+}
+
+.m-popLayer .tt{
+	text-align: center;
+	height: 19px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.m-popLayer .tt span{
+	margin-left: 180px;
+}
+.m-popLayer .tt .icon-arrowTop{
+	float: left;
+	width: 36px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	background: url(../images/login.png) -80px -4px no-repeat;
+	_background: url(../images/login.gif) -80px -4px no-repeat;
+}
+.m-popLayer .ct{
+	background-color: #fff;
+	height: 100%;
+}
+.m-popLayer .ct .ctw{
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 36px;
+}
+
+.m-input{
+	text-align: center; 
+	padding-left: 108px;
+	*width: 300px;
+}
+.m-input h3 ,.m-gotoReg h3{
+	color: #666;
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+.m-input .login-inp-bg{  
+	width: 295px;
+	padding: 0px 0 0 0;
+	height: 37px; 
+	display: inline-block;
+	border: none;
+	background:url(../images/login/login.png) no-repeat 0 0;
+	_background:url(../images/login/login.gif) no-repeat 0 0;
+    position: relative;
+	z-index: 1
+}
+
+
+.m-input input[type="text"],.m-input input[type="password"]{ 
+	padding: 0 10px 0 42px;
+	font-size: 14px;
+	width: 239px;
+	height: 35px;
+	line-height: 14px;
+	line-height: 35px\9;
+	background-color: #fbfbfc;
+	border: 1px solid #ddd;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+} 
+.m-input input.account,.m-input input.password{ 
+	padding: 0 10px 0 42px;
+	font-size: 14px;
+	width: 239px;
+	height: 35px;
+	line-height: 14px;
+	line-height: 35px\9;
+	background-color: #fbfbfc;
+	border: 1px solid #ddd;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+} 
+.m-input input[type="text"]:focus,.m-input input[type="password"]:focus{  
+	-webkit-transition: -webkit-box-shadow .2s,border-color .2s ease-in-out;
+	-moz-transition: -moz-box-shadow .2s,border-color .2s ease-in-out;
+	transition: box-shadow .2s,border-color .2s ease-in-out;
+	border-color:#6ad245 ;
+    outline: none;
+ }
+.m-input  .account-pad{
+	margin-bottom:21px; 
+}
+.m-input  .password-pad{
+	margin-bottom:17px; 
+}
+.m-input  .login-btn{
+	display: inline-block;
+	margin-bottom:22px; 
+	height: 44px;
+	width: 295px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	border: 0px none;
+	background: #5fc03d none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.m-input  .login-loading-btn{ 
+	display: inline-block;
+	margin-bottom:22px; 
+	height: 44px;
+	width: 295px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	border: 0px none;
+	background: #5fc03d url(../images/login/login_loading.gif) no-repeat center center;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: 1px 1px 2px #c5c5c5;
+}
+.m-input  .login-btn:hover{ 
+	background: #6ad245 none; 
+}
+.m-input .account-ico,.m-input .password-ico{ 
+	display: inline-block;
+	position: absolute;
+	z-index: 10;
+	top:8px;
+	left: 12px;
+}
+.m-input .account-ico{  
+	width: 17px;
+	height: 17px;  
+	background:url(../images/login/login.png) no-repeat  -332px 0;
+	_background:url(../images/login/login.gif) no-repeat -332px 0;
+   
+}
+.m-input .password-ico{  
+	width: 13px;
+	height: 17px;  
+	background:url(../images/login/login.png) no-repeat -315px 0;
+	_background:url(../images/login/login.gif) no-repeat -315px 0;
+}
+.m-input-sign {
+	width:290px;
+	margin: 0 auto;
+}
+.m-input-sign .a-Grayl{
+	float: right; 
+}
+.m-input-sign .a-Grayl i{
+	margin-top: -3px;
+	display: inline-block;
+    width:12px;
+    height: 17px; 
+    margin-right: 5px;  
+    background:url(../images/login/login.png) no-repeat -352px 5px;
+    _background:url(../images/login/login.gif) no-repeat -352px 5px;
+}
+.m-input-sign span{
+	color: #666;
+	vertical-align: middle;
+}
+.m-input-sign span a{ 
+	display: inline-block;
+	margin-left: 5px;
+	color: #3598dc;
+}
+.m-toggle-login h2{
+	width: 380px;
+	height: 44px;
+	padding: 0 20px;
+	margin: 0 auto;
+	line-height: 44px;
+	color: #b9c0c5;
+	font-size: 20px;
+	text-align: center;
+	border:1px solid #b9c0c5;
+	border-radius: 3px;
+	margin-top: 50px;
+}
+.m-toggle-login ul{
+   border:0px none;
+}
+.m-gotoReg {
+	border-left: 1px solid #cbd4da;
+	padding: 0 20px;
+	width: 310px;
+	text-align: center;
+}
+.m-gotoReg h3{
+	margin-left: 30px;
+	margin-bottom: 17px;
+}
+.m-gotoReg h6{
+	padding-left: 100px;
+	font-size: 14px;
+	color: #666;
+}
+.m-gotoReg .img-dodo ,.m-gotoReg .btn-gotoReg{
+	margin-left: 40px;
+	margin-top: 21px;
+}
+.m-idInfo .ct{
+	background-color: #e9ecef;
+}
+.m-idInfo .tt .icon-arrowTop{
+	background-position: -126px -4px
+}
+
+
+/*==底部弹窗==*/
+
+/*底部版权*/
+.g-ft{
+	position: absolute;
+	bottom:0;
+	left: 0;
+	border-top: none;
+}
+.g-ftc{
+	color: #E0F82A;
+	border-top: none;
+}
+/*==底部版权==*/

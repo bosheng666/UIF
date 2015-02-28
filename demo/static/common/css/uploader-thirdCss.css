@@ -1,0 +1,441 @@
+/*新增表单模块化样式*/
+.formStyle {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.formStyle,.formStyle * {
+	list-style: none
+}
+
+.formStyle fieldset {
+	border: 0
+}
+
+.formStyle-explain {
+	margin: 0;
+	padding: 8px 0 0;
+	font-size: 14px;
+	color: #B2B2B2
+}
+.uploadDone{
+	color: #2fcc71;
+}
+
+.uploadFail{
+	color: #e84c3d;
+}
+
+.uploading{
+	color: #888;
+}
+
+.formStyle-other {
+	margin-left: 8px
+}
+.formStyle-other input ,.formStyle-item input{
+	line-height: 14px;
+	height: 14px;
+	vertical-align: middle;
+	font-size: 14px;
+
+}
+
+.formStyle-item:after {
+	clear: both;
+	content: '.';
+	display: block;
+	height: 0;
+	visibility: hidden
+}
+
+.formStyle-item {
+	padding: 10px 5px 5px 140px;
+	zoom: 1;
+}
+
+.formStyle-item select {
+	vertical-align: middle;
+}
+
+select {
+	position: relative;
+	font-size: 14px;
+	width: 183px;
+	line-height: 14px;
+	color: #333;
+	margin: 0;
+	padding: 1px;
+	border-color:#d2d2d2;
+	border-width:1px;
+}
+
+.formStyle-item-error .formStyle-explain {
+	color: #FF5243
+}
+
+.formStyle-large .formStyle-label {
+	padding-top: 12px
+}
+
+.formStyle-label {
+	float: left;
+	width: 170px;
+	margin-left: -180px;
+	padding-top: 2px;
+	text-align: right;
+	font-size: 14px;
+	color:#666;
+}
+.formStyle-required {
+	color: red;
+	font-family: SimSun;
+	font-size: 14px;
+	margin-right: 6px
+}
+
+/*==新增表单模块化样式==*/
+
+
+/*tag*/
+.tagBox {
+    position: relative;
+    padding: 0 0;
+}
+
+.tagBox .recText {
+    width: 100%;
+    height: auto!important;
+    height: 24px;
+    min-height: 24px;
+    line-height: 24px;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+}
+.tagBox .recText input {
+    height: 24px;
+    line-height: 24px;
+    border: 0px solid #fff;
+    background: #fff;
+    vertical-align:top;
+}
+.tagBox .recText span .del em {
+    display: inline-block;
+    width: 6px;
+    height: 7px;
+    font-size: 0;
+    margin: 4px 0 0 0;
+    background: url(../images/siteSpr.gif) no-repeat -140px -1px;
+}
+.tagBox div em {
+    display: inline-block;
+    font-style: normal;
+    padding: 2px 0 0;
+}
+
+.tagBox .recText span {
+    color:#fff;
+    display:inline-block;
+    height:22px;
+    line-height:22px;
+    padding:0 0 0 5px;
+    background:#e3b285;
+    margin:1px 2px 1px 1px;
+}
+
+.tagBox .recText span .del {
+    text-align:center;
+    display:inline-block;
+    width:19px;
+    height:20px;
+    overflow:hidden;
+    vertical-align:top;
+    *vertical-align:middle;
+    margin:0 0 0 4px;
+    cursor:pointer;
+    opacity:0.7;
+    filter: Alpha(opacity=70);
+}
+
+.tagBox .recText .active .del {
+    opacity:1;
+    filter: Alpha(opacity=100);
+    background:#cd9969;
+}
+
+.associateWrap {
+    border:1px solid #cbcbcb;
+    background-color:#fff;
+    position:absolute;
+    top:25px;
+    left:0;
+    z-index:4;
+    box-shadow:0 1px 2px #dcdcdc;
+}
+
+.associateWrap a {
+    padding:0 9px;
+    display:block;
+    height:26px;
+    line-height:26px;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #f0f0f0;
+}
+
+.associateWrap a:hover {
+    color:#fff;
+    text-decoration:none;
+    background-color:#e4b373;
+    background-image:linear-gradient(to bottom, #ebba78, #ddad6d);
+    border-top:1px solid #d6a768;
+    border-bottom:1px solid #d6a768;
+}
+
+.recTag em {
+    color:#cc9a67;
+    font-style: normal;
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 0 5px 5px 0;
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+}
+
+.show-detail-tags .tag-content a {
+    background-color: #cd9969;
+    padding: 0 10px;
+    margin-right: 5px;
+}
+
+/*==tag==*/
+
+.customForm_txtInput {
+	outline: none;
+	height:12px;
+	line-height:12px;
+	padding:6px;
+	overflow:hidden;
+	vertical-align:middle;
+}
+
+.customForm_textarea {
+	outline: none;
+	padding:6px;
+	overflow-y:auto;
+	height: 60px;
+}
+
+.customForm_inputBoxDisabled,.customForm_inputBoxDefault,.customForm_inputBoxGetFocus1,.customForm_inputBoxGetFocus2,.customForm_inputBoxFinish,.customForm_inputBoxError1,.customForm_inputBoxError2 {
+	color:#bababa;
+	background-color:#fff;
+	border:1px solid #d2d2d2;
+	box-shadow:inset 0 1px 0 #ededed;
+}
+
+.customForm_inputBoxDefault {
+	color: #666;
+}
+
+/*新增编辑器里的样式名*/
+.customBtn,.customBtnLarge,.customBtnSmall,.customBtnNormal ,.customBtnMini,.edui-default .edui-dialog-buttons .edui-button .edui-button-body {
+	text-align:center;
+	display:inline-block;
+	line-height:18px;
+	padding:3px 12px;
+	vertical-align:middle;
+	border-radius:2px;
+	cursor:pointer;
+	border-width:1px;
+	border-style:solid;
+	font-weight: bold;
+}
+
+.customBtnLarge {
+	padding:5px 14px;
+}
+
+.customBtnNormal {
+	padding:5px 14px;
+}
+
+
+
+/*宽度*/
+.width80{
+	width: 80px;
+}
+.width330{
+	width: 330px;
+}
+
+/*公用*/
+body {
+	font-size:12px;
+	line-height:1.5;
+	font-family:Arial,Helvetica,'Microsoft YaHei','simsun';
+	background-color:#e9ecef;
+}
+
+/*公共ICON*/
+.icon-close,.icon-error,.icon-done,.icon-upload{
+	display:inline-block;
+	width:28px;
+	height:18px;
+	_height:24px;
+	line-height:0;
+	font-size:0;
+	vertical-align:middle;
+	background:url(../images/publicSpr.png) no-repeat 5px 0;
+	/*正式发布时，生成ie6拼图*/
+	/*_background:url(../images/publicSpr.gif) no-repeat 5px 3px;*/
+}
+
+
+.icon-close{
+	background-position: -60px 0;
+}
+.icon-done{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background-position: -120px 0;
+	margin-right: 4px;
+}
+.icon-error{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background-position: -134px -14px;
+	margin-right: 4px;
+}
+.icon-upload{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background-position: -150px 0;
+	margin-right: 4px;
+}
+
+/*弹框*/
+.W-form{
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.m-upload{
+	/*width: 600px;*/
+	position: absolute;
+	background-color: #fff;
+	z-index: 100;
+	padding:0 20px; 
+	box-shadow: 0 0 9px #666;
+	background:#fff url(../images/dialog-top-bg.jpg) repeat-x 0 0;
+}
+.m-upload .hd{
+	color: #fff;
+	display: inline-block;
+	padding: 5px 0px;
+	font-weight: bolder;
+	width: 100%;	 
+	/*border-bottom: 2px solid #e6e8e9;*/
+}
+
+.m-upload .hd strong{
+	color: #333333;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: bold;
+	float: left;
+	font-size: 18px;
+	/*border-left: 4px solid #96a6a6;*/
+	padding-left: 8px;
+}
+a.upload-close:link{
+	width:30px;
+	height:30px;
+	overflow: hidden;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+}
+a.upload-close:hover{
+	/*background-color: #e84c3d;*/
+	background-position: -90px 0;
+}
+.m-ftc{
+	border-top: 1px solid #e6e8e9;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.w-btn{
+	text-align: center;
+}
+.f-bgstrong{
+	background-color: #f2f2f2;
+}
+/*浮动*/
+.f-fl {
+	float:left;
+}
+
+.f-fr {
+	float:right;
+}
+
+.f-cb {
+	clear:both;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+
+.colourDarkGreen,.colourDarkGreen:link,.colourDarkGreen:visited,.edui-default .edui-dialog-buttons .edui-button .edui-button-body {
+	color:#fff;
+	background-color:#33d075;
+	border-color:#2bbb68;
+}
+
+.colourDarkGreen:hover,.edui-default .edui-dialog-buttons .edui-button .edui-state-hover .edui-button-body {
+	color:#fff;
+	text-decoration:none;
+	background-color:#469d52;
+	border-color:#2c8140;
+}
+
+.colourLightGray,.colourLightGray:link,.colourLightGray:visited,.colourLightGray1,.colourLightGray1:link,.colourLightGray1:visited {
+	color:#595a59;
+	background-color:#f3f3f3;
+	background-image:linear-gradient(to bottom, #f8f8f8, #e7e7e7);
+	border-color:#bdbebb;
+	box-shadow:inset 0 1px 0 #fff;
+}
+
+.colourLightGray:hover,.colourLightGray1:hover {
+	color:#969696;
+	text-decoration:none;
+	background-color:#f3f3f3;
+	background-image:linear-gradient(to bottom, #f8f8f8, #efefef);
+}
+
+.colourLightGray:active {
+	color:#969696;
+	text-shadow:0 1px 0 #fff;
+	text-decoration:none;
+	background-color:#e1e1e1;
+	background-image:none;
+	box-shadow:inset 0 1px 0 #d5d5d5;
+}
+
+.pageBg {
+	background-color: #333;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0.5;
+	filter: Alpha(opacity=50);
+	z-index: 99;
+} 

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>监听滚动-多多前端框架v2.0</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	 
+<div class="tm-middle">
+	<div class="uk-container  ">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			 
+<div class="tm-main ">
+
+                        <article class="uk-article">
+
+                            <h1 id="bottom" class="uk-article-title">监听滚动/Scrollspy</h1>
+
+                            <p class="uk-article-lead">页面滚动时触发事件及动画。</p>
+
+                            <h2>用法</h2>
+
+                            <p>该监听滚动组件监听页面滚动，并触发基于滚动位置的事件。比如当你向下滚动页面时，你可以使首次出现在视窗中的一个元素触发一个平滑淡出的动画。</p>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>Data属性</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy="{cls:'MY-CLASS'}"</code></td>
+                                        <td>只有元素首次出现在视窗时才触发。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy="{cls:'MY-CLASS', repeat: true}"</code></td>
+                                        <td>每次元素出现在视窗中都触发。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy="{cls:'MY-CLASS', delay:600}"</code></td>
+                                        <td>添加以毫秒为单位的动画延迟。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p>通常情况下，<a href="animation.html">动画组件</a> 的类都与监听滚动一起使用。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <p>下面的例子使用了 <code>repeat: true</code> 选项。向上或向下滚动可以看到被触发动画。</p>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+                                        <h3>Fade</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4 uk-push-1-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
+                                        <h3>Scale up</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4 uk-push-2-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-scale-down" data-uk-scrollspy="{cls:'uk-animation-scale-down', repeat: true}">
+                                        <h3>Scale down</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4 uk-push-3-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-slide-top" data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}">
+                                        <h3>Slide top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4 uk-push-2-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-slide-bottom" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                        <h3>Slide bottom</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4 uk-push-1-4">
+                                    <div class="uk-panel uk-panel-box uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-slide-right" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}">
+                                        <h3>Slide right</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true}">
+                                        <h3>Slide left</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-grid">
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+                                        <h3 class="uk-panel-title">Delay</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300, repeat: true}">
+                                        <h3 class="uk-panel-title">Delay</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600, repeat: true}">
+                                        <h3 class="uk-panel-title">Delay</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-4">
+                                    <div class="uk-panel uk-panel-box" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900, repeat: true}">
+                                        <h3 class="uk-panel-title">Delay</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-scrollspy</span>=<span class="value">"{cls:'uk-animation-fade'}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-scrollspy</span>=<span class="value">"{cls:'uk-animation-fade', repeat: true}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-uk-scrollspy</span>=<span class="value">"{cls:'uk-animation-fade', delay:900}"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Javascript 事件</h2>
+
+                            <p>该监听滚动组件，每次当一个元素出现在视窗中时触发 <code>uk.scrollspy.inview</code> 事件，元素离开视窗时触发 <code>uk.scrollspy.outview</code> 事件。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+<pre><code class="javascript">$(<span class="string">'[data-uk-scrollspy]'</span>).on({
+
+    <span class="string">'uk.scrollspy.inview'</span>, <span class="keyword">function</span>(){
+        console.log(<span class="string">"Element is visible."</span>);
+    },
+
+    <span class="string">'uk.scrollspy.outview'</span>, <span class="keyword">function</span>(){
+        console.log(<span class="string">"Element is not visible."</span>);
+    }
+});</code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>监听滚动导航/Scrollspy Nav</h2>
+
+                            <p>根据你网站滚动条的位置来自动更新所对应的导航标记，只需添加 <code>data-uk-scrollspy-nav</code> 这个data属性到任意导航中。导航项中的链接必须对应到网站中具有相同ID的部分。</p>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>Data属性</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy-nav</code></td>
+                                        <td>触发监听滚动导航功能所必需的JavaScript。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy-nav="{closest:'MY-SELECTOR'}"</code></td>
+                                        <td>通过遍历查找此DOM树中最接近的节点元素进行匹配。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy-nav="{smoothscroll:true}"</code></td>
+                                        <td>在网站的不同部分之间切换时应用 <a href="smooth-scroll.html">平滑滚动组件</a>。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>data-uk-scrollspy-nav="{cls:'MY-CLASS'}"</code></td>
+                                        <td>默认情况下ScrollspyNav将切换 <code>uk-active</code> 类。使用 <code>cls</code> 选项可以使用自己的类名。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p>对于监听滚动导航的一个例子, 可以查看 <a href="../src/tests/scrollspy.html">监听滚动导航测试页</a>。</p>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-side"</span> <span class="attribute">data-uk-scrollspy-nav</span>=<span class="value">"{closest:'li', smoothscroll:true}"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#MY-ID"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#MY-ID2"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"MY-ID"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"MY-ID2"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+                        </article>
+
+                    </div>
+
+
+                </div>
+            </div>
+</div>	
+</body>
+</html>

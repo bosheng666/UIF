@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>开始使用-多多前端框架v2.0</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" > 
+<div class="tm-middle">
+	<div class="uk-container  ">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			 
+		 <div class="tm-main ">
+
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title">评论</h1>
+
+                            <p class="uk-article-lead">创建评论，比如关于文章的评论。</p>
+
+                            <h2>用法</h2>
+
+                            <p>评论组件由评论标头（包含头像，标题及元数据）和评论主体组成。</p>
+
+                            <table class="uk-table">
+                                <thead>
+                                    <tr>
+                                        <th>类</th>
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>.uk-comment</code></td>
+                                        <td>添加这个类来定义评论组件。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-comment-header</code></td>
+                                        <td>添加这个类来创建评论标头。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-comment-avatar</code></td>
+                                        <td>为 <code>&lt;img&gt;</code> 元素添加这个类，创建评论作者的头像。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-comment-title</code></td>
+                                        <td>为标题添加这个类，创建评论的标题。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-comment-meta</code></td>
+                                        <td>为一个段落添加这个类，创建有关评论的元数据。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.uk-comment-body</code></td>
+                                        <td>为 <code>&lt;div&gt;</code> 元素添加这个类，创建评论主体。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                                <article class="uk-comment">
+                                    <header class="uk-comment-header">
+                                        <img class="uk-comment-avatar" src="http://placekitten.com/50/50" alt="">
+                                        <h4 class="uk-comment-title">Author</h4>
+                                        <div class="uk-comment-meta">Written by Super User on 12 April 2012. Posted in Blog</div>
+                                    </header>
+                                    <div class="uk-comment-body">
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                    </div>
+                                </article>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">article</span> <span class="attribute">class</span>=<span class="value">"uk-comment"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">header</span> <span class="attribute">class</span>=<span class="value">"uk-comment-header"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value">"uk-comment-avatar"</span> <span class="attribute">src</span>=<span class="value">""</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">h4</span> <span class="attribute">class</span>=<span class="value">"uk-comment-title"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-comment-meta"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">header</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-comment-body"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">article</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>评论列表</h2>
+
+                            <p>添加 <code>.uk-comment-list</code> 类到一个 <code>&lt;ul&gt;</code> 元素中，创建一个评论列表。你可以在评论列表中嵌套任意数量的 <code>&lt;ul&gt;</code> 元素。</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <ul class="uk-comment-list">
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img class="uk-comment-avatar" src="http://placekitten.com/50/50" alt="">
+                                            <h4 class="uk-comment-title">Author</h4>
+                                            <div class="uk-comment-meta">Written by Super User on 12 April 2012. Posted in Blog</div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        </div>
+                                    </article>
+                                    <ul>
+                                        <li>
+                                            <article class="uk-comment">
+                                                <header class="uk-comment-header">
+                                                    <img class="uk-comment-avatar" src="http://placekitten.com/50/50" alt="">
+                                                    <h4 class="uk-comment-title">Author</h4>
+                                                    <div class="uk-comment-meta">Written by Super User on 12 April 2012. Posted in Blog</div>
+                                                </header>
+                                                <div class="uk-comment-body">
+                                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                                </div>
+                                            </article>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-comment-list"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">article</span> <span class="attribute">class</span>=<span class="value">"uk-comment"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">article</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">article</span> <span class="attribute">class</span>=<span class="value">"uk-comment"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">article</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">article</span> <span class="attribute">class</span>=<span class="value">"uk-comment"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">article</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+                        </article>
+
+                    </div>
+</div>	
+</body>
+</html>

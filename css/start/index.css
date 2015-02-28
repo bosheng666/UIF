@@ -53,14 +53,16 @@ html {
  * Blocks
  */
 
-.tm-middle,
+.tm-middle{
+    padding: 0px;
+}
+
 .tm-section,
 .tm-footer { padding: 50px 0; }
 
 /* Tablet and bigger */
 @media (min-width: 768px) {
 
-    .tm-middle,
     .tm-section,
     .tm-footer { padding: 90px 0; }
 
@@ -69,7 +71,6 @@ html {
 /* Large screen and bigger */
 @media (min-width: 1220px) {
 
-    .tm-middle,
     .tm-section,
     .tm-footer { padding: 120px 0; }
 
@@ -91,7 +92,7 @@ html {
     }
 
     .tm-main {
-        padding-left: 50px !important;
+        padding:80px 0 120px 50px !important;
         border-left: 1px solid #E5E5E5;
     }
 
@@ -742,3 +743,18 @@ input.sp-input {
 .sp-hue { font: inherit; }
 
 .sp-input-container { margin-bottom: 10px; }
+
+/*代码块自定义样式*/
+/*部分公用样式来自于uikit.docs.min.css*/
+pre .string, pre .tag .value, pre .phpdoc, pre .tex .formula {
+    color: #66d9ef;
+}
+
+pre .comment{
+    color: #717069;
+}
+
+pre .tag .attribute{
+    color: #a6e22e;
+}
+/*==代码块自定义样式==*/

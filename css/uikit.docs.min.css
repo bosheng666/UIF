@@ -195,14 +195,14 @@ blockquote {
 
 pre {
 	padding: 10px;
-	background: #fafafa;
-	font: 12px / 18px Consolas,monospace,serif;
-	color: #666;
+	background: #26292c;
+	/*font: 12px / 18px Consolas,monospace,serif;*/
+	font:400 14px / 24px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #f8f8f2;
 	-moz-tab-size: 4;
 	tab-size: 4;
 	overflow: auto;
-	border: 1px solid #e5e5e5;
-	border-radius: 3px
+	border-radius: 3px;
 }
 
 ::-moz-selection {
@@ -4661,9 +4661,9 @@ select.uk-form-width-mini {
 
 .uk-badge {
 	display: inline-block;
-	padding: 0 5px;
+	padding: 8px 10px;
 	background: #009dd8;
-	font-size: 10px;
+	font-size: 14px;
 	font-weight: 700;
 	line-height: 14px;
 	color: #fff;
@@ -7706,4 +7706,9 @@ a.uk-datepicker-table-muted {
 
 .uk-dragover {
 	box-shadow: 0 0 20px rgba(100,100,100,.3)
+}
+
+.s-red{
+	color: red;
+	font-weight: bold;
 }

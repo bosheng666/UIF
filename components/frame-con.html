@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>开始使用-多多前端框架v2.0</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	 
+<div class="tm-middle">
+	<div class="uk-container ">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			
+			<div class="tm-main ">
+
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title">功能组件</h1>
+
+                            <p class="uk-article-lead">全部组件分类</p>
+
+                            <p>UIF提供了超过 30 个模块化并可扩展的组件，它们可以自由结合。组件根据自己的用途及功能分为不同的类型。</p>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title uk-badge uk-badge-success">默认</h2>
+                                        <p>这些组件通常用来实现HTML元素的跨浏览器标准化功能，并添加了一些非常基础的样式。</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title uk-badge uk-badge-success">布局</h2>
+                                        <p>充分运用我们完全响应式的流体网格系统和面板，常见的布局组成部分如博客文章和评论以及其他一些实用的效果类型。</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title uk-badge uk-badge-success">导航</h2>
+                                        <p>UIF 提供了不同形式的导航组件，如导航栏和侧导航。使用面包屑或通过一个分页来翻阅文章。</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title uk-badge uk-badge-success">元素</h2>
+                                        <p>基本的HTML元素样式，如表格和表单。这些组件使用自有的类。它们不会因想到任何默认的元素样式。</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title uk-badge uk-badge-success">常用</h2>
+                                        <p>在这里你可以找到一些经常在内容中使用的组件，如按钮、图标、徽章、缩略图、进度条等等。</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title uk-badge uk-badge-success">JavaScript</h2>
+                                        <p>这些组件主要依赖于 JavaScript 的淡出显示与隐藏内容，比如下拉菜单，模态对话框，弹出式画布和提示组件等。</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>多平台适配</h2>
+
+                            <p>UIF 包含一系列为各种不同的浏览器宽度实现响应式内容的类。下面的表格提供了一个关于一些可用的CLASS名称以及相应的设备概述。</p>
+
+                            <table class="uk-table uk-table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th>屏幕宽度</th>
+                                    <th>class名称</th>
+                                    <th>设备</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Mini</td>
+                                        <td>小于 479px</td>
+                                        <td>手机纵向</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Small</td>
+                                        <td>480px 到 767px</td>
+                                        <td>手机横向</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Medium</td>
+                                        <td>768px 到 959px</td>
+                                        <td>平板电脑纵向</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Large</td>
+                                        <td>960px 到 1199px</td>
+                                        <td>台式机或平板电脑横向</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Xlarge</td>
+                                        <td>1200px 或以上</td>
+                                        <td>大屏幕设备</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>CSS 命名规律</h2>
+
+                            <p>为了提高识别度，所有的UIF类均添加不同前缀以命名区分。由于历史原因，部分不规则命名仍存在，后期逐步去掉~</p>
+
+
+                            <table class="uk-table uk-table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th>前缀</th>
+                                    <th>概述</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>g-</td>
+                                        <td>基础性的框架布局，主要应用于项目整体的布局规律</td>
+                                    </tr>
+                                    <tr>
+                                        <td>s-</td>
+                                        <td>主要应用于项目外观样式</td>
+                                    </tr>
+                                    <tr>
+                                        <td>f-</td>
+                                        <td>功能性的样式，比如清除浮动，对齐等</td>
+                                    </tr>
+                                    <tr>
+                                        <td>m-</td>
+                                        <td>局部区域小模块的命名和区分</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>JavaScript 使用</h2>
+
+                            <p>你可以通过为HTML元素添加 <code>data-uk-*</code> 属性来使用前端框架中存在的JS功能<br>
+                                <!-- 这是使用UIF组件时应该首先考虑的最佳做法。 --></p>
+
+                            <h3 class="tm-article-subtitle">html代码绑定</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">data-uk-button</span>&gt;</span>My Button<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></pre>
+
+                            <p>当然你也可以通过 jQuery API 来使用这些组件。</p>
+
+                            <h3 class="tm-article-subtitle">JS代码绑定</h3>
+
+<pre><code class="ruby"><span class="variable">$(</span><span class="string">".button"</span>).uk(<span class="string">"button"</span>);</code></pre>
+
+                        </article>
+
+                    </div>
+		</div>
+
+	</div>
+</div>	
+</body>
+</html>

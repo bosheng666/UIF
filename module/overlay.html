@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>覆盖-多多前端框架v2.0</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	 
+<div class="tm-middle">
+	<div class="uk-container  ">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+		 
+		 
+<div class="tm-main  ">
+
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title">Overlay</h1>
+
+                            <p class="uk-article-lead">Create an image overlay, which comes in different styles.</p>
+
+                            <h2>用法</h2>
+
+                            <p>This component can be applied to an image, an anchor or text. Just add the <code>.uk-overlay</code> to a container element and the <code>.uk-overlay-area</code> class to a <code>&lt;div&gt;</code> to create the overlay itself.</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-margin">
+
+                                <div class="uk-overlay">
+                                    <img src="http://placekitten.com/200/100" alt="">
+                                    <div class="uk-overlay-area"></div>
+                                </div>
+
+                                <a class="uk-overlay" href="#">
+                                    <img src="http://placekitten.com/200/100" alt="">
+                                    <div class="uk-overlay-area"></div>
+                                </a>
+
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="comment">&lt;!-- This is a div with an overlay --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-overlay"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">""</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-overlay-area"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="comment">&lt;!-- This is an anchor with an overlay --&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"uk-overlay"</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">""</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-overlay-area"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">a</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Overlay toggle</h2>
+
+                            <p>To toggle the overlay by hovering the area around it, like a caption for example, just add the <code>.uk-overlay-toggle</code> class.</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-width-medium-1-2">
+                                    <figure class="uk-overlay-toggle">
+                                        <div class="uk-overlay">
+                                            <img src="http://placekitten.com/200/100" alt="">
+                                            <div class="uk-overlay-area"></div>
+                                        </div>
+                                        <figcaption>Caption</figcaption>
+                                    </figure>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">figure</span> <span class="attribute">class</span>=<span class="value">"uk-overlay-toggle"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-overlay"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">""</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-overlay-area"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">figcaption</span>&gt;</span>...<span class="tag">&lt;/<span class="title">figcaption</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">figure</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Overlay caption</h2>
+
+                            <p>Add the <code>.uk-overlay-caption</code> class to create an overlay with a text caption.</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-margin">
+
+                                <div class="uk-overlay">
+                                    <img src="http://placekitten.com/200/100" alt="">
+                                    <div class="uk-overlay-caption">Some text</div>
+                                </div>
+
+                                <a class="uk-overlay" href="#">
+                                    <img src="http://placekitten.com/200/100" alt="">
+                                    <div class="uk-overlay-caption">Some text</div>
+                                </a>
+
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="comment">&lt;!-- This is a div with an overlay caption --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-overlay"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">""</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-overlay-caption"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="comment">&lt;!-- This is an anchor with an overlay caption --&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"uk-overlay"</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">""</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-overlay-caption"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">a</span>&gt;</span></code></pre>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>Overlay with thumbnails</h2>
+
+                            <p>You can also apply an overlay to a thumbnail from the <a href="thumbnail.html">Thumbnail component</a>. To toggle the overlay by hovering the thumbnail's caption or frame, just add the <code>.uk-overlay-toggle</code> class.</p>
+
+                            <h3 class="tm-article-subtitle">示例</h3>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-2">
+                                    <a class="uk-thumbnail uk-overlay-toggle" href="#">
+                                        <div class="uk-overlay">
+                                            <img src="http://placekitten.com/400/250" alt="">
+                                            <div class="uk-overlay-area"></div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="uk-width-medium-1-2">
+                                    <a class="uk-thumbnail uk-overlay-toggle" href="#">
+                                        <div class="uk-overlay">
+                                            <img src="http://placekitten.com/400/250" alt="">
+                                            <div class="uk-overlay-caption">Some text</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"uk-thumbnail uk-overlay-toggle"</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-overlay"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">""</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-overlay-caption"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">a</span>&gt;</span></code></pre>
+
+                        </article>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+</div>	
+</body>
+</html>

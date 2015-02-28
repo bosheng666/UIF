@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DEMO-模块布局和样式</title>
+<link href="../static/common/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="../static/common/css/public.css" rel="stylesheet" type="text/css" />
+<link href="../static/common/css/component.css" rel="stylesheet" type="text/css" />
+<link href="../static/common/css/stu-layout.css" rel="stylesheet" type="text/css" />
+<style type="">
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 14px;
+        color: #fff;
+        background-color:rgba(62, 146, 51, 0.8);
+    }
+    h3{
+        font-size:16px;
+    }
+    i{
+        font-weight: normal;
+        color:green;
+    }
+</style>
+</head>
+
+<body>
+<!--内容&底部-->
+<div class="g-wrap">
+    <div class="g-bd">
+        <div class="g-sd f-fl">
+            <h2>左边栏布局：绑定样式（g-sd f-fl）</h2>
+            <div class="m-ulWrap s-bsdStyle1 f-mb10">
+                <h1>模块区域（以M-开头的都为模块，该class功能是定义选择器）:</h1>
+                <br>如：此处使用“m-ulWrap”，可方便对该模块内的div等标签，单独定义风格，不干扰其他模块div的样式
+                <br>
+                <i>程序比喻：指针，模块化，封装成类，单独定义（类似闭包,避免样式污染全局），复合调用</i>
+            </div>
+            <div class="m-ulWrap s-bsdStyle1 f-mb10 clearfix">
+                <h1>设计风格（s-定义模块使用的通用风格样式）：</h1>
+                <br>
+                如，此处使用的“s-bsdStyle1” 阴影,是抽出的投影样式。
+                <br /> <strong>s-bsdStyle1属于public.css 具有全局属性。</strong>
+                <br><strong>若现有样式不能满足，需要新样式。</strong><br>
+
+                <br><i>1.样式通用的话，写在全局public.css；</i><br>
+
+                <br><i>2.若新样式只有教师身份有(举例)，请写入tec-layout.css；</i>
+                <br>
+                <br><i>3.若样式只有个别有，请尽量统一整体；非改不可的，请单独写入
+                tec-layout.css，并注释，方便后期的css优化和调整；</i>   
+            </div>
+            <div class="m-ulWrap s-bsdStyle1 f-mt10">
+                <h1>布局排版（f-定义模块使用的通用风格样式）：</h1>
+                <br>
+                如，此处使用的“f-mt10” ,是抽出的排版间距,等同：margin-top:10
+                <br/>
+                <i>说明：该样式，也为全局样式。修改和新增的流程，与s-一样</i>
+            </div>
+        </div>
+        <div class="g-mn f-fr">
+            <h2>主要内容区域（左边栏）：绑定样式（g-mn f-fr）</h2>
+            <div class="m-ulWrap s-bsdStyle1">
+                <h1>模块区域（以M开头的都为模块）:</h1>
+                <strong>1.组成：</strong> <br>模块由tab,按钮组，列表，表单控件等基础的元素组成构成，具体使用，请参考前端框架的demo 分离样式()或社区的基础组件。
+                归属样式为compont.css
+                <br>
+                <br>
+                <strong>2.布局：</strong> <br>模块的主要布局，是采用了浮动布局（记住清除浮动）和绝对定位布局（注意z-index的层级）<br>
+                布局，请劲量复用"f-“ 模块<br>
+                <br>
+                <strong>3.标签：</strong> <br>模块的主要以标签的组合和嵌套，完成对样式的控制（减轻对class,id选择器的依赖度,目的是为了提高模块的通用性，一致性，减少css片段的冗余）
+                <br>重合度较高的地方，可以添加tt（title），ct(content).<strong style="color:red">具体请参照svn中的css命名说明.doc</strong><br>
+                <br>
+                <strong>4.通用性： <br></strong>
+                1.模块按身份权限进行组织，如教师专有模块，对应tec-layout.css。
+                 <br>
+                2.通用的模块，命名尽量通用，避免出现不同身份权限调用公用模块，但是模块名称却是“m-tecInfoCenter”，模块命名不够通用的的情形（此处仅为举例说明）
+                ;
+                 <br>
+                3.模块的命名，为前缀“m-”，后缀驼峰大小写的命名方式。如：m-infoCenter
+
+            </div>
+        </div>
+
+        <div class="f-cb">
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
