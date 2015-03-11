@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>开始使用-uif前端框架</title>
+	<link rel="stylesheet" href="../css/uikit.docs.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+	<script src="../js/jquery-1.11.1.min.js" ></script>
+	<script src="../js/uikit.js" ></script>
+	<script src="../js/highlight.js" ></script>
+	<script src="../js/docs.js" ></script>
+</head>
+<body class="tm-background" >
+	 
+<div class="tm-middle">
+	<div class="uk-container uk-container-center">
+
+		<div class="uk-grid" data-uk-grid-margin="">
+			<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small">  
+				<ul class="tm-nav uk-nav" data-uk-nav=""> 
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">默认</li>
+                            <li><a href="normalize.html" title="Normalize component">标准化</a></li>
+                            <li><a href="base.html" title="Base component">基础</a></li>
+                            <li><a href="print.html" title="Print component">打印</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">布局</li>
+                            <li><a href="grid.html" title="Grid component">网格</a></li>
+                            <li><a href="panel.html" title="Panel component">面板</a></li>
+                            <li><a href="article.html" title="Article component">文章</a></li>
+                            <li><a href="comment.html" title="Comment component">评论</a></li>
+                            <li><a href="utility.html" title="Utility component">效果</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">导航</li>
+                            <li><a href="nav.html" title="Nav component">纵向Tab</a></li>
+                            <li><a href="navbar.html" title="Navbar component">水平Tab</a></li>
+                            <li><a href="subnav.html" title="Subnav component">水平二级Tab</a></li>
+                            <li><a href="breadcrumb.html" title="Breadcrumb component">面包屑</a></li>
+                            <li><a href="pagination.html" title="Pagination component">分页</a></li>
+                            <li><a href="tab.html" title="Pagination component">自定义/组合</a></li>
+                            <!-- <li><a href="tab.html" title="Tab component">选项卡</a></li> -->
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">元素</li>
+                            <li><a href="list.html" title="List component">列表</a></li>
+                            <li><a href="description-list.html" title="Description list component">描述列表</a></li>
+                            <li><a href="table.html" title="Table component">表格</a></li>
+                            <li><a href="form.html" title="Form component">表单</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">常用</li>
+                            <li><a href="button.html" title="Button component">按钮</a></li>
+                            <li><a href="icon.html" title="Icon component">图标</a></li>
+                            <li><a href="close.html" title="Close component">关闭</a></li>
+                            <li><a href="badge.html" title="Badge component">徽章</a></li>
+                            <li><a href="alert.html" title="Alert component">提示框</a></li>
+                            <li><a href="thumbnail.html" title="Thumbnail component">缩略图</a></li>
+                            <li><a href="overlay.html" title="Overlay component">覆盖</a></li>
+                            <li><a href="progress.html" title="Progress component">进度条</a></li>
+                            <li><a href="search.html" title="Search component">搜索</a></li>
+                            <li><a href="text.html" title="Text component">文本</a></li>
+                            <li><a href="animation.html" title="Animation component">动画</a></li>
+
+                            <li class="uk-nav-header" style="font-size: 16px;line-height:30px;font-weight: bold;background:#fff;border-bottom:1px solid #e6e6e6">交互式JS组件</li>
+                            <li><a href="dropdown.html" title="Dropdown">下拉菜单</a></li>
+                            <li><a href="modal.html" title="Modal component">模态对话框</a></li>
+                            <li><a href="offcanvas.html" title="Off-canvas component">弹出式画布</a></li>
+                            <li><a href="switcher.html" title="Switcher component">切换器</a></li>
+                            <li><a href="toggle.html" title="Toggle component">拨动</a></li>
+                            <li><a href="tooltip.html" title="Tooltip component">提示组件</a></li>
+                            <li><a href="scrollspy.html" title="Scrollspy component">监听滚动</a></li>
+                            <li><a href="smooth-scroll.html" title="Smooth scroll component">平滑滚动</a></li>
+
+                        </ul>
+
+			</div>
+			<div class="tm-main uk-width-medium-3-4">
+
+                        <article class="uk-article">
+
+                            <h1 class="uk-article-title">功能组件</h1>
+
+                            <p class="uk-article-lead">UIF 全部组件一览。</p>
+
+                            <p>UIF提供了超过 30 个模块化并可扩展的组件，它们可以自由结合。组件根据自己的用途及功能分为不同的类型。</p>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title">默认</h2>
+                                        <p>这些组件通常用来实现HTML元素的跨浏览器标准化功能，并添加了一些非常基础的样式。</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title">布局</h2>
+                                        <p>充分运用我们完全响应式的流体网格系统和面板，常见的布局组成部分如博客文章和评论以及其他一些实用的效果类型。</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title">导航</h2>
+                                        <p>UIF 提供了不同形式的导航组件，如导航栏和侧导航。使用面包屑或通过一个分页来翻阅文章。</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="uk-grid" data-uk-grid-margin="">
+
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title">元素</h2>
+                                        <p>基本的HTML元素样式，如表格和表单。这些组件使用自有的类。它们不会因想到任何默认的元素样式。</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title">常用</h2>
+                                        <p>在这里你可以找到一些经常在内容中使用的组件，如按钮、图标、徽章、缩略图、进度条等等。</p>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-panel">
+                                        <h2 class="uk-panel-title">JavaScript</h2>
+                                        <p>这些组件主要依赖于 JavaScript 的淡出显示与隐藏内容，比如下拉菜单，模态对话框，弹出式画布和提示组件等。</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>断点</h2>
+
+                            <p>UIF 包含一系列为各种不同的视图宽度实现响应式内容的类。下面的表格提供了一个关于一些可用的视图断点以及相应的设备概述。你可以通过 <a href="customizer.html">定制器</a> 来调整所有的断点。</p>
+
+                            <table class="uk-table uk-table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th>大小</th>
+                                    <th>断点</th>
+                                    <th>设备</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Mini</td>
+                                        <td>小于 479px</td>
+                                        <td>手机纵向</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Small</td>
+                                        <td>480px 到 767px</td>
+                                        <td>手机横向</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Medium</td>
+                                        <td>768px 到 959px</td>
+                                        <td>平板电脑纵向</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Large</td>
+                                        <td>960px 到 1199px</td>
+                                        <td>台式机或平板电脑横向</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Xlarge</td>
+                                        <td>1200px 或以上</td>
+                                        <td>大屏幕设备</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>CSS 架构</h2>
+
+                            <p>为了避免与其他CSS框架冲突，所有的UIF类均以 <code>uk-</code> 作为前缀进行命名。组件分为组件本身、子对象和调节器，其类名通常沿用组件名。</p>
+
+                            <h3>定义</h3>
+
+                            <table class="uk-table uk-table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th>对象</th>
+                                    <th>概述</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>组件</td>
+                                        <td>理论上一个网站经常用到一部分基于类的组件模块，比如按钮。这些都可重复使用和相互组合。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>子对象</td>
+                                        <td>子对象都被放置在一个组件中用来增强其功能性，比如一个在提示框中的关闭按钮。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>调节器</td>
+                                        <td>调节器的类用来调整修改组件及其子对象的样式，比如按钮的颜色和大小。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <hr class="uk-article-divider">
+
+                            <h2>JavaScript 架构</h2>
+
+                            <p>你可以通过为HTML元素添加 <code>data-uk-*</code> 属性来使用所有的UIF组件而不需要单独编写一行JavaScript代码。这是使用UIF组件时应该首先考虑的最佳做法。
+</p>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">data-uk-button</span>&gt;</span>My Button<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></pre>
+
+                            <p>当然你也可以通过 jQuery API 来使用这些组件。</p>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+
+<pre><code class="ruby"><span class="variable">$(</span><span class="string">".button"</span>).uk(<span class="string">"button"</span>);</code></pre>
+
+                        </article>
+
+                    </div>
+		</div>
+
+	</div>
+</div>	
+</body>
+</html>
