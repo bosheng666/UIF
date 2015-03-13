@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>输入框下拉-多多前端框架v2.0</title>
+	<link rel="stylesheet" href="css/uikit.docs.min.css">
+    <link rel="stylesheet" href="css/docs.css">
+	<script src="js/jquery.js" ></script>
+	<script src="js/uikit.min.js" ></script>
+	<script src="js/highlight.js" ></script>
+	<script src="js/docs.js" ></script>
+    <link rel="stylesheet" href="css/codemirror.css">
+    <link rel="stylesheet" href="css/show-hint.css">
+    <script src="js/codemirror.js"></script>
+    <script src="js/marked.js"></script>
+    <script src="js/htmleditor.js"></script>
+    <script src="js/inputddl.js"></script>
+</head> 
+<body class="tm-background" >
+	 
+<div class="tm-middle">
+	<div class="uk-container  ">
+		<div class="uk-grid" data-uk-grid-margin="">
+           <div class="tm-main  ">
+                        <article class="uk-article">
+                            <h1>输入框下拉/inputDropdownlist</h1>
+                            <p class="uk-article-lead">创建一个输入时带下拉列表的组件。</p>
+                            <h2>用法</h2>
+
+                            <p>要创建一个输入框下拉组件，只需把 <code>id="email_tips"</code>添加到 <code>&lt;div&gt;</code>元素。
+                            </p>
+                                      <h3 class="tm-article-subtitle">示例</h3>
+                     <div class="input_id">
+                            <input id="userName" name="userName" maxlength="20" type="text" data-default="请输入您的社区账户">
+                            <div id="email_tips" class="email_tips" style="display: none;">
+                                <ul>
+                                    <li>
+                                        <span name="spanUserName">stuu</span><span class="msg" name="delUserName"></span>
+                                    </li>
+                                    <li style="cursor: pointer;">
+                                        <span name="spanUserName">qshd01</span><span class="msg" name="delUserName"></span>
+                                    </li>
+                                    <li style="cursor: pointer;">
+                                        <span name="spanUserName">stuu2</span><span class="msg" name="delUserName"></span>
+                                    </li>
+                                    <li style="cursor: pointer;">
+                                        <span name="spanUserName">qshd02</span><span class="msg" name="delUserName"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <label name="userNameDefault" style="color: rgb(213, 213, 213);"></label>
+                        </div>
+
+                            <h3 class="tm-article-subtitle">Code.</h3>
+                             <!--<span class="tag">&lt;<span class="title">div</span>
+                                  <span class="attribute">class</span>=<span class="value">"backTop"</span>
+                                 </span>&gt;</span>
+                                 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+                                 -->
+                            <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input_id"</span><span>&gt;</span>
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">data-default</span>=<span class="value">"请输入您的社区账户"</span><span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">id</span>=<span class="value">"userName"</span> <span class="attribute">name</span>=<span class="value">"userName"</span> <span class="attribute">maxlength</span>=<span class="value">"20"</span> <span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span><span class="attribute">class</span>=<span class="value">"email_tips"</span> <span class="attribute">id</span>=<span class="value">"email_tips"</span><span>&gt;</span>  
+        <span class="tag">&lt;<span class="title">ul</span><span>&gt;</span> 
+            <span class="tag">&lt;<span class="title">li</span><span>&gt;</span> 
+                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">name</span>=<span class="value">"spanUserName"</span>stuu<span>&gt;</span><span class="tag">/&lt;<span class="title">span</span><span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"msg"</span> <span class="attribute">name</span>=<span class="value">"delUserName"</span><span>&gt;</span><span class="tag">/&lt;<span class="title">span</span><span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">li</span><span>&gt;</span>
+                ...
+        <span class="tag">&lt;/<span class="title">ul</span><span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span><span>&gt;</span>
+    <span class="tag">&lt;<span class="title">label</span> <span class="attribute">name</span>=<span class="value">"userNameDefault"</span> <span class="attribute">style</span>=<span class="value">"color: rgb(213, 213, 213);"</span><span>&gt;</span><span class="tag">&lt;/<span class="title">label</span><span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span><span>&gt;</span></code></pre>
+                                <hr class="uk-article-divider">
+
+                            <h2>Javascript 选项</h2>
+
+                            <p>这是关于如何通过调用方法的示例：</p>
+
+                            <pre>inputList.init();</pre>
+
+                        </article>
+                    </div> 
+                </div>
+            </div>
+</div>	
+</body>
+</html>

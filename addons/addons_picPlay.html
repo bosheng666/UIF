@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>图片滚动-多多前端框架v2.0</title>
+	<link rel="stylesheet" href="css/uikit.docs.min.css">
+    <link rel="stylesheet" href="css/docs.css">
+	<script src="js/jquery.js" ></script>
+	<script src="js/uikit.min.js" ></script>
+	<script src="js/highlight.js" ></script>
+	<script src="js/docs.js" ></script>
+    <link rel="stylesheet" href="css/codemirror.css">
+    <link rel="stylesheet" href="css/show-hint.css">
+    <script src="js/codemirror.js"></script>
+    <script src="js/marked.js"></script>
+    <script src="js/htmleditor.js"></script>
+    <script src="js/picplay.js"></script>
+</head> 
+<body class="tm-background" >
+	 
+<div class="tm-middle">
+	<div class="uk-container  ">
+		<div class="uk-grid" data-uk-grid-margin="">
+           <div class="tm-main  ">
+                        <article class="uk-article">
+                            <h1>图片滚动/picPlay</h1>
+                            <p class="uk-article-lead">创建一个可循环滚动图片的组件。</p>
+                            <h2>用法</h2>
+
+                            <p>要创建一个图片滚动组件，只需把 <code>id="LoginAlbumConDiv"</code>添加到 <code>&lt;div&gt;</code>元素中，并根据图片宽度*数量设置style的width值，heith为图片高度
+                            </p>
+                                      <h3 class="tm-article-subtitle">示例</h3>
+                            <div class="hd_img" style="overflow: hidden">
+                            <div id="LoginAlbumConDiv" style="position: relative; width: 3930px; height: 365px; left: 0px;">
+                                <img name="imgChange" src="images/school_1.jpg">
+                                <img name="imgChange" src="images/school_2.jpg">
+                                <img name="imgChange" src="images/school_3.jpg">
+                                <img name="imgChange" src="images/school_4.jpg">
+                                <img name="imgChange" src="images/school_5.jpg">
+                            </div>
+                            <div class="page1" name="imgIndex">
+                                <a href="#" class="current">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </div>
+                        </div>
+                            <h3 class="tm-article-subtitle">Code.</h3>
+                             <!--<span class="tag">&lt;<span class="title">div</span>
+                                  <span class="attribute">class</span>=<span class="value">"backTop"</span>
+                                 </span>&gt;</span>
+                                 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+                                 -->
+                            <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"hd_img"</span><span class="attribute">style</span>=<span class="value">"overflow: hidden"</span> <span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"LoginAlbumConDiv"</span><span class="attribute">style</span>=<span class="value">"position: relative; width: 3930px; height: 365px; left: 0px;"</span> <span>&gt;</span>
+        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">name</span>=<span class="value">"imgChange"</span><span class="attribute">src</span>=<span class="value">"images/school_1.jpg"</span> <span>&gt;</span>
+        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">name</span>=<span class="value">"imgChange"</span><span class="attribute">src</span>=<span class="value">"images/school_2.jpg"</span> <span>&gt;</span>
+        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">name</span>=<span class="value">"imgChange"</span><span class="attribute">src</span>=<span class="value">"images/school_3.jpg"</span> <span>&gt;</span>
+        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">name</span>=<span class="value">"imgChange"</span><span class="attribute">src</span>=<span class="value">"images/school_4.jpg"</span> <span>&gt;</span>
+        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">name</span>=<span class="value">"imgChange"</span><span class="attribute">src</span>=<span class="value">"images/school_5.jpg"</span> <span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"page1"</span><span class="attribute">name</span>=<span class="value">"imgIndex"</span> <span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"current"</span> <span class="attribute">href</span>=<span class="value">"#"</span><span>&gt;</span>1<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span><span>&gt;</span>2<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span><span>&gt;</span>3<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span><span>&gt;</span>4<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span><span>&gt;</span>5<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+                                <hr class="uk-article-divider">
+
+                            <h2>Javascript 选项</h2>
+
+                            <p>这是关于如何通过调用方法的示例：</p>
+
+                            <pre>playPic.initPicPlayer(<span class="string">$('div[name="imgIndex"] a'), 'LoginAlbumConDiv', 655</span>);</pre>
+
+                            <table class="uk-table uk-table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>参数</th>
+                                       
+                                        <th>概述</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>$('div[name="imgIndex"] a')</code></td>                                       
+                                        <td>图片按钮</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>LoginAlbumConDiv</code></td>
+                                        <td>滚动容器的ID</td>
+                                    </tr>
+                                     <tr>
+                                        <td><code>655</code></td>
+                                        <td>每张图片的宽度</td>
+                                    </tr>
+                                </tbody>
+                            </table>                  
+                        </article>
+                    </div> 
+                </div>
+            </div>
+</div>	
+</body>
+</html>

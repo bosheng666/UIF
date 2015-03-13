@@ -192,112 +192,125 @@ body .f-hide {
 .f-pt3 {
     padding-top:3px;
 }
+.f-pt5 {
+    padding-top:5px;
+}
+.f-pt10 {
+    padding-top:10px;
+}
+.f-pt15 {
+    padding-top:15px;
+}
 .f-pt20 {
     padding-top:20px;
 }
-.f-pl2 {
-    padding-left:2px;
+.f-pb3 {
+    padding-bottom:3px;
+}
+.f-pb5 {
+    padding-bottom:5px;
+}
+.f-pb10 {
+    padding-bottom:10px;
+}
+.f-pb15 {
+    padding-bottom:15px;
+}
+.f-pb20 {
+    padding-bottom:20px;
 }
 .f-pl3 {
     padding-left:3px;
 }
-.f-pl4 {
-    padding-left:4px;
+.f-pl5 {
+    padding-left:5px;
 }
 .f-pl10 {
     padding-left:10px;
 }
+.f-pl15 {
+    padding-left:15px;
+}
+.f-pl20 {
+    padding-left:20px;
+}
 .f-pr3 {
     padding-right:3px;
+}
+.f-pr5 {
+    padding-right:5px;
 }
 .f-pr10 {
     padding-right:10px;
 }
+.f-pr15 {
+    padding-right:15px;
+}
+.f-pr20 {
+    padding-right:20px;
+}
+
 
 /* 外边距 */
-.f-ml3 {
-    margin-left:3px;
+ .f-mt3 {
+    padding-top:3px;
 }
-
-.f-ml5 {
-    margin-left:5px;
-}
-
-.f-ml10 {
-    margin-left:10px;
-}
-
-.f-ml15 {
-    margin-left:15px;
-}
-
-.f-ml20 {
-    margin-left:20px;
-}
-
-.f-mr3 {
-    margin-right:3px;
-}
-
-.f-mr5 {
-    margin-right:5px;
-}
-
-.f-mr10 {
-    margin-right:10px;
-}
-
-.f-mr20 {
-    margin-right:20px;
-}
-
-
-.f-mtm3 {
-    margin-top:-3px;
-}
-
 .f-mt5 {
-    margin-top:5px;
+    padding-top:5px;
 }
-
-.f-mt6 {
-    margin-top:6px;
-}
-
 .f-mt10 {
-    margin-top:10px;
+    padding-top:10px;
 }
-
 .f-mt15 {
-    margin-top:15px;
+    padding-top:15px;
 }
-
 .f-mt20 {
-    margin-top:20px;
+    padding-top:20px;
 }
-
-.f-mt25 {
-    margin-top:25px;
+.f-mb3 {
+    padding-bottom:3px;
 }
-
 .f-mb5 {
-    margin-bottom:5px;
+    padding-bottom:5px;
 }
-
 .f-mb10 {
-    margin-bottom:10px;
+    padding-bottom:10px;
 }
-
 .f-mb15 {
-    margin-bottom:15px;
+    padding-bottom:15px;
 }
-
 .f-mb20 {
-    margin-bottom:20px;
+    padding-bottom:20px;
 }
-
-.f-mb30 {
-    margin-bottom:30px;
+.f-ml3 {
+    padding-left:3px;
+}
+.f-ml5 {
+    padding-left:5px;
+}
+.f-ml10 {
+    padding-left:10px;
+}
+.f-ml15 {
+    padding-left:15px;
+}
+.f-ml20 {
+    padding-left:20px;
+}
+.f-mr3 {
+    padding-right:3px;
+}
+.f-mr5 {
+    padding-right:5px;
+}
+.f-mr10 {
+    padding-right:10px;
+}
+.f-mr15 {
+    padding-right:15px;
+}
+.f-mr20 {
+    padding-right:20px;
 }
 
 

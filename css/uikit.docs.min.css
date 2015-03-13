@@ -46,9 +46,9 @@ b,strong {
 	color: #d05;
 	white-space: nowrap;
 	padding: 0 4px;
-	border: 1px solid #e5e5e5;
+	/*border: 1px solid #e5e5e5;*/
 	border-radius: 3px;
-	background: #fafafa
+	/*background: #fafafa*/
 }
 
 em {
@@ -7712,3 +7712,9 @@ a.uk-datepicker-table-muted {
 	color: red;
 	font-weight: bold;
 }
+/*添加表格行经过的样式*/
+.uk-table tr:hover{
+	background: #fffaec;
+}
+
+/*==添加表格行经过的样式==*/
