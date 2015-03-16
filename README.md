@@ -9,11 +9,13 @@
 v1.0 地址：http://frontend.dodoedu.com
 
 
+
 文件存放路径
 ------------------
 svn  ：svn://172.16.0.3/static/pc_uikit
 
 点三：\\172.16.0.3\html\front_end\v2 
+
 
 
 图片放置说明
