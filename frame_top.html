@@ -18,7 +18,7 @@
 <nav class="tm-navbar uk-navbar uk-navbar-attached">
 		<div class="uk-container uk-container-center">
 
-			<a class="uk-navbar-brand uk-hidden-small" href="index.html" title="UIkit" target="content">
+			<a class="uk-navbar-brand uk-hidden-small uk-logo" href="frame_con.html" title="UIkit" target="content">
 				<img class="uk-margin uk-margin-remove" src="images/t_logo.jpg" width="90" height="30" alt="uif"></a>
 
 			<ul class="uk-navbar-nav uk-hidden-small">
@@ -54,6 +54,11 @@
 	                     $(this).addClass("uk-active");
          	 		});
          	 	});
+
+         	  $(".uk-logo").click(function(){
+         	  	   $(".uk-container .uk-navbar-nav li").removeClass("uk-active");
+         	  });
+
          });
 	</script>
 </body>	
