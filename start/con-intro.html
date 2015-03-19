@@ -36,11 +36,11 @@
 					</p>
 
 					<p>
-						此外，<a href="https://github.com/uikit/uikit" target="_blank" rel="nofollow">多多前端框架</a>在github上部署有项目文件，你可以在内网，外网
+						此外，<a href="https://codeload.github.com/bosheng666/UIF/zip/master" target="_blank" rel="nofollow">多多前端框架</a>在github上部署有项目文件，你可以在内网，外网
 					</p>
 
 					<p>
-						<a class="uk-button uk-button-large uk-button-primary" data-uikit-download="" href="https://github.com/uikit/uikit/releases/download/v2.8.0/uikit-2.8.0.zip">下载 多多前端框架</a>
+						<a class="uk-button uk-button-large uk-button-primary" data-uikit-download="" href="https://codeload.github.com/bosheng666/UIF/zip/master">下载 多多前端框架</a>
 					</p>
 
 					<hr class="uk-article-divider">
@@ -69,8 +69,14 @@
 								<td>
 									<code>/images</code>
 								</td>
-								<td>包含 UIF 所有的Images文件和压缩后的版本。</td>
+								<td>包含 UIF 所有的Images是项目中必须文件，文件都是压缩后的版本。</td>
 							</tr>
+							<tr>
+								<td>
+									<code>/img</code>
+								</td>
+								<td>包含 UIF 所有占位置的图片，图片是压缩后的版本</td>
+							</tr> 
 							<tr>
 								<td>
 									<code>/js</code>
@@ -113,11 +119,29 @@
     <span class="tag">&lt;<span class="title">head</span>&gt;</span>
         <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"Content-Type"</span> <span class="attribute">content</span>=<span class="value">"text/html; charset=utf-8"</span> /&gt;</span>
 	    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"renderer"</span> <span class="attribute">content</span>=<span class="value">"webkit"</span> /&gt;</span>
-	    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"IE=Edge,chrome=1"</span> /&gt;</span> 
-        <span class="tag">&lt;<span class="title">title</span>&gt;</span>多多框架-hello world!<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"../../static/common/css/reset.css"</span> /&gt;</span>
-        <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"../../static/common/css/component.css"</span> /&gt;</span>
-        <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"../../static/common/js/jquery-1.6.4 .min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span> 
+	    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"IE=Edge,chrome=1"</span> /&gt;</span>   
+	    <span class="tag">&lt;</span>!-- 使用最新ie版本打开，使用chrome模式打开 --<span>&gt;</span>  
+	    <span class="tag">&lt;<span class="title">title</span>&gt; <span class="attribute">多多框架-hello world!</span>&lt;/<span class="title">title</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"css/commponts.css"</span>  <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>/&gt;</span> 
+		<span class="tag">&lt;</span>!-- reset.css和框架组件样式表 --<span>&gt;</span>  
+
+		<span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"css/theme.css"</span>  <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>/&gt;</span>  
+		<span class="tag">&lt;</span>!-- 产品个性化组件样式表--<span>&gt;</span>  
+
+		<span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"css/页面.css"</span>  <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>/&gt;</span>           
+		<span class="tag">&lt;</span>!-- 当前页面样式表 --<span>&gt;</span>  
+
+		<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"js/jquery-1.6.4 .min.js"</span>  <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;&lt;/<span  class="title">script</span>&gt;</span>  
+		<span class="tag">&lt;</span>!-- 基础框架js 1.6.4 兼容ie6 --<span>&gt;</span> 
+
+		<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"js/common.js"</span>  <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;&lt;/<span  class="title">script</span>&gt;</span> 
+		<span class="tag">&lt;</span>!-- 组件js --<span>&gt;</span>
+
+		<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"js/XXX.js"</span>  <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;&lt;/<span  class="title">script</span>&gt;</span>   
+		<span class="tag">&lt;</span>!-- 第三方js --<span>&gt;</span>  
+
+		<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"js/页面.js"</span>  <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;&lt;/<span  class="title">script</span>&gt;</span>   
+		<span class="tag">&lt;</span>!-- 当前页面js --<span>&gt;</span>   
     <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
     <span class="tag">&lt;<span class="title">body</span>&gt;</span>
     <span class="tag">&lt;/<span class="title">body</span>&gt;</span>

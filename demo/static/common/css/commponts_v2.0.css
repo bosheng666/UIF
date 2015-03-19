@@ -1,0 +1,60 @@
+/*基本的侧边栏导航菜单*/
+.c-navs,.c-navs li{
+	width: 100%;
+}
+.c-navs li a{
+  display: block;
+  color: #666;
+  text-indent: 5px;
+  font:normal 14px / 30px "microsoft yahei";
+}
+.c-navs li a:hover{
+	background:rgba(0,0,0,.03); 
+}
+.c-navs li a.z-cur{ 
+  color: #fff;
+  background-color:#009dd8; 
+} 
+.c-navs li a i.ico{
+
+}
+/*==基本的侧边栏导航菜单==*/
+/*侧边栏导航菜单-带子菜单*/
+.c-navs-sub,.c-navs-sub li{
+	width: 100%;
+}
+.c-navs-sub li a{
+  display: block;
+  color: #666;
+  text-indent: 5px;
+  font:normal 14px / 30px "microsoft yahei";
+} 
+.c-navs-sub li a:hover{
+	background:rgba(0,0,0,.03); 
+}
+.c-navs-sub li a.z-cur{ 
+  color: #fff;
+  background-color:#009dd8; 
+} 
+.c-navs-sub li ul{
+	padding-left: 15px;
+}
+.c-navs-sub li ul a:hover{
+	background: none;
+	color: blue;
+}
+.c-navs-sub li ul a.z-cur{ 
+  color: blue;
+  background:none; 
+} 
+.c-navs-sub li i.ico{
+	width:7px;
+	height: 6px;
+	float: left;
+	display: inline-block;
+	margin-right:2px;
+	margin-top:-2px;
+	background: url(../images/ico.png) no-repeat 0 -9px;
+	_background: url(../images/ico.gif) no-repeat 0 -9px;
+}
+/*==侧边栏导航菜单-带子菜单==*/

@@ -1,15 +1,29 @@
-﻿html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+﻿/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+    color:#000;background:#fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
     margin: 0;
     padding: 0;
 }
 
-div, h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd, form, input, select, textarea {
-    text-align: left;
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
+    display:block;
 }
 
-header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
-    display: block;
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,canvas,video {
+    display: inline-block;*display: inline;*zoom: 1;
 }
+
+
+div, h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd, form, input, select, textarea {
+    text-align: left;
+} 
 
 caption, th {
     font-weight: normal;
@@ -72,4 +86,258 @@ a, a:hover {
 img {
     vertical-align: middle;
     border: none;
+}
+
+/* 清理浮动 */
+.f-cb:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.f-cb {
+    zoom:1; /* for IE6 IE7 */
+}
+
+/* 隐藏, 通常用来与 JS 配合 */
+body .f-hide {
+    display:none;
+}
+
+/* 设置内联, 减少浮动带来的bug */
+.f-fl,
+.f-fr {
+    display:inline;
+}
+.f-fl {
+    float:left;
+}
+.f-fr{
+    float:right;
+}
+
+/* 单行文字溢出时出现省略号，需设定宽度 */ 
+.f-tof {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 简单的渐变 */
+.f-linear {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f1f1f1));
+    background: -moz-linear-gradient(top, #fcfcfc, #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f1f1f1');
+    background:-o-linear-gradient(top, #fcfcfc, #f1f1f1);
+    background:-ms-linear-gradient(top, #fcfcfc, #f1f1f1);
+    background: linear-gradient(to bottom, #fcfcfc, #f1f1f1);
+}
+
+/* 浅色的渐变 */
+.f-linear-light {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#999));
+    background: -moz-linear-gradient(top, #fcfcfc, #999);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#999');
+    background:-o-linear-gradient(top, #fcfcfc, #999);
+    background:-ms-linear-gradient(top, #fcfcfc, #999);
+    background: linear-gradient(to bottom, #fcfcfc, #999);
+}
+
+/* 人民币符号 */
+.f-rmb {
+    font-family: arial;
+    font-style: normal;
+    padding-right: 4px;
+}
+
+
+/* chrome 下字体过小的问题 */
+.f-webkit-adjust {
+    -webkit-text-size-adjust: none;
+}
+
+/*字体加样式*/
+.f-fw {
+    font-weight:bold;
+}
+
+.f-fwNor {
+    font-weight:normal;
+}
+
+.f-vam {
+    vertical-align:middle;
+}
+
+.f-vat {
+    vertical-align:top;
+}
+
+.f-vab {
+    vertical-align:bottom;
+}
+
+.f-tar {
+    text-align:right;
+}
+
+.f-tac {
+    text-align:center;
+}
+
+.f-tal {
+    text-align:left;
+} 
+
+/* 内边距 */
+.f-pt3 {
+    padding-top:3px;
+}
+.f-pt5 {
+    padding-top:5px;
+}
+.f-pt10 {
+    padding-top:10px;
+}
+.f-pt15 {
+    padding-top:15px;
+}
+.f-pt20 {
+    padding-top:20px;
+}
+.f-pb3 {
+    padding-bottom:3px;
+}
+.f-pb5 {
+    padding-bottom:5px;
+}
+.f-pb10 {
+    padding-bottom:10px;
+}
+.f-pb15 {
+    padding-bottom:15px;
+}
+.f-pb20 {
+    padding-bottom:20px;
+}
+.f-pl3 {
+    padding-left:3px;
+}
+.f-pl5 {
+    padding-left:5px;
+}
+.f-pl10 {
+    padding-left:10px;
+}
+.f-pl15 {
+    padding-left:15px;
+}
+.f-pl20 {
+    padding-left:20px;
+}
+.f-pr3 {
+    padding-right:3px;
+}
+.f-pr5 {
+    padding-right:5px;
+}
+.f-pr10 {
+    padding-right:10px;
+}
+.f-pr15 {
+    padding-right:15px;
+}
+.f-pr20 {
+    padding-right:20px;
+}
+
+
+/* 外边距 */
+ .f-mt3 {
+    padding-top:3px;
+}
+.f-mt5 {
+    padding-top:5px;
+}
+.f-mt10 {
+    padding-top:10px;
+}
+.f-mt15 {
+    padding-top:15px;
+}
+.f-mt20 {
+    padding-top:20px;
+}
+.f-mb3 {
+    padding-bottom:3px;
+}
+.f-mb5 {
+    padding-bottom:5px;
+}
+.f-mb10 {
+    padding-bottom:10px;
+}
+.f-mb15 {
+    padding-bottom:15px;
+}
+.f-mb20 {
+    padding-bottom:20px;
+}
+.f-ml3 {
+    padding-left:3px;
+}
+.f-ml5 {
+    padding-left:5px;
+}
+.f-ml10 {
+    padding-left:10px;
+}
+.f-ml15 {
+    padding-left:15px;
+}
+.f-ml20 {
+    padding-left:20px;
+}
+.f-mr3 {
+    padding-right:3px;
+}
+.f-mr5 {
+    padding-right:5px;
+}
+.f-mr10 {
+    padding-right:10px;
+}
+.f-mr15 {
+    padding-right:15px;
+}
+.f-mr20 {
+    padding-right:20px;
+}
+
+
+/*字体大小*/
+.f-fs12 {
+    font-size:12px;
+}
+
+.f-fs14 {
+    font-size:14px;
+}
+
+.f-fs16 {
+    font-size:16px;
+}
+
+.f-fs18 {
+    font-size:18px;
+}
+
+.f-fs22 {
+    font-size:22px;
+}
+
+.f-fs24 {
+    font-size:24px;
 }

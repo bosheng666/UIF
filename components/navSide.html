@@ -28,47 +28,50 @@
                         <h2>用法</h2>
 
                         <p>
-                            要应用这个组件，为
-                            <code>&lt;ul&gt;</code>
+                            要应用这个组件，为最外面的
+                            <code>&lt;div&gt;</code>
                             元素添加
-                            <code>.uk-nav</code>
+                            <code>.c-navs</code>
                             类。 使用
                             <code>&lt;a&gt;</code>
                             元素作为列表中的菜单项。要对一个菜单项应用选中状态的效果，添加
-                            <code>.uk-active</code>
+                            <code>.z-cur</code>
                             类即可。
                         </p>
 
                         <h3 class="tm-article-subtitle">示例</h3>
 
                         <div class="uk-width-medium-1-3">
-                            <ul class="uk-nav uk-nav-side">
-                                <li class="uk-active">
-                                    <a href="#">Active</a>
-                                </li>
-                                <li>
-                                    <a href="#">Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Item</a>
-                                </li>
-                            </ul>
+                            <iframe src="../demo/views/navSide/navSide.html"></iframe>
 
                         </div>
 
                         <p>
                             <span class="uk-badge uk-badge-info">注意</span>
                             默认情况下，导航菜单没有任何样式。这就是为什么要添加一些具有样式的修饰类，这是很重要的，在例子中我们使用了
-                            <code>.uk-nav-side</code>
+                            <code>.c-navs</code>
                             类。
                         </p>
 
                         <h3 class="tm-article-subtitle">Code.</h3>
 
-                        <pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"uk-active"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+                        <pre><code class="xml"> 
+      &lt;div class=&quot;c-navs&quot;&gt;
+          &lt;ul&gt;
+              &lt;li&gt;
+                  &lt;a href=&quot;&quot; class=&quot;z-cur&quot;&gt;基本侧边栏导航选中&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                  &lt;a href=&quot;&quot; &gt;基本侧边栏导航1&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                  &lt;a href=&quot;&quot; &gt;基本侧边栏导航2&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                  &lt;a href=&quot;&quot; &gt;基本侧边栏导航3&lt;/a&gt;
+              &lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/div&gt;
 </code></pre>
 
                         <hr class="uk-article-divider">
@@ -91,20 +94,14 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <code>.uk-nav-sub</code>
+                                        <code>.c-navs-sub</code>
                                     </td>
                                     <td>
                                         在第一个嵌套的
                                         <code>&lt;ul&gt;</code>
                                         中添加这个类，使其拥有最佳的间距。
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code>.uk-parent</code>
-                                    </td>
-                                    <td>添加这个类来表示一个父菜单项。</td>
-                                </tr>
+                                </tr> 
                                 <tr>
                                     <td>
                                         <code>.uk-nav-parent-icon</code>
@@ -117,605 +114,49 @@
                         <h4 class="tm-article-subtitle">示例</h4>
 
                         <div class="uk-width-medium-1-3">
-                            <ul class="uk-nav uk-nav-side uk-nav-parent-icon">
-                                <li class="uk-active">
-                                    <a href="">Active</a>
-                                </li>
-
-                                <li class="uk-parent uk-open">
-                                    <a href="#">Parent</a>
-                                    <ul class="uk-nav-sub">
-                                        <li>
-                                            <a href="">Sub item</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Sub item</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <iframe src="../demo/views/navSide/navSide-sub.html" height="250"></iframe>
                         </div>
 
                         <h4 class="tm-article-subtitle">Code.</h4>
 
-                        <pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-parent-icon"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"uk-parent"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav-sub"</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-                <span class="tag">&lt;<span class="title">ul</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-            <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+                        <pre><code class="xml">
+      &lt;div class=&quot;c-navs-sub&quot;&gt;
+          &lt;ul&gt;
+              &lt;li&gt;
+                  &lt;a href=&quot;&quot; class=&quot;z-cur&quot;&gt;基本侧边栏导航选中&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                  &lt;a href=&quot;&quot; &gt;基本侧边栏导航1&lt;/a&gt;
+                  &lt;ul&gt;
+                      &lt;li&gt;
+                        &lt;a href=&quot;&quot; class=&quot;z-cur&quot;&gt;基本侧边栏导航选中&lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;
+                        &lt;a href=&quot;&quot; &gt;基本侧边栏导航1&lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;
+                        &lt;a href=&quot;&quot; &gt;基本侧边栏导航2&lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;
+                        &lt;a href=&quot;&quot; &gt;基本侧边栏导航3&lt;/a&gt;
+                      &lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                  &lt;a href=&quot;&quot; &gt;基本侧边栏导航2&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                  &lt;a href=&quot;&quot; &gt;基本侧边栏导航3&lt;/a&gt;
+              &lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/div&gt;
+                        </code></pre>
 
                         <hr class="uk-article-divider">
 
-                        <h3>手风琴</h3>
-
-                        <p>
-                            默认情况下，子菜单项总是可见的。若要应用手风琴效果，只需给主
-                            <code>&lt;ul&gt;</code>
-                            元素添加
-                            <code>data-uk-nav</code>
-                            属性。当点击一个父菜单项时，会关闭已经展开的菜单项，每次只允许展开一个嵌套的菜单。若要避免这种情况，只需附加
-                            <code>{multiple:true}</code>
-                            到 data 属性。
-                        </p>
-
-                        <h3 class="tm-article-subtitle">示例</h3>
-
-                        <div class="uk-grid" data-uk-grid-margin="">
-                            <div class="uk-width-medium-1-2">
-
-                                <p>
-                                    <code>data-uk-nav</code>
-                                </p>
-
-                                <ul class="uk-nav uk-nav-side uk-nav-parent-icon uk-width-medium-2-3" data-uk-nav="">
-                                    <li class="uk-active">
-                                        <a href="">Active</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Item</a>
-                                    </li>
-
-                                    <li class="uk-parent">
-                                        <a href="#">Parent</a>
-                                        <div style="overflow:hidden;height:0;position:relative;">
-                                            <ul class="uk-nav-sub">
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="">Sub item</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Sub item</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="uk-parent">
-                                        <a href="#">Parent</a>
-                                        <div style="overflow:hidden;height:0;position:relative;">
-                                            <ul class="uk-nav-sub">
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <div class="uk-width-medium-1-2">
-
-                                <p>
-                                    <code>data-uk-nav="{multiple:true}"</code>
-                                </p>
-
-                                <ul class="uk-nav uk-nav-side uk-nav-parent-icon uk-width-medium-2-3" data-uk-nav="{multiple:true}">
-                                    <li class="uk-active">
-                                        <a href="">Active</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Item</a>
-                                    </li>
-
-                                    <li class="uk-parent">
-                                        <a href="#">Parent</a>
-                                        <div style="overflow:hidden;height:0;position:relative;">
-                                            <ul class="uk-nav-sub">
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="">Sub item</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Sub item</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="uk-parent">
-                                        <a href="#">Parent</a>
-                                        <div style="overflow:hidden;height:0;position:relative;">
-                                            <ul class="uk-nav-sub">
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                        <h3 class="tm-article-subtitle">Code.</h3>
-
-                        <div class="uk-grid" data-uk-grid-margin="">
-
-                            <div class="uk-width-medium-1-2">
-                                <pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-parent-icon"</span> <span class="attribute">data-uk-nav</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"uk-parent"</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav-sub"</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
-                            </div>
-                            <div class="uk-width-medium-1-2">
-                                <pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-parent-icon"</span> <span class="attribute">data-uk-nav</span>=<span class="value">"{multiple:true}"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"uk-parent"</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav-sub"</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
-                            </div>
-                        </div>
-
-                        <hr class="uk-article-divider">
-
-                        <h3>标题和分隔线</h3>
-
-                        <p>为菜单项添加下面其中的一个类，创建菜单项中的标题或分隔线。</p>
-
-                        <table class="uk-table">
-                            <thead>
-                                <tr>
-                                    <th>类</th>
-                                    <th>概述</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <code>.uk-nav-header</code>
-                                    </td>
-                                    <td>
-                                        添加这个类到一个
-                                        <code>&lt;li&gt;</code>
-                                        元素创建一个标题。
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code>.uk-nav-divider</code>
-                                    </td>
-                                    <td>
-                                        添加这个类到一个
-                                        <code>&lt;li&gt;</code>
-                                        元素，在单独的菜单项之间创建一个分割线。
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <p>
-                            <span class="uk-badge">注意</span>
-                            你还可以给菜单项添加副标题。只需在菜单项的
-                            <code>&lt;a&gt;</code>
-                            元素里面创建一个
-                            <code>&lt;div&gt;</code>
-                            元素。
-                        </p>
-
-                        <h4 class="tm-article-subtitle">示例</h4>
-
-                        <div class="uk-width-medium-1-3">
-
-                            <ul class="uk-nav uk-nav-side" data-uk-nav="">
-                                <li class="uk-nav-header">Header</li>
-                                <li>
-                                    <a href="">
-                                        Item
-                                        <div>Subtitle</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">Item</a>
-                                </li>
-                                <li class="uk-nav-divider"></li>
-                                <li>
-                                    <a href="">Item</a>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <h4 class="tm-article-subtitle">Code.</h4>
-
-                        <pre><code class="xml"><span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"uk-nav-header"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"uk-nav-divider"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></pre>
-
-                        <hr class="uk-article-divider">
-
-                        <h2>样式修饰</h2>
-
-                        <p>你可以根据需求通过一些修饰类来改变导航菜单的样式。</p>
-
-                        <h3>附和导航菜单</h3>
-
-                        <p>
-                            添加
-                            <code>.uk-nav-side</code>
-                            类，在侧边栏、面板或网页内容的任意其他地方放置一个导航菜单。
-                        </p>
-
-                        <h4 class="tm-article-subtitle">示例</h4>
-
-                        <div class="uk-width-medium-1-3">
-
-                            <div class="uk-panel uk-panel-box">
-
-                                <h3 class="uk-panel-title">Nav side in panel</h3>
-
-                                <ul class="uk-nav uk-nav-side uk-nav-parent-icon" data-uk-nav="">
-                                    <li class="uk-active">
-                                        <a href="">Active</a>
-                                    </li>
-
-                                    <li class="uk-parent">
-                                        <a href="#">Parent</a>
-                                        <div style="overflow:hidden;height:0;position:relative;">
-                                            <ul class="uk-nav-sub">
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="">Sub item</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Sub item</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="uk-parent">
-                                        <a href="#">Parent</a>
-                                        <div style="overflow:hidden;height:0;position:relative;">
-                                            <ul class="uk-nav-sub">
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <a href="">Item</a>
-                                    </li>
-
-                                    <li class="uk-nav-header">Header</li>
-                                    <li class="uk-parent">
-                                        <a href=""> <i class="uk-icon-star"></i>
-                                            Parent
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href=""> <i class="uk-icon-twitter"></i>
-                                            Item
-                                        </a>
-                                    </li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li>
-                                        <a href="">
-                                            <i class="uk-icon-rss"></i>
-                                            Item
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                        <h4 class="tm-article-subtitle">Code.</h4>
-
-                        <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-panel uk-panel-box"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"uk-panel-title"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-side"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-</code></pre>
-
-                        <hr class="uk-article-divider">
-
-                        <h3>下拉导航菜单</h3>
-
-                        <p>
-                            添加
-                            <code>.uk-nav-dropdown</code>
-                            类，将导航菜单放置到一个
-                            <a href="dropdown.html" title="Dropdown">下拉菜单组件</a>
-                            中的默认下拉菜单中。
-                        </p>
-
-                        <h4 class="tm-article-subtitle">示例</h4>
-
-                        <div class="uk-button-dropdown" data-uk-dropdown="">
-                            <button class="uk-button">
-                                Dropdown
-                                <i class="uk-icon-caret-down"></i>
-                            </button>
-
-                            <div class="uk-dropdown uk-dropdown-small">
-
-                                <ul class="uk-nav uk-nav-dropdown">
-                                    <li>
-                                        <a href="#">Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Another item</a>
-                                    </li>
-                                    <li class="uk-nav-header">Header</li>
-                                    <li>
-                                        <a href="#">Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Another item</a>
-                                    </li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li>
-                                        <a href="#">Separated item</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                        <h4 class="tm-article-subtitle">Code.</h4>
-
-                        <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-dropdown"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-</code></pre>
-
-                        <hr class="uk-article-divider">
-
-                        <h3>导航栏中的导航菜单</h3>
-
-                        <p>
-                            添加
-                            <code>.uk-nav-navbar</code>
-                            类，将导航菜单放置到一个
-                            <a href="navbar.html" title="Navbar">导航栏组件</a>
-                            中的导航栏下拉菜单中。
-                        </p>
-
-                        <h4 class="tm-article-subtitle">示例</h4>
-
-                        <nav class="uk-navbar">
-
-                            <ul class="uk-navbar-nav">
-                                <li class="uk-parent" data-uk-dropdown="">
-                                    <a href="">Parent</a>
-
-                                    <div class="uk-dropdown uk-dropdown-navbar">
-                                        <ul class="uk-nav uk-nav-navbar">
-                                            <li>
-                                                <a href="#">Item</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Another item</a>
-                                            </li>
-                                            <li class="uk-nav-header">Header</li>
-                                            <li>
-                                                <a href="#">Item</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Another item</a>
-                                            </li>
-                                            <li class="uk-nav-divider"></li>
-                                            <li>
-                                                <a href="#">Separated item</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </li>
-                            </ul>
-
-                        </nav>
-
-                        <h4 class="tm-article-subtitle">Code.</h4>
-
-                        <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-navbar"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-navbar"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-</code></pre>
-
-                        <hr class="uk-article-divider">
-
-                        <h3>搜索结果的下拉导航菜单</h3>
-
-                        <p>
-                            添加
-                            <code>.uk-nav-search</code>
-                            类，将导航菜单放置到一个
-                            <a href="search.html" title="Search">搜索组件</a>
-                            中的显示搜索结果的下拉菜单中。默认情况下，搜索相关的 JavaScript 会自动注入到菜单中，因此不必进行手动设置。
-                        </p>
-
-                        <h4 class="tm-article-subtitle">示例</h4>
-
-                        <form class="uk-search" data-uk-search="{source:'../vendor/searchresults.json'}">
-                            <input class="uk-search-field" type="search" placeholder="search...">
-                            <button class="uk-search-close" type="reset"></button>
-                        </form>
-
-                        <h4 class="tm-article-subtitle">Code.</h4>
-
-                        <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-dropdown uk-dropdown-search"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-search"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
-
-                        <hr class="uk-article-divider">
-
-                        <h3>弹出式画布的导航菜单</h3>
-
-                        <p>
-                            添加
-                            <code>.uk-nav-offcanvas</code>
-                            类，将导航菜单放置到
-                            <a href="offcanvas.html" title="Off-canvas component">弹出式画布组件</a>
-                            里的侧边栏弹出式画布中。
-                        </p>
-
-                        <h4 class="tm-article-subtitle">示例</h4>
-
-                        <button class="uk-button" data-uk-offcanvas="{target:'#offcanvas-1'}">Off-canvas</button>
-
-                        <div id="offcanvas-1" class="uk-offcanvas">
-
-                            <div class="uk-offcanvas-bar">
-
-                                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="">
-                                    <li>
-                                        <a href="">Item</a>
-                                    </li>
-                                    <li class="uk-active">
-                                        <a href="">Active</a>
-                                    </li>
-
-                                    <li class="uk-parent">
-                                        <a href="#">Parent</a>
-                                        <div style="overflow:hidden;height:0;position:relative;">
-                                            <ul class="uk-nav-sub">
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="">Sub item</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Sub item</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="uk-parent">
-                                        <a href="#">Parent</a>
-                                        <div style="overflow:hidden;height:0;position:relative;">
-                                            <ul class="uk-nav-sub">
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Sub item</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <a href="">Item</a>
-                                    </li>
-
-                                    <li class="uk-nav-header">Header</li>
-                                    <li class="uk-parent">
-                                        <a href="">
-                                            <i class="uk-icon-star"></i>
-                                            Parent
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="uk-icon-twitter"></i>
-                                            Item
-                                        </a>
-                                    </li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li>
-                                        <a href="">
-                                            <i class="uk-icon-rss"></i>
-                                            Item
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                        <h4 class="tm-article-subtitle">Code.</h4>
-
-                        <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-offcanvas-bar"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"uk-nav uk-nav-offcanvas"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-</code></pre>
-
-                    </article>
-
-                </div>
-            </div>
+                        
+ 
+                         
+ 
 </body>
         </html>
