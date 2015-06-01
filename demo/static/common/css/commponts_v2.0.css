@@ -44,17 +44,26 @@
 	color: blue;
 }
 .c-navs-sub li ul a.z-cur{ 
-  color: blue;
-  background:none; 
+	color: blue;
+	background:none; 
 } 
 .c-navs-sub li i.ico{
-	width:7px;
+	width: 7px;
 	height: 6px;
 	float: left;
 	display: inline-block;
-	margin-right:2px;
-	margin-top:-2px;
+	margin-right: 4px;
+	margin-top: 13px;
+	margin-left: 10px;
+	background: url(../images/ico.png) no-repeat 0 -9px;
+	_background: url(../images/ico.gif) no-repeat 0 -9px;
+}  
+.c-navs-sub li a:hover i{
 	background: url(../images/ico.png) no-repeat 0 -9px;
 	_background: url(../images/ico.gif) no-repeat 0 -9px;
 }
+.c-navs-sub li a.z-cur i{ 
+	background: url(../images/ico.png) no-repeat 0 0;
+	_background: url(../images/ico.gif) no-repeat 0 0;
+} 
 /*==侧边栏导航菜单-带子菜单==*/
